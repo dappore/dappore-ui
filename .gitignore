@@ -1,3 +1,4 @@
 _site
 dist/stylesheets/semantic_src.css
 node_modules
+package-lock.json
