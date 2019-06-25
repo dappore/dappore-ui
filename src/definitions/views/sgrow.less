@@ -1,0 +1,63 @@
+
+/*--------------
+      Item
+---------------*/
+
+.ui.sgrows {
+    background-color: white;
+    box-shadow: 8px rgba(52, 57, 61, 0.1);
+	border-radius: 8px;
+}
+
+/*--------------
+      Items
+---------------*/
+
+.ui.sgrows > .row {
+    padding: 0 20px;
+    height: 88px;
+    font-size: 16px;
+    color: rgba(75, 82, 90, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*--------------
+      Selection
+---------------*/
+
+.ui.selectable.sgrows > .row:hover {
+    background-color: rgba(238, 246, 246, 1);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.ui.selectable.sgrows > .row:hover:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.ui.selectable.sgrows > .row:hover:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+/*-------------------
+      Divided
+--------------------*/
+
+.ui.divided.sgrows > .row {
+    border-top: 1px solid rgba(237, 242, 245, 1);
+}
+
+.ui.divided.sgrows > .row:first-child {
+    border-top: none;
+}
+
+/*-------------------
+      Content - Text
+--------------------*/
+
+.ui.sgrows > .row > .item > .small.content {
+    font-size: 14px;
+	color: rgba(145, 153, 163, 1);
+}

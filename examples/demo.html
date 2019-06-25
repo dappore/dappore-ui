@@ -7,6 +7,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
+    <link href="demo.css" rel="stylesheet" type="text/css" />
     <script src="main_css.js"></script>
     <script src="main_js.js"></script>
 
@@ -16,28 +17,65 @@
 
 
     <div class="ui container">
-        <div class="ui cell">
-            <div class="item">
-                <div class="avatar" img-src="/assets/images/avatar_placeholder.png"></div>
-                <div class="header">周子辰</div>
-                <div class="footer">辰辰</div>
+        <div class="ui divided selectable sgrows">
+
+            <div class="row">
+                <div class="avatar item">
+                    <div class="ui female sgavatar image">
+                        全
+                        <img src="./images/avatar/male.jpg">
+                    </div>
+                    <div class="content">周子辰</div>
+                    <div class="small content">辰辰</div>
+                </div>
+
+                <div class="item">
+                    <div class="content">2岁</div>
+                </div>
+
+                <div class="item">
+                    <div class="content">周子辰</div>
+                    <div class="small content">辰辰</div>
+                </div>
+
+                <div class="item">
+                    <div class="ui sgaction">
+                        <a data-tooltip="日志" href="" class="positive action"><i class="icon file"></i></a>
+                        <a data-tooltip="编辑" href="" class="positive action"><i class="icon edit"></i></a>
+                        <a data-tooltip="删除" href="" class="negative action"><i class="icon trash"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="item">
-                <div class="content">2岁</div>
+            <div class="row">
+                <div class="avatar item">
+                    <div class="ui female sgavatar image">
+                        <img src="/assets/images/avatar_placeholder.png">
+                    </div>
+                    <div class="content">周子辰</div>
+                    <div class="small content">辰辰</div>
+                </div>
+
+                <div class="item">
+                    <div class="content">2岁</div>
+                </div>
+
+                <div class="item">
+                    <div class="content">周子辰</div>
+                    <div class="small content">辰辰</div>
+                </div>
+
+                <div class="item">
+                    <div class="ui sgaction">
+                        <a data-tooltip="日志" href="" class="positive action"><i class="icon file"></i></a>
+                        <a data-tooltip="编辑" href="" class="positive action"><i class="icon edit"></i></a>
+                        <a data-tooltip="删除" href="" class="negative action"><i class="icon trash"></i></a>
+                    </div>
+                </div>
             </div>
 
-            <div class="item">
-                <div class="header">周子辰</div>
-                <div class="footer">辰辰</div>
-            </div>
-
-            <div class="item">
-                <div class="action"><i class="icon file"></i></div>
-                <div class="action"><i class="icon edit"></i></div>
-                <div class="action"><i class="icon trash"></i></div>
-            </div>
         </div>
+
     </div>
 
     <script src="index_js.js"></script>
