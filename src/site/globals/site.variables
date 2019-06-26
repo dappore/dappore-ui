@@ -1,4 +1,86 @@
 @imagePath: '/assets/images';
 @fontPath: '/assets/webfonts';
 
+
+
+/*******************************
+         Site Settings
+*******************************/
+
+/*-------------------
+       Fonts
+--------------------*/
+
+@fontName          : 'PingFangSC-Regular, Microsoft YaHei, Avenir';
+
+@headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
 @importGoogleFonts: false;
+
+@fontTitleColor         : #4B525A;
+@fontGrayColor          : #9199A3;
+@textBgColor         : #F6F8FA;
+
+/*-------------------
+      Base Sizes
+--------------------*/
+
+/* This is the single variable that controls them all */
+@emSize   : 16px;
+
+/* The size of page text  */
+@fontSize : 16px;
+
+
+/*-------------------
+    Border Radius
+--------------------*/
+
+/* See Power-user section below
+   for explanation of @px variables
+*/
+
+@defaultBorderRadius: 8px;
+
+/*-------------------
+    Brand Colors
+--------------------*/
+
+@primaryColor        : #00CDDD;
+
+@borderColor         : #DBE1E6;
+@disableColor        : #CCCCCC;
+@dividedColor        : #EDF2F5;
+
+
+@lightPrimaryColor   : @lightBlue;
+@lightSecondaryColor : @lightBlack;
+
+/*-------------------
+    Emotive Colors
+--------------------*/
+
+/* Positive */
+@positiveColor           : #39BE65;
+
+/* Negative */
+@negativeColor           : #F05656;
+
+/* Info */
+@infoColor              : #2F90F0;
+
+/* Warning */
+@warningColor           : #FFBD00;
+
+/* Error */
+@warningColor           : #F05656;
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor           : #2F90F0;
+@linkUnderline       : none;
+@linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
+@linkHoverUnderline  : @linkUnderline;
