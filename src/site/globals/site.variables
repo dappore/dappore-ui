@@ -32,6 +32,9 @@
 /* The size of page text  */
 @fontSize : 16px;
 
+@fontHeaderSize : 20px;
+@fontBodySize : 16px;
+@fontCaptionSize : 16px;
 
 /*-------------------
     Border Radius
@@ -72,9 +75,6 @@
 
 /* Warning */
 @warningColor           : #FFBD00;
-
-/* Error */
-@warningColor           : #F05656;
 
 /*-------------------
        Links
