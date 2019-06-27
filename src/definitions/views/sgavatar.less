@@ -7,7 +7,6 @@
   font-family: PingFang-SC-Regular;
   font-weight: normal;
   font-stretch: normal;
-  background-color: rgba(255, 189, 0, 1);
   border-radius: 8px;
   color: rgba(255, 255, 255, 1);
 }
@@ -19,7 +18,7 @@
   position: relative;
 }
 
-.ui.female.sgavatar>img {
+.ui.female.sgavatar > img {
   width: 100%;
   border-radius: 8px;
 }
@@ -44,7 +43,7 @@
   position: relative;
 }
 
-.ui.male.sgavatar>img {
+.ui.male.sgavatar > img {
   width: 100%;
   border-radius: 8px;
 }
@@ -69,5 +68,63 @@
 .ui.literal.sgavatar {
   font-size: 20px;
   text-align: center;
-  line-height: 50px;
+  padding-top: 15px;
+  background-color: rgba(255, 189, 0, 1);
+}
+
+/*-------------------
+    .ui.female.literal.sgavatar
+--------------------*/
+
+.ui.female.literal.sgavatar {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+  background-color: rgba(255, 189, 0, 1);
+}
+
+.ui.female.literal.sgavatar > img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.ui.female.literal.sgavatar:after {
+  content: "\f221";
+  background: #ff8ACA;
+  font-family: 'Font Awesome 5 Free';
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 29px;
+  border-radius: 12px;
+  padding: 0px 2px 0px 3px !important;
+}
+
+
+.ui.male.literal.sgavatar {
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 15px;
+  background-color: rgba(255, 189, 0, 1);
+}
+
+.ui.male.literal.sgavatar > img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.ui.male.literal.sgavatar:after {
+  content: "\f222";
+  background: #00cddd;
+  font-family: 'Font Awesome 5 Free';
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 29px;
+  border-radius: 12px;
+  padding: 0px 2px 1px 4px !important;
 }
