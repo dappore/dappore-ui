@@ -1,76 +1,73 @@
 /*-------------------
-      sgavator
+    .ui.sgavatar
 --------------------*/
-.ui.sgavatar{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    font-family: PingFang-SC-Regular;
-    font-weight: normal;
-    font-stretch: normal;
-    background-color: rgba(255, 189, 0, 1);
-    border-radius:8px;
-
-}
-.ui.sgavatar>img{
-    width: 100%;
-    border-radius: 8px;
+.ui.sgavatar {
+  width: 50px;
+  height: 50px;
+  font-family: PingFang-SC-Regular;
+  font-weight: normal;
+  font-stretch: normal;
+  background-color: rgba(255, 189, 0, 1);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 1);
 }
 
 /*-------------------
-      micon/wicon
+    .ui.female.sgavatar
 --------------------*/
-.ui.wicon,.ui.micon{
-    width: 11px;
-    height: 11px;
-    position: absolute;
-    top: 34px;
-    left: 34px;
-    z-index: 2;
+.ui.female.sgavatar {
+  position: relative;
 }
-.ui.micon>i,.ui.wicon>i{
-    color: rgba(255, 255, 255, 1);
-    border-radius:10px;
-    padding:0px 4px 16px 4px;
+
+.ui.female.sgavatar>img {
+  width: 100%;
+  border-radius: 8px;
 }
-.ui.wicon>i{
-    background: #FF8ACA;
-}
-.ui.micon>i{
-    background: #00cddd;
+
+.ui.female.sgavatar:after {
+  content: "\f221";
+  background: #ff8ACA;
+  font-family: 'Font Awesome 5 Free';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 12px;
+  padding: 0px 0px 2px 6px;
 }
 
 /*-------------------
-    man header
+    .ui.male.sgavatar
 --------------------*/
-.sgheader.content{
-    width: 50px;
-    height: 30px;
-    position: absolute;
-    top: 8px;
-    left: 62px;
-}
-.sgheader.content>.header{
-	font-size: 16px;
-	letter-spacing: 0px;
-	color: rgba(75, 82, 90, 1);
-}
-.sgheader.content>.description{
-	font-size: 14px;
-	letter-spacing: 0.2px;
-	color: rgba(145, 153, 163, 1);
+.ui.male.sgavatar {
+  position: relative;
 }
 
+.ui.male.sgavatar>img {
+  width: 100%;
+  border-radius: 8px;
+}
 
+.ui.male.sgavatar:after {
+  content: "\f222";
+  background: #00cddd;
+  font-family: 'Font Awesome 5 Free';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  border-radius: 12px;
+  padding: 0px 0px 2px 4px;
+}
 
 
 /*-------------------
-    font avatar
+    .ui.male.sgavatar
 --------------------*/
-.ui.sgavatar>.favatar{
-    font-size: 20px;
-    font-stretch: normal;
-	letter-spacing: 0px;
-    color: rgba(255, 255, 255, 1);
-    padding:15px 15px;
+.ui.literal.sgavatar {
+  font-size: 20px;
+  text-align: center;
+  line-height: 50px;
 }
