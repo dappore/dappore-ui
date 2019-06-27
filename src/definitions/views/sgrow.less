@@ -5,59 +5,128 @@
 
 .ui.sgrows {
     background-color: white;
-    box-shadow: 8px rgba(52, 57, 61, 0.1);
-	border-radius: 8px;
+    // box-shadow: 8px rgba(52, 57, 61, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    border-collapse: collapse;
 }
 
 /*--------------
       Items
 ---------------*/
 
-.ui.sgrows > .row {
-    padding: 0 20px;
+.ui.sgrows > .body > .row {
     height: 88px;
     font-size: 16px;
     color: rgba(75, 82, 90, 1);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.ui.sgrows > .header > .row {
+    height: 50px;
+    color: #9199a3;
+    font-size: 14px;
 }
 
 /*--------------
       Selection
 ---------------*/
 
-.ui.selectable.sgrows > .row:hover {
+.ui.selectable.sgrows > .body > .row:hover > .item {
     background-color: rgba(238, 246, 246, 1);
-    border-radius: 8px;
     cursor: pointer;
 }
 
-.ui.selectable.sgrows > .row:hover:first-child {
+.ui.selectable.sgrows > .body > .row:hover:first-child > .item:first-child {
     border-radius: 8px 8px 0 0;
 }
 
-.ui.selectable.sgrows > .row:hover:last-child {
-    border-radius: 0 0 8px 8px;
+.ui.selectable.sgrows > .body > .row:hover:last-child > .item:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.ui.selectable.sgrows > .body > .row:hover:last-child > .item:last-child {
+    border-bottom-right-radius: 8px;
 }
 
 /*-------------------
       Divided
 --------------------*/
 
-.ui.divided.sgrows > .row {
+.ui.divided.sgrows > .body > .row {
     border-top: 1px solid rgba(237, 242, 245, 1);
 }
 
-.ui.divided.sgrows > .row:first-child {
+.ui.divided.sgrows > .body > .row:first-child {
     border-top: none;
+}
+
+/*--------------
+      Layout
+---------------*/
+
+.ui.sgrows {
+    display: table;
+}
+
+.ui.sgrows > .header {
+    display: table-header-group;
+}
+
+.ui.sgrows > .body {
+    display: table-row-group;
+}
+
+.ui.sgrows .row {
+    display: table-row;
+}
+
+.ui.sgrows .row > .item {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: start;
+}
+
+.ui.sgrows .row > .item:last-child {
+    text-align: end;
+}
+
+/*--------------
+      Header
+---------------*/
+
+.ui.sgrows > .header {
+    height: 50px;
+}
+
+.ui.sgrows > .header > .row > .item {
+    background-color: #eef6f6;
+}
+
+.ui.sgrows > .header > .row > .item:first-child {
+    border-top-left-radius: 8px;
+}
+
+.ui.sgrows > .header > .row > .item:last-child {
+    border-top-right-radius: 8px;
+}
+
+/*-------------------
+      Content
+--------------------*/
+
+.ui.sgrows .row > .item:first-child {
+    padding-left: 20px;
+}
+
+.ui.sgrows .row > .item:last-child {
+    padding-right: 20px;
 }
 
 /*-------------------
       Content - Text
 --------------------*/
 
-.ui.sgrows > .row > .item > .small.content {
+.ui.sgrows > .body > .row > .item > .small.content {
     font-size: 14px;
 	color: rgba(145, 153, 163, 1);
 }
@@ -66,15 +135,21 @@
       Content - Avatar
 --------------------*/
 
-.ui.sgrows > .row > .avatar.item {
+.ui.sgrows > .body > .row > .avatar.item {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
+    margin: 19px 0;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-.ui.sgrows > .row > .avatar.item > .sgavatar {
+.ui.sgrows > .body > .row > .avatar.item > .sgavatar {
     height: 100%;
 }
 
-// .ui.sgrows > .row > .avatar.item > .content {
-//     display: block;
-// }
+.ui.sgrows > .body > .row > .avatar.item > .content {
+    margin-left: 12px;
+    width: 100%;
+}
