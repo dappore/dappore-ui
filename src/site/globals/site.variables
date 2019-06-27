@@ -39,6 +39,13 @@
 @fontCaptionSize : 16px;
 
 /*-------------------
+      Spacing
+--------------------*/
+
+@marginLeft : 20px;
+@marginRight : 20px;
+
+/*-------------------
     Border Radius
 --------------------*/
 
