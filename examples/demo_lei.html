@@ -1,264 +1,30 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <title>Page Title</title>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <script src="main_css.js"></script>
-  <script src="main_js.js"></script>
-  <style>
-    /* .wavatars{
-      position: relative;
-      width: 50px;
-      height: 50px;
-    }
-    .wavatar{
-    width: 100%;
-    border-radius: 8px;
-    z-index:-1;
-    }
-    .wavatars .nevus.icon{
-       position: absolute;
-       top:38px;
-       left: 38px;
-       z-index:1;
-    } */
-    .wavatars{
-      width: 50px;
-      height: 50px;
-      background:url('image/w.jpg') no-repeat bottom right;
-      background-size:11px 11px;
-      border-radius: 8px;
-      z-index:1000;
-    }
-.wavatar{
-  width: 50px;
-  height: 50px;
-  border-radius: 8px;
-  z-index:-1;
-}
-.ui.mavatar.image{
-     width: 50px;
-    height: 50px;
-    border-radius: 8px;
-    background-image: linear-gradient(90deg,);
-    /* background:url(image/w.jpg) no-repeat 48px 48px;
-    background-size:11px 11px; */
-    display:block;
-    background: url('image/w.jpg') no-repeat bottom right ;
-}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test</title>
+    <script src="main_css.js"></script>
+    <script src="main_js.js"></script>
 </head>
-
 <body>
-  <div class="ui image">
-    <img src="image/nan.jpg" alt="" class="ui wavatar image">
 
-  </div>
-  <!-- <div class="ui container">
-        <div class="ui cells">
-            <div class="item">
-                <div class="avatar" img-src="/assets/images/avatar_placeholder.png"></div>
-                <div class="header">周子辰</div>
-                <div class="footer">辰辰</div>
-            </div>
-
-            <div class="item">
-                <div class="content">2岁</div>
-            </div>
-
-            <div class="item">
-                <div class="header">周子辰</div>
-                <div class="footer">辰辰</div>
-            </div>
-
-            <div class="item">
-                <div class="action"><i class="icon file"></i></div>
-                <div class="action"><i class="icon edit"></i></div>
-                <div class="action"><i class="icon trash"></i></div>
-            </div>
-        </div>
-    </div> -->
-  <div class="ui container">
-    <div class="ui cells">
-      <table class="ui cells table">
-        <thead>
-          <tr>
-            <td>宝宝</td>
-            <td>年龄</td>
-            <td>家长</td>
-            <td>关系</td>
-            <td>来源</td>
-            <td>备注</td>
-            <td>标签</td>
-            <td>状态</td>
-            <td>编辑</td>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="center aligned">
-            <td>
-              <div class="ui left aligned image">
-                <img src="../dist/images/avatar/nan.jpg" alt="" class="ui mini rounded avatar image">
-                <div class="content">
-                  周子辰
-                  <div class="sub header">辰辰</div>
-                </div>
-              </div>
-            </td>
-            <td>2岁</td>
-            <td>
-              <p></p>
-              <div class="content">
-                <div class="header">周振宇</div>
-                <div class="sub header">18571734463</div>
-              </div>
-    </div>
-    </td>
-    <td>
-      <div class="content">
-        <div class="header">亲子</div>
-      </div>
-    </td>
-    <td>
-      <div class="content">
-        <div class="header">地推</div>
-      </div>
-    </td>
-    <td>
-      <div class="content">
-        <div class="header">暂未约课</div>
-      </div>
-    </td>
-    <td>
-      <div class="content">
-        <div class="header">意向</div>
-      </div>
-    </td>
-    <td>
-      <div class="content">
-        <div class="header">待处理</div>
-      </div>
-    </td>
-    <td>
-      <div>
-        <i class="fas fa-file"></i>
-        <i class="fas fa-edit"></i>
-        <i class="fas fa-trash"></i>
-      </div>
-    </td>
-    </tr>
-    <tr class="center aligned">
-      <td>
-        <div class="ui left aligned image">
-          <p></p>
-          <div class="content">
-            周子辰
-            <div class="sub header">辰辰</div>
-          </div>
-        </div>
-      </td>
-      <td>2岁</td>
-      <td>
-        <div class="ui left aligned image">
-          <img src="" alt="" class="ui mini rounded avatar image">
-          <div class="content">
-            周振宇
-            <div class="sub header">18571734463</div>
-          </div>
-        </div>
-      </td>
-      <td>
-        <div class="content">
-          <div class="header">亲子</div>
-        </div>
-      </td>
-      <td>
-        <div class="content">
-          <div class="header">地推</div>
-        </div>
-      </td>
-      <td>
-        <div class="content">
-          <div class="header">暂未约课</div>
-        </div>
-      </td>
-      <td>
-        <div class="content">
-          <div class="header">意向</div>
-        </div>
-      </td>
-      <td>
-        <div class="content">
-          <div class="header">待处理</div>
-        </div>
-      </td>
-      <td>
-        <div>
-          <i class="fas fa-file"></i>
-          <i class="fas fa-edit"></i>
-          <i class="fas fa-trash"></i>
-        </div>
-      </td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
-
-
-  <div class="ui divider"></div>
-
-
-  <div class="ui cells">
-    <table class="ui cells table">
-      <tbody>
-        <tr class="c_small">
-          <td>
-            <div class="header">OD-BULQ-A727-OOYC-5X13</div>
-          </td>
-          <td>
-            <div class="header">/admin/buyers/14/orders</div>
-          </td>
-          <td>
-            <div class="header">支付宝</div>
-          </td>
-          <td>
-            <div class="header">18888.0</div>
-          </td>
-          <td>
-            <div class="header">18888.0</div>
-          </td>
-          <td>
-            <div class="ui header">
-              <i class="fas fa-check-circle"></i>
-              <div class="content">已支付</div>
-            </div>
-          </td>
-          <td>18:26 06-05-2019</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  </div>
-
-
-
-<div class="ui divider"></div>
-
-<div class="ui iamge">
-  <i class="venus icon circular pink"></i>
-  <img src="image/nan.jpg" alt="" class="ui wavatar image">
+<div class="ui name sgavatar">全</div>
+<!-- female -->
+<div class="ui female sgavatar">
+    <img src="image/nan.jpg" alt="">
 </div>
 
-<div class="ui mavatars iamge">
-  <img src="image/nan.jpg" alt="" class="ui mavatar image">
-  <i class="venus icon circular inverted pink"></i>
+
+<!-- male -->
+<div class="ui male sgavatar">
+    <img src="image/tom.jpg" alt="">
 </div>
 
-  <script src="index_js.js"></script>
 
+
+
+    <script src="index_js.js"></script>
 </body>
-
 </html>
