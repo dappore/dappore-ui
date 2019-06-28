@@ -1,8 +1,74 @@
+
+/*******************************
+            Theme
+*******************************/
+
+@import (multiple) '../../site/globals/site.variables';
+
+/*******************************
+            Standard
+*******************************/
+
 /*--------------
       Item
 ---------------*/
 
-.ui.sgsearch {
+.ui.sgheader {
     background-color: white;
     border-radius: @defaultBorderRadius;
+}
+
+.ui.sgheader > .ui.divider {
+    margin: 0;
+}
+
+.ui.sgsearch {
+    
+    font-size: @fontSize;
+
+    display: flex;
+    align-items: center;
+}
+
+.ui.sgsearch > .ui.input {
+    padding: 30px 5px 30px 20px;
+    min-height: 40px;
+}
+
+.ui.sgsearch > .ui.input > input {
+    color: #999999;
+    border-radius: 4px;
+    font-weight: 300;
+}
+
+.ui.sgsearch > .ui.button {
+    font-size: @fontSize;
+    font-weight: 300;
+    width: 68px;
+    height: 40px;
+    padding: 0;
+    margin: 0 5px;
+    line-height: 38px;
+    border-radius: 4px;
+}
+
+.ui.sgsearch > .ui.submit.button {
+    background-color: @primaryColor;
+    
+    color: white;
+}
+
+.ui.sgsearch > .ui.submit.button:hover {
+    opacity: 0.9;
+}
+
+.ui.sgsearch > .ui.reset.button {
+    background-color: white;
+    color: @fontTitleColor;
+    border: solid 1px @borderColor;
+}
+
+.ui.sgsearch > .ui.reset.button:hover {
+    color: @primaryColor;
+    border: solid 1px @primaryColor;
 }
