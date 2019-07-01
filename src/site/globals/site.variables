@@ -82,6 +82,18 @@
 @warningColor           : #FFBD00;
 
 /*-------------------
+    Colors
+--------------------*/
+
+@purpleColor : #7367c6;
+@blueColor : #2f90f0;
+@lightBlueColor : #00cddd;
+@greenColor : #78c88e;
+@yellowColor : #ffbd00;
+@pinkColor : #ed896d;
+@redColor : #f05656;
+
+/*-------------------
        Links
 --------------------*/
 
