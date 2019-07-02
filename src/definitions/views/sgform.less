@@ -1,22 +1,70 @@
-.ui.sgform {
+.ui.sgmodal {
   width: 917px;
   height: 708px;
   box-shadow: 0px 8px 7px rgba(52, 57, 61, 0.1);
   border-radius: 8px;
   position: relative;
+  margin: auto;
 }
 
-.ui.sgform>.header {
+.ui.sgmodal>.header {
   padding-top: 40px;
   padding-left: 40px;
   font-size: 26px;
   color: #4b525a;
 }
 
-.ui.sgform>.close.icon {
+.ui.sgmodal>.close.icon {
   position: absolute;
   top: 20px;
   right: 20px;
   font-size: 16px;
   color: #9199a3;
 }
+/************************
+.ui.sgmodal>.ui.form
+*************************/
+.ui.sgmodal>.ui.form{
+  margin: 0 auto;
+  width: 432px;
+}
+/************************
+    .select.field
+*************************/
+.ui.form>.select.field>label{
+  font-size: 16px;
+  color: #4b525a;
+}
+.select.field>.ui.dropdown{
+  width: 432px;
+  color: #4b525a;
+  border-radius: 4px;
+}
+
+/************************
+    .input.field
+*************************/
+.ui.form>.input.field>label{
+  font-size: 16px;
+  color: #4b525a;
+}
+.input.field>input{
+  width: 432px;
+  color: #4b525a;
+  border-radius: 4px;
+}
+/************************
+    .text.field
+*************************/
+.ui.form>.text.field>label{
+  font-size: 16px;
+  color: #4b525a;
+}
+.text.field>textarea{
+  width: 432px;
+  color: #4b525a;
+  border-radius: 4px;
+}
+/************************
+    .radio.fields
+*************************/
