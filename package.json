@@ -1,8 +1,11 @@
 {
-  "name": "work-design-ui",
+  "name": "sg-web-ui",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/work-design/work-design-ui.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/work-design/work-design-ui.git"
+  },
   "author": "qinmingyuan <mingyuan0715@foxmail.com>",
   "license": "MIT",
   "scripts": {
@@ -37,5 +40,13 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
     "jquery": "^3.4.1"
+  },
+  "description": "Work Design UI 是Work Design 所使用的UI框架，是对多个UI框架的优化和改进；",
+  "bugs": {
+    "url": "https://github.com/work-design/work-design-ui/issues"
+  },
+  "homepage": "https://github.com/work-design/work-design-ui#readme",
+  "directories": {
+    "example": "examples"
   }
 }
