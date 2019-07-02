@@ -20,11 +20,7 @@ module.exports = {
         test: /\.less$/,
         use: [
           {
-            loader: MiniCssExtractPlugin.loader,
-            options: {
-              publicPath: '../',
-              hmr: true
-            },
+            loader: MiniCssExtractPlugin.loader
           },
           'style-loader',
           { loader: 'css-loader', options: { importLoaders: 1 } },
