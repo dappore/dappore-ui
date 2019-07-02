@@ -2,6 +2,7 @@ module.exports = {
   mode: 'development',
   entry: {
     main_css: './src/semantic.less',
+    semantic_js: './Fomantic-UI/dist/semantic.min.js',
     main_js: './src/ready.js',
     index_js: './src/index.js'
   },

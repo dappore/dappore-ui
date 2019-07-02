@@ -18,9 +18,41 @@
     border-radius: @defaultBorderRadius;
 }
 
-.ui.sgheader > .ui.divider {
+.ui.sgheader > div {
+    padding: 20px;
+    border-top: 1px solid #DBE1E6;
+}
+
+.ui.sgheader > div:first-child {
+    border-top: none;
+}
+
+.ui.sgheader > .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ui.sgheader > .search > .action {
+    display: flex;
+    align-items: center;
+}
+
+.ui.sgheader > .search > .action > .ui.button {
+    background-color: #ffbd00;
+	box-shadow: 0px 2px 11px 0px 
+		rgba(255, 189, 0, 0.2);
+    border-radius: 4px;
+    // font-family: PingFangSC-Medium;
+    font-weight: 300;
+    font-size: @fontSize;
+    color: white;
     margin: 0;
 }
+
+/*--------------
+      SG Search
+---------------*/
 
 .ui.sgsearch {
     
@@ -31,7 +63,8 @@
 }
 
 .ui.sgsearch > .ui.input {
-    padding: 30px 5px 30px 20px;
+    padding: 0;
+    padding-right: 5px;
     min-height: 40px;
 }
 
@@ -71,4 +104,28 @@
 .ui.sgsearch > .ui.reset.button:hover {
     color: @primaryColor;
     border: solid 1px @primaryColor;
+}
+
+
+
+
+/*--------------
+      SG Filter
+---------------*/
+
+.ui.sgfilter {
+    display: flex;
+    align-items: center;
+}
+
+.ui.sgfilter > div {
+    margin: 0 5px;
+}
+
+.ui.sgfilter > div:first-child {
+    margin-left: 0;
+}
+
+.ui.sgfilter > .ui.dropdown {
+    border-radius: 4px;
 }
