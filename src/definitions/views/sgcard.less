@@ -8,8 +8,6 @@
   padding: 20px;
   box-shadow: 0px 8px 7px rgba(52, 57, 61, 0.11);
   position: relative;
-  margin-top: 10px;
-  margin-left: 10px;
 }
 
 /********************
@@ -94,112 +92,113 @@
   float: left;
 }
 
-/********************
-   .fields>field
-*********************/
-.field {
-  // text-align: center;
+.ui.field {
+  margin: auto;
+  width: 90%;
+  // display: flex;
+  // justify-content: space-between;
+  // flex-wrap: wrap;
+  // background: palegreen;
+}
+
+.ui.field>.sgcards {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   flex-wrap: wrap;
+  background: palegreen;
 }
 
-// @media screen and (min-width: 1003px) {
-//   .six.field>.ui.sgcard {
-//     width: 14%;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .six.field>.ui.sgcard {
-//     width: 15%;
-//   }
-// }
-
-// @media screen and (min-width: 1200px) {
-//   .five.field>.ui.sgcard {
-//     width: 18%;
-//   }
-// }
-
-.ui.container>.ui.sgcard {
-  float: left;
-  margin-left:10px;
-}
-
-.ui.six.container>.ui.sgcard {
-  width: 15%;
-  margin-left: 13px;
-}
-
-.ui.five.container>.ui.sgcard {
-  width: 18%;
-  margin-left: 11px;
-}
-
-.ui.four.container>.ui.sgcard {
-  width: 22%;
-  margin-left: 12px;
-}
-
-.ui.three.container>.ui.sgcard {
-  width: 30%;
-  margin-left: 13px;
-}
-.ui.two.container>.ui.sgcard{
-  width: 40%;
-  margin: 10px;
-}
-
-// .field > .ui.sgcard {
-//   // float: left;
-//   margin: 0 10px;
-// }
-// @media screen and (max-width: 479px) {
-//   .field > .ui.sgcard {
-//     width: 60%;
-//     // margin-left: 15px;
-//   }
-// }
-// @media screen and (min-width: 480px) {
-//   .field > .ui.sgcard {
-//     width: 40%;
-//     // margin-left:15px;
-//   }
-// }
-// @media screen and (min-width: 768px) {
-//   .field > .ui.sgcard {
-//     width: 30%;
-//     // margin-left:15px;
-//   }
-// }
-// @media screen and (min-width: 992px) {
-//   .field > .ui.sgcard {
-//     width: 23%;
-//     // margin-left:15px;
-//   }
-// }
-// @media  screen and (min-width: 1200px) {
-//   .field > .ui.sgcard {
-//     width: 18%;
-//     // margin-left:15px;
-//   }
-// }
 /********************
-   grid
+   six sgcards
 *********************/
+.ui.field>.six.sgcards {
+  width: 100%;
+}
 
-// .ui.grid>.column>.ui.sgcard {
-//   width: 100%;
-//   overflow: hidden;
-//   padding: 5%;
-//   border: 1px solid rgba(52, 57, 61, 0.11);
-//   border-radius: 3%;
+.ui.field>.six.sgcards>.ui.sgcard {
+  width: 16%;
+}
 
-// }
+.ui.field>.six.sgcards>.ui.sgcard:first-child {
+  margin-left: 0;
+}
 
-// .ui.grid>.column>.ui.sgcard>.close.icon {
-//   position: absolute;
-//   top: 4%;
-//   right: 4%;
-// }
+.ui.field>.six.sgcards>.ui.sgcard:last-child {
+  margin-right: 0;
+}
+
+/********************
+   five sgcards
+*********************/
+.ui.field>.five.sgcards {
+  width: 100%;
+}
+
+.ui.field>.five.sgcards>.ui.sgcard {
+  width: 19.5%;
+}
+
+.ui.field>.five.sgcards>.ui.sgcard:first-child {
+  margin-left: 0;
+}
+
+.ui.field>.five.sgcards>.ui.sgcard:last-child {
+  margin-right: 0;
+}
+
+/********************
+   four sgcards
+*********************/
+.ui.field>.four.sgcards {
+  width: 100%;
+}
+
+.ui.field>.four.sgcards>.ui.sgcard {
+  width: 22%;
+}
+
+.ui.field>.four.sgcards>.ui.sgcard:first-child {
+  margin-left: 0;
+}
+
+.ui.field>.four.sgcards>.ui.sgcard:last-child {
+  margin-right: 0;
+}
+
+
+/********************
+   three sgcards
+*********************/
+.ui.field>.three.sgcards {
+  width: 100%;
+  justify-content: space-around;
+}
+
+.ui.field>.three.sgcards>.ui.sgcard {
+  width: 22%;
+}
+
+.ui.field>.three.sgcards>.ui.sgcard:first-child {
+  margin-left: 0;
+}
+
+.ui.field>.three.sgcards>.ui.sgcard:last-child {
+  margin-right: 0;
+}
+
+/********************
+   two sgcards
+*********************/
+.ui.field>.two.sgcards {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.ui.field>.two.sgcards>.ui.sgcard {
+  width: 22%;
+  margin-right: 40px;
+}
+
+.ui.field>.two.sgcards>.ui.sgcard:first-child {
+  margin-left: 0;
+}
