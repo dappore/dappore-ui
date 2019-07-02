@@ -26,7 +26,8 @@ module.exports = {
               hmr: true
             },
           },
-          'css-loader',
+          'style-loader',
+          { loader: 'css-loader', options: { importLoaders: 1 } },
           'postcss-loader',
           'less-loader'
         ]

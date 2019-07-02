@@ -29,6 +29,7 @@
     "mini-css-extract-plugin": "^0.7.0",
     "postcss": "^7.0.17",
     "postcss-discard-overridden": "4.0.0-rc.2",
+    "postcss-load-config": "^2.1.0",
     "postcss-loader": "^3.0.0",
     "style-loader": "^0.23.1",
     "stylelint": "^9.2.0",
