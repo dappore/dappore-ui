@@ -1,61 +1,63 @@
+@import (multiple) '../../site/globals/site.variables';
+
 /********************
-   .ui.sgcard
+   .ui.class.sgcard
 *********************/
 .ui.sgcard {
   width: 265px;
   border: 1px solid rgba(52, 57, 61, 0.11);
-  border-radius: 8px;
+  border-radius: @defaultBorderRadius;
   padding: 20px;
   box-shadow: 0px 8px 7px rgba(52, 57, 61, 0.11);
   position: relative;
-  background: #fff;
+  background: white;
 }
 
 /********************
-   .ui.sgcard>.clase.icon
+   .ui.class.sgcard>.clase.icon
 *********************/
 .ui.sgcard>.close.icon {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 8px;
-  color: #9199a3;
+  font-size: @defaultBorderRadius;
+  color: @fontGrayColor;
 }
 
 /********************
    .ui.literal.sgavatar
 *********************/
 .ui.literal.sgavatar {
-  font-size: 24px;
+  font-size: @fontLiteralSize;
 }
 
 /********************
    .ui.literal.sgavatar/color
 *********************/
 .ui.literal.teal.sgavatar {
-  background: #00cddd;
+  background: @primaryColor;
 }
 
 .ui.literal.yellow.sgavatar {
-  background: #ffbd00;
+  background: @warningColor;
 }
 
 .ui.literal.green.sgavatar {
-  background: #78c88e;
+  background: @greenColor;
 }
 
 .ui.literal.blue.sgavatar {
-  background: #2f90f0;
+  background: @blueColor;
 }
 
 .ui.literal.orange.sgavatar {
-  background: #ed896d;
+  background: @pinkColor;
 }
 
 /********************
    .group.content
 *********************/
-.ui.sgcard>.group.content {
+.ui.class.sgcard>.group.content {
   position: absolute;
   left: 84px;
   top: 25px;
@@ -65,10 +67,10 @@
 /********************
    .group.conteent>header
 *********************/
-.ui.sgcard>.group.content>.header {
+.ui.class.sgcard>.group.content>.header {
   font-size: 18px;
-  color: #4b525a;
-  font-family: PingFangSC-Semibold;
+  color: @fontTitleColor;
+  font-family: @sgcardHeaderFont;
 }
 
 
@@ -76,20 +78,20 @@
    .ui.sglabel
 *********************/
 
-.ui.sglabel {
+.ui.number.sglabel {
   width: 35px;
   height: 14px;
   position: relative;
   line-height: 14px;
-  font-size: 13px;
-  color: #9199a3;
+  font-size: @fontSglabelSize;
+  color: @fontGrayColor ;
   margin-top: 6px;
 }
 
-.ui.sglabel:after {
+.ui.number.sglabel:after {
   width: 17px;
   content: "\f007";
-  font-family: 'Font Awesome 5 Free';
+  font-family: @iconFont;
   float: left;
 }
 
@@ -102,67 +104,66 @@
   // background: palegreen;
 }
 
-.ui.field>.sgcards {
+.ui.field>.cols {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background: palegreen;
 }
 
 /********************
    six sgcards
 *********************/
-.ui.field>.six.sgcards {
+.ui.field>.six.cols {
   width: 100%;
 }
 
-.ui.field>.six.sgcards>.ui.sgcard {
-  width: 16%;
+.ui.field>.six.cols>.ui.sgcard {
+  width: calc((100% - 100px)/6);
 }
 
-.ui.field>.six.sgcards>.ui.sgcard:first-child {
+.ui.field>.six.cols>.ui.sgcard:first-child {
   margin-left: 0;
 }
 
-.ui.field>.six.sgcards>.ui.sgcard:last-child {
+.ui.field>.six.cols>.ui.sgcard:last-child {
   margin-right: 0;
 }
 
 /********************
    five sgcards
 *********************/
-.ui.field>.five.sgcards {
+.ui.field>.five.cols {
   width: 100%;
 }
 
-.ui.field>.five.sgcards>.ui.sgcard {
-  width: 19.5%;
+.ui.field>.five.cols>.ui.class.sgcard {
+  width: calc((100% - 80px)/5);
 }
 
-.ui.field>.five.sgcards>.ui.sgcard:first-child {
+.ui.field>.five.cols>.ui.class.sgcard:first-child {
   margin-left: 0;
 }
 
-.ui.field>.five.sgcards>.ui.sgcard:last-child {
+.ui.field>.five.cols>.ui.class.sgcard:last-child {
   margin-right: 0;
 }
 
 /********************
    four sgcards
 *********************/
-.ui.field>.four.sgcards {
+.ui.field>.four.cols {
   width: 100%;
 }
 
-.ui.field>.four.sgcards>.ui.sgcard {
-  width: 22%;
+.ui.field>.four.cols>.ui.class.sgcard {
+  width: calc((100% - 60px)/4);
 }
 
-.ui.field>.four.sgcards>.ui.sgcard:first-child {
+.ui.field>.four.cols>.ui.class.sgcard:first-child {
   margin-left: 0;
 }
 
-.ui.field>.four.sgcards>.ui.sgcard:last-child {
+.ui.field>.four.cols>.ui.class.sgcard:last-child {
   margin-right: 0;
 }
 
@@ -170,36 +171,169 @@
 /********************
    three sgcards
 *********************/
-.ui.field>.three.sgcards {
+.ui.field>.three.cols {
   width: 100%;
-  justify-content: space-around;
 }
 
-.ui.field>.three.sgcards>.ui.sgcard {
-  width: 22%;
+.ui.field>.three.cols>.ui.class.sgcard {
+  width: calc((100% - 40px)/3);
 }
 
-.ui.field>.three.sgcards>.ui.sgcard:first-child {
+.ui.field>.three.cols>.ui.class.sgcard:first-child {
   margin-left: 0;
 }
 
-.ui.field>.three.sgcards>.ui.sgcard:last-child {
+.ui.field>.three.cols>.ui.class.sgcard:last-child {
   margin-right: 0;
 }
 
 /********************
    two sgcards
 *********************/
-.ui.field>.two.sgcards {
+.ui.field>.two.cols {
   width: 100%;
-  justify-content: flex-start;
 }
 
-.ui.field>.two.sgcards>.ui.sgcard {
-  width: 22%;
-  margin-right: 40px;
+.ui.field>.two.cols>.ui.class.sgcard {
+  width: calc((100% - 20px)/2);
 }
 
-.ui.field>.two.sgcards>.ui.sgcard:first-child {
+.ui.field>.two.cols>.ui.class.sgcard:first-child {
   margin-left: 0;
 }
+
+
+/**********************************
+        .ui.child.sgcard
+***********************************/
+
+.ui.class.sglabel {
+  width: 64px;
+  height: 24px;
+  background: #ffbd00;
+  border-radius: 4px;
+  font-size: 14px;
+  color: white;
+  font-family: PingFang-SC-Regular;
+  line-height: 24px;
+  text-align: center;
+}
+
+.ui.child.sgcard {
+  padding: 0px;
+}
+
+.ui.child.sgcard>.content>.ui.grid>.column>.ui.female.sgavatar {
+  width: 64px;
+  height: 64px;
+}
+
+.ui.child.sgcard>.content {
+  margin: 40px 48px 20px 24px;
+}
+
+.ui.child.sgcard>.content>.ui.grid>.column>.content {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+}
+
+.ui.child.sgcard>.content>.ui.grid>.column>.content>.header {
+  margin-bottom: 6px;
+  font-family: PingFang-SC-Regular;
+}
+
+.ui.child.sgcard>.content>.ui.grid>.column>.content>.description {
+  position: absolute;
+  left: 55px;
+  top: 0px;
+  font-size: 14px;
+  color: #9199a3;
+  font-family: PingFang-SC-Regular;
+}
+
+.ui.child.sgcard>.description {
+  font-size: 14px;
+  color: #9199a3;
+  text-align: center;
+  font-family: PingFang-SC-Regular;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.ui.child.sgcard>p {
+  width: 100%;
+  height: 84px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 84px;
+  background: #edf2f5;
+  border-top: 1px solid #E8E8E8;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: #9199a3;
+}
+
+
+
+/**********************************
+        .ui.child.sgcard
+***********************************/
+.ui.year.sgcard {
+  padding: 0px;
+}
+
+.ui.year.sgcard>.content>.ui.sgavatar {
+  width: 64px;
+  height: 64px;
+}
+
+.ui.year.sgcard>.content {
+  width: 64px;
+  margin: auto;
+  text-align: center;
+  margin-top: 22px;
+}
+
+.ui.year.sgcard>.content>.ui.literal.sgavatar {
+  font-size: 34px;
+  text-align: center;
+  line-height: 64px;
+  margin-bottom: 10px;
+}
+
+.ui.year.sgcard>.content>.header {
+  color: #4b525a;
+  font-family: PingFang-SC-Medium;
+  margin-bottom: 30px;
+}
+
+.ui.year.sgcard>.ui.horizontal.list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-top: 1px solid #E8E8E8;
+}
+
+.ui.year.sgcard>.ui.horizontal.list>.item {
+  font-size: 20px;
+  color: #4b525a;
+  font-family: Avenir-Heavy;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ui.year.sgcard>.ui.horizontal.list:first-child {
+  padding-left: 26px;
+}
+
+.ui.year.sgcard>.ui.horizontal.list>.item :last-child {
+  padding-right: 26px;
+}
+
+// .ui.field>.two.cols>.ui.class.sgcard:first-child {
+//   margin-left: 0;
+// }

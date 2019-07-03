@@ -1,18 +1,20 @@
+@import (multiple) '../../site/globals/site.variables';
+
 /*-------------------
     .ui.sgavatar
 --------------------*/
 .ui.sgavatar {
   width: 50px;
   height: 50px;
-  font-family: PingFang-SC-Regular;
-  border-radius: 8px;
-  color: rgba(255, 255, 255, 1);
+  font-family: @fontName;
+  border-radius: @defaultBorderRadius;
+  color: white;
   position: relative;
 }
 
-.ui.sgavatar > img {
+.ui.sgavatar>img {
   width: 100%;
-  border-radius: 8px;
+  border-radius: @defaultBorderRadius;
 }
 
 /*-------------------
@@ -20,8 +22,8 @@
 --------------------*/
 .ui.literal.sgavatar {
   text-align: center;
-  padding-top: 15px;
-  background-color: rgba(255, 189, 0, 1);
+  line-height: 50px;
+  background-color: @yellowColor;
 }
 
 /*-------------------
@@ -29,23 +31,24 @@
 --------------------*/
 .ui.female.sgavatar:after,
 .ui.male.sgavatar:after {
-  font-family: 'Font Awesome 5 Free';
+  font-family: @iconFont ;
   width: 20px;
   height: 20px;
   position: absolute;
-  top: 30px;
-  left: 30px;
+  bottom: 0px;
+  right: 0px;
   border-radius: 12px;
   text-align: center;
   line-height: 20px;
+  font-size: @fontBodySize;
 }
 
 .ui.female.sgavatar:after {
   content: "\f221";
-  background: #ff8ACA;
+  background: @maleColor;
 }
 
 .ui.male.sgavatar:after {
   content: "\f222";
-  background: #00cddd;
+  background: @lightBlueColor;
 }

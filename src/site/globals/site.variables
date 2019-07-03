@@ -18,6 +18,7 @@
 
 @iconFont          : 'Font Awesome 5 Free';
 
+@sgcardHeaderFont  : 'PingFangSC-Semibold';
 @importGoogleFonts: false;
 
 @fontTitleColor         : #4B525A;
@@ -37,7 +38,8 @@
 @fontHeaderSize : 20px;
 @fontBodySize : 16px;
 @fontCaptionSize : 16px;
-
+@fontLiteralSize : 24px;
+@fontSglabelSize : 13px;
 /*-------------------
       Spacing
 --------------------*/
@@ -92,6 +94,13 @@
 @yellowColor : #ffbd00;
 @pinkColor : #ed896d;
 @redColor : #f05656;
+
+/*-------------------
+    Gender Colors
+--------------------*/
+
+@maleColor : #ff8ACA;
+@femaleColor : #ff8ACA;
 
 /*-------------------
        Links
