@@ -1,97 +1,92 @@
 
+/*******************************
+            Theme
+*******************************/
+
+@import (multiple) '../../site/globals/site.variables';
+
+/*******************************
+            Standard
+*******************************/
+
 /*--------------
       Rows
 ---------------*/
 
 .ui.sgrows {
-    background-color: white;
-    border-radius: 8px;
+    
+    
     width: 100%;
-    border-collapse: collapse;
-    box-sizing: border-box;
+
+    & table {
+        background-color: white;
+        border: unset;
+        border-radius: 8px;
+        border-collapse: collapse;
+    }
 }
 
 /*--------------
       Row
 ---------------*/
 
-.ui.sgrows > .body > .row {
+.ui.sgrows > table > tbody > tr > td {
+    border-top: 0px !important;
     height: 88px;
     font-size: 16px;
     color: rgba(75, 82, 90, 1);
+    padding: 0;
 }
 
-.ui.sgrows > .header > .row {
+.ui.sgrows > table > thead > tr > th {
+    border-bottom: 0px !important;
+}
+
+.ui.sgrows > table > thead > tr > th {
     height: 50px;
+    background-color: #eef6f6;
     color: #9199a3;
     font-size: 14px;
+    font-weight: unset;
 }
 
 /*--------------
       Selection
 ---------------*/
 
-.ui.selectable.sgrows > .body > .row:hover {
-    background-color: rgba(238, 246, 246, 1);
-    // border-radius: 8px;
-    cursor: pointer;
-}
+.ui.sgrows > .ui.selectable.table > tbody {
+    
 
-// .ui.selectable.sgrows > .body > .row:hover > .item {
-//     background-color: rgba(238, 246, 246, 1);
-// }
+    & tr:hover {
+        background-color: rgba(238, 246, 246, 1);
+    }
 
-.ui.selectable.sgrows > .body > .row:hover:first-child > .item:first-child {
-    border-radius: 8px 8px 0 0;
-}
+    & tr:last-child > td:first-child {
+        border-bottom-left-radius: @defaultBorderRadius;
+    }
 
-.ui.selectable.sgrows > .body > .row:last-child > .item:first-child {
-    border-bottom-left-radius: 8px;
-}
-
-.ui.selectable.sgrows > .body > .row:last-child > .item:last-child {
-    border-bottom-right-radius: 8px;
+    & tr:last-child > td:last-child {
+        border-bottom-right-radius: @defaultBorderRadius;
+    }
 }
 
 /*-------------------
       Divided
 --------------------*/
 
-.ui.divided.sgrows > .body > .row {
+.ui.divided.sgrows > table > tbody > tr:not(:first-child) {
     border-top: 1px solid rgba(237, 242, 245, 1);
-}
-
-.ui.divided.sgrows > .body > .row:first-child {
-    border-top: none;
 }
 
 /*--------------
       Layout
 ---------------*/
 
-.ui.sgrows {
-    display: table;
+.ui.sgrows > table > thead > tr > th:last-child {
+    text-align: end;
 }
 
-.ui.sgrows > .header {
-    display: table-header-group;
-}
-
-.ui.sgrows > .body {
-    display: table-row-group;
-}
-
-.ui.sgrows .row {
-    display: table-row;
-}
-
-.ui.sgrows .row > .item {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: start;
-}
-
-.ui.sgrows .row > .item:last-child {
+.ui.sgrows > table > tbody > tr > td:last-child {
     text-align: end;
 }
 
@@ -99,39 +94,54 @@
       Header
 ---------------*/
 
-.ui.sgrows > .header {
-    height: 50px;
+.ui.sgrows > table > thead > tr {
+
+    & th {
+        padding: 0;
+    }
+
+    & th:first-child {
+        padding-left: 20px;
+    }
+    
+    & th:last-child {
+        padding-right: 20px;
+    }
 }
 
-.ui.sgrows > .header > .row > .item {
-    background-color: #eef6f6;
+/*--------------
+      Footer
+---------------*/
+
+.ui.sgrows > table > tfoot > tr {
+    border-top: 1px solid rgba(237, 242, 245, 1);
+    height: 88px;
 }
 
-.ui.sgrows > .header > .row > .item:first-child {
-    border-top-left-radius: 8px;
-}
-
-.ui.sgrows > .header > .row > .item:last-child {
-    border-top-right-radius: 8px;
+.ui.sgrows > table > tfoot > tr > td > div {
+    text-align: center;
 }
 
 /*-------------------
       Content
 --------------------*/
 
-.ui.sgrows .row > .item:first-child {
-    padding-left: 20px;
-}
+.ui.sgrows > table > tbody > tr {
 
-.ui.sgrows .row > .item:last-child {
-    padding-right: 20px;
+    & td:first-child {
+        padding-left: 20px;
+    }
+    
+    & td:last-child {
+        padding-right: 20px;
+    }
 }
 
 /*-------------------
       Content - Text
 --------------------*/
 
-.ui.sgrows > .body > .row > .item > .small.content {
+.ui.sgrows > table > tbody > tr > td > .small.content {
     font-size: 14px;
 	color: rgba(145, 153, 163, 1);
 }
@@ -140,7 +150,7 @@
       Content - Avatar
 --------------------*/
 
-.ui.sgrows > .body > .row > .avatar.item {
+.ui.sgrows > table > tbody > tr > .avatar.item {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -150,11 +160,11 @@
     align-items: flex-start;
 }
 
-.ui.sgrows > .body > .row > .avatar.item > .sgavatar {
+.ui.sgrows > table > tbody > tr > .avatar.item > .sgavatar {
     height: 100%;
 }
 
-.ui.sgrows > .body > .row > .avatar.item > .content {
+.ui.sgrows > table > tbody > tr > .avatar.item > .content {
     margin-left: 12px;
     width: 100%;
 }

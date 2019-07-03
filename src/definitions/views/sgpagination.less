@@ -1,0 +1,166 @@
+
+/*******************************
+            Theme
+*******************************/
+
+@import (multiple) '../../site/globals/site.variables';
+
+/*******************************
+            Standard
+*******************************/
+
+/*--------------
+      Item
+---------------*/
+
+.ui.sgpagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ui.sgpagination > .items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------
+      Move
+---------------*/
+
+.ui.sgpagination > .previous {
+    width: 80px;
+	height: 40px;
+    border-radius: 4px;
+    border: solid 1px #dbe1e6;
+    font-size: 14px;
+    margin: 0 5px;
+    line-height: 40px;
+    box-sizing: content-box;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.ui.sgpagination > .next {
+    width: 80px;
+	height: 40px;
+    border-radius: 4px;
+    border: solid 1px #dbe1e6;
+    font-size: 14px;
+    margin: 0 5px;
+    line-height: 40px;
+    box-sizing: content-box;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.ui.sgpagination > .disable.previous {
+    border: solid 1px #ebf0f4;
+    color: #cccccc;
+
+    &:hover {
+        cursor: unset;
+    }
+}
+
+.ui.sgpagination > .disable.next {
+    border: solid 1px #ebf0f4;
+    color: #cccccc;
+
+    &:hover {
+        cursor: unset;
+    }
+}
+
+/*--------------
+      Item
+---------------*/
+
+.ui.sgpagination > .items > .item {
+    width: 40px;
+	height: 40px;
+    border-radius: 4px;
+    border: solid 1px #dbe1e6;
+    font-size: 14px;
+    margin: 0 5px;
+    line-height: 40px;
+    box-sizing: content-box;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.ui.sgpagination > .items > .active.item {
+    background-color: @primaryColor;
+    color: white;
+    border: none;
+}
+
+.ui.sgpagination > .items > .disable.item {
+    border: solid 1px #ebf0f4;
+    color: #cccccc;
+
+    &:hover {
+        cursor: unset;
+    }
+}
+
+/*--------------
+      Total
+---------------*/
+
+.ui.sgpagination > .total {
+    font-size: 14px;
+    color: #333333;
+    margin: 0 5px;
+}
+
+/*--------------
+      Jump
+---------------*/
+
+.ui.sgpagination > .jump {
+    font-size: 14px;
+    color: #333333;
+    margin: 0 0 0 25px;
+    display: flex;
+    align-items: center;
+}
+
+.ui.sgpagination > .jump > .ui.input {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+}
+
+.ui.sgpagination > .jump > .ui.input > input {
+    text-align: center;
+    padding: 0;
+    line-height: 40px;
+    border-radius: 4px;
+}
+
+/*--------------
+      Go
+---------------*/
+
+.ui.sgpagination > .go {
+    width: 64px;
+	height: 40px;
+    border-radius: 4px;
+    border: solid 1px #dbe1e6;
+    font-size: 14px;
+    margin: 0 5px 0 20px;
+    line-height: 40px;
+    box-sizing: content-box;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

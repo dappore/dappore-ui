@@ -72,79 +72,108 @@
     </div>
 
     <div class="ui container">
-        <div class="ui divided selectable sgrows">
+        <div class="ui divided sgrows">
 
-            <div class="header">
-                <div class="row">
-                    <div class="item">
-                        宝宝
-                    </div>
-                    <div class="item">
-                        年龄
-                    </div>
-                    <div class="item">
-                        家长
-                    </div>
-                    <div class="item">
-                        操作
-                    </div>
-                </div>
-            </div>
+            <table class="ui selectable table">
+                <thead>
+                    <tr>
+                        <th>宝宝</th>
+                        <th>年龄</th>
+                        <th>家长</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
 
-            <div class="body">
-                <div class="row">
-                    <div class="avatar item">
-                        <div class="ui male literal sgavatar">
-                            王
-                        </div>
-                        <div class="content">周子辰</div>
-                    </div>
+                <tbody>
+                    <tr>
+                        <td class="avatar item">
+                            <div class="ui male literal sgavatar">
+                                王
+                            </div>
+                            <div class="content">周子辰</div>
+                        </td>
 
-                    <div class="item">
-                        <div class="content">2岁</div>
-                    </div>
+                        <td class="item">
+                            <div class="content">2岁</div>
+                        </td>
 
-                    <div class="item">
-                        <div class="content">周子辰</div>
-                        <div class="small content">辰辰</div>
-                    </div>
+                        <td class="item">
+                            <div class="content">周子辰</div>
+                            <div class="small content">辰辰</div>
+                        </td>
 
-                    <div class="item">
-                        <div class="ui sgaction">
-                            <a data-tooltip="日志" href="" class="positive action"><i class="far fa-sticky-note"></i></a>
-                            <a data-tooltip="编辑" href="" class="positive action"><i class="far fa-edit"></i></a>
-                            <a data-tooltip="删除" href="" class="negative action"><i class="far fa-trash-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
+                        <td class="item">
+                            <div class="ui sgaction">
+                                <a data-tooltip="日志" href="" class="positive action"><i
+                                        class="far fa-sticky-note"></i></a>
+                                <a data-tooltip="编辑" href="" class="positive action"><i class="far fa-edit"></i></a>
+                                <a data-tooltip="删除" href="" class="negative action"><i
+                                        class="far fa-trash-alt"></i></a>
+                            </div>
+                        </td>
+                    </tr>
 
-                <div class="row">
-                    <div class="avatar item">
-                        <div class="ui female sgavatar">
-                            <img src="./images/avatar/male.jpg">
-                        </div>
-                        <div class="content">周子辰</div>
-                        <div class="small content">辰辰</div>
-                    </div>
+                    <tr>
+                        <td class="avatar item">
+                            <div class="ui female sgavatar">
+                                <img src="./images/avatar/male.jpg">
+                            </div>
+                            <div class="content">周子辰</div>
+                            <div class="small content">辰辰</div>
+                        </td>
 
-                    <div class="item">
-                        <div class="content">2岁</div>
-                    </div>
+                        <td class="item">
+                            <div class="content">2岁</div>
+                        </td>
 
-                    <div class="item">
-                        <div class="content">周子辰</div>
-                        <div class="small content">辰辰</div>
-                    </div>
+                        <td class="item">
+                            <div class="content">周子辰</div>
+                            <div class="small content">辰辰</div>
+                        </td>
 
-                    <div class="item">
-                        <div class="ui sgaction">
-                            <a data-tooltip="日志" href="" class="positive action"><i class="far fa-sticky-note"></i></a>
-                            <a data-tooltip="编辑" href="" class="positive action"><i class="far fa-edit"></i></a>
-                            <a data-tooltip="删除" href="" class="negative action"><i class="far fa-trash-alt"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <td class="item">
+                            <div class="ui sgaction">
+                                <a data-tooltip="日志" href="" class="positive action"><i
+                                        class="far fa-sticky-note"></i></a>
+                                <a data-tooltip="编辑" href="" class="positive action"><i class="far fa-edit"></i></a>
+                                <a data-tooltip="删除" href="" class="negative action"><i
+                                        class="far fa-trash-alt"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            <div class="ui sgpagination">
+                                <div class="disable previous">上一页</div>
+                                <div class="items">
+                                    <div class="active item">1</div>
+                                    <div class="item">2</div>
+                                    <div class="item">3</div>
+                                    <div class="item">4</div>
+                                    <div class="item">5</div>
+                                    <div class="item">6</div>
+                                    <div class="disable item">...</div>
+                                    <div class="item">20</div>
+                                </div>
+                                <div class="next">下一页</div>
+                                <div class="total">共20页</div>
+                                <div class="jump">
+                                    跳转到
+                                    <div class="ui input">
+                                        <input type="text">
+                                    </div>
+                                    页
+                                </div>
+                                <div class="go">确定</div>
+                            </div>
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
 
         </div>
 
