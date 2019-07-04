@@ -97,7 +97,7 @@
 
 .ui.field {
   margin: auto;
-  width: 90%;
+  width: 100%;
   // display: flex;
   // justify-content: space-between;
   // flex-wrap: wrap;
@@ -121,13 +121,13 @@
   width: calc((100% - 100px)/6);
 }
 
-.ui.field>.six.cols>.ui.sgcard:first-child {
-  margin-left: 0;
-}
+// .ui.field>.six.cols>.ui.sgcard:first-child {
+//   margin-left: 0;
+// }
 
-.ui.field>.six.cols>.ui.sgcard:last-child {
-  margin-right: 0;
-}
+// .ui.field>.six.cols>.ui.sgcard:last-child {
+//   margin-right: 0;
+// }
 
 /********************
    five sgcards
@@ -136,17 +136,17 @@
   width: 100%;
 }
 
-.ui.field>.five.cols>.ui.class.sgcard {
+.ui.field>.five.cols>.ui.sgcard {
   width: calc((100% - 80px)/5);
 }
 
-.ui.field>.five.cols>.ui.class.sgcard:first-child {
-  margin-left: 0;
-}
+// .ui.field>.five.cols>.ui.class.sgcard:first-child {
+//   margin-left: 0;
+// }
 
-.ui.field>.five.cols>.ui.class.sgcard:last-child {
-  margin-right: 0;
-}
+// .ui.field>.five.cols>.ui.class.sgcard:last-child {
+//   margin-right: 0;
+// }
 
 /********************
    four sgcards
@@ -155,17 +155,17 @@
   width: 100%;
 }
 
-.ui.field>.four.cols>.ui.class.sgcard {
+.ui.field>.four.cols>.ui.sgcard {
   width: calc((100% - 60px)/4);
 }
 
-.ui.field>.four.cols>.ui.class.sgcard:first-child {
-  margin-left: 0;
-}
+// .ui.field>.four.cols>.ui.class.sgcard:first-child {
+//   margin-left: 0;
+// }
 
-.ui.field>.four.cols>.ui.class.sgcard:last-child {
-  margin-right: 0;
-}
+// .ui.field>.four.cols>.ui.class.sgcard:last-child {
+//   margin-right: 0;
+// }
 
 
 /********************
@@ -175,17 +175,17 @@
   width: 100%;
 }
 
-.ui.field>.three.cols>.ui.class.sgcard {
+.ui.field>.three.cols>.ui.sgcard {
   width: calc((100% - 40px)/3);
 }
 
-.ui.field>.three.cols>.ui.class.sgcard:first-child {
-  margin-left: 0;
-}
+// .ui.field>.three.cols>.ui.class.sgcard:first-child {
+//   margin-left: 0;
+// }
 
-.ui.field>.three.cols>.ui.class.sgcard:last-child {
-  margin-right: 0;
-}
+// .ui.field>.three.cols>.ui.class.sgcard:last-child {
+//   margin-right: 0;
+// }
 
 /********************
    two sgcards
@@ -194,13 +194,13 @@
   width: 100%;
 }
 
-.ui.field>.two.cols>.ui.class.sgcard {
+.ui.field>.two.cols>.ui.sgcard {
   width: calc((100% - 20px)/2);
 }
 
-.ui.field>.two.cols>.ui.class.sgcard:first-child {
-  margin-left: 0;
-}
+// .ui.field>.two.cols>.ui.sgcard:first-child {
+//   margin-left: 0;
+// }
 
 
 /**********************************
@@ -279,7 +279,7 @@
 
 
 /**********************************
-        .ui.child.sgcard
+        .ui.year.sgcard
 ***********************************/
 .ui.year.sgcard {
   padding: 0px;
@@ -294,7 +294,7 @@
   width: 64px;
   margin: auto;
   text-align: center;
-  margin-top: 22px;
+  margin-top: 40px;
 }
 
 .ui.year.sgcard>.content>.ui.literal.sgavatar {
@@ -311,11 +311,13 @@
 }
 
 .ui.year.sgcard>.ui.horizontal.list {
-  width: 100%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-top: 1px solid #E8E8E8;
+  margin: auto;
+  margin-bottom: 15px;
+
 }
 
 .ui.year.sgcard>.ui.horizontal.list>.item {
@@ -323,17 +325,16 @@
   color: #4b525a;
   font-family: Avenir-Heavy;
   text-align: center;
-  margin-top: 20px;
 }
 
-.ui.year.sgcard>.ui.horizontal.list:first-child {
-  padding-left: 26px;
+.ui.year.sgcard>.ui.horizontal.list>.item>.header {
+  font-family: Avenir-Heavy;
+  font-size: 20px;
+  color: #4b525a;
 }
 
-.ui.year.sgcard>.ui.horizontal.list>.item :last-child {
-  padding-right: 26px;
+.ui.year.sgcard>.ui.horizontal.list>.item>.description {
+  font-family: PingFang-SC-Regular;
+  font-size: 14px;
+  color: #9199a3;
 }
-
-// .ui.field>.two.cols>.ui.class.sgcard:first-child {
-//   margin-left: 0;
-// }
