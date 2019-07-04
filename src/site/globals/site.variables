@@ -41,9 +41,6 @@
 @fontBodySize : 16px;
 @fontCaptionSize : 14px;
 @fontFooterSize : 13px;
-
-@fontLiteralSize : 24px;
-@fontSglabelSize : 13px;
 /*-------------------
       Spacing
 --------------------*/
