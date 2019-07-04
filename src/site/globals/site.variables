@@ -35,9 +35,13 @@
 /* The size of page text  */
 @fontSize : 16px;
 
-@fontHeaderSize : 20px;
+@fontHeaderSize : 26px;
+@fontTitleSize1 : 22px;
+@fontTitleSize2 : 18px;
 @fontBodySize : 16px;
-@fontCaptionSize : 16px;
+@fontCaptionSize : 14px;
+@fontFooterSize : 13px;
+
 @fontLiteralSize : 24px;
 @fontSglabelSize : 13px;
 /*-------------------
@@ -55,7 +59,8 @@
    for explanation of @px variables
 */
 
-@defaultBorderRadius: 8px;
+@containerBorderRadius: 8px;
+@componentBorderRadius: 4px;
 
 /*-------------------
     Brand Colors
