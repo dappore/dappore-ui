@@ -68,7 +68,7 @@
    .group.conteent>header
 *********************/
 .ui.class.sgcard>.group.content>.header {
-  font-size: 18px;
+  font-size: @fontTitleSize2;
   color: @fontTitleColor;
   font-family: @sgcardHeaderFont;
 }
@@ -83,7 +83,7 @@
   height: 14px;
   position: relative;
   line-height: 14px;
-  font-size: 13px;
+  font-size: @fontFooterSize;
   color: @fontGrayColor ;
   margin-top: 6px;
 }
@@ -115,6 +115,7 @@
 *********************/
 .ui.field>.six.cols {
   width: 100%;
+  min-width: 1440px;
 }
 
 .ui.field>.six.cols>.ui.sgcard {
@@ -210,9 +211,9 @@
 .ui.class.sglabel {
   width: 64px;
   height: 24px;
-  background: #ffbd00;
-  border-radius: 4px;
-  font-size: 14px;
+  background: @warningColor;
+  border-radius: @componentBorderRadius;
+  font-size: @fontCaptionSize;
   color: white;
   font-family: PingFang-SC-Regular;
   line-height: 24px;
@@ -223,14 +224,17 @@
   padding: 0px;
 }
 
-.ui.child.sgcard>.content>.ui.grid>.column>.ui.female.sgavatar {
+.ui.child.sgcard>.content>.ui.grid>.column>.ui.sgavatar {
   width: 64px;
   height: 64px;
+  margin-left: -8px;
 }
 
 .ui.child.sgcard>.content {
-  margin: 40px 48px 20px 24px;
+  margin: 40px 40px 20px 20px;
 }
+
+.ui.child.sgcard>.content>.ui.grid>.column {}
 
 .ui.child.sgcard>.content>.ui.grid>.column>.content {
   position: relative;
@@ -247,14 +251,14 @@
   position: absolute;
   left: 55px;
   top: 0px;
-  font-size: 14px;
-  color: #9199a3;
+  font-size: @fontCaptionSize;
+  color: @fontGrayColor;
   font-family: PingFang-SC-Regular;
 }
 
 .ui.child.sgcard>.description {
-  font-size: 14px;
-  color: #9199a3;
+  font-size: @fontCaptionSize;
+  color: @fontGrayColor;
   text-align: center;
   font-family: PingFang-SC-Regular;
   width: 80%;
@@ -266,14 +270,14 @@
 .ui.child.sgcard>p {
   width: 100%;
   height: 84px;
-  font-size: 14px;
+  font-size: @fontCaptionSize;
   text-align: center;
   line-height: 84px;
-  background: #edf2f5;
+  background: @dividedColor;
   border-top: 1px solid #E8E8E8;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-  color: #9199a3;
+  border-bottom-right-radius: @containerBorderRadius;
+  border-bottom-left-radius: @containerBorderRadius;
+  color: @fontGrayColor;
 }
 
 
@@ -305,7 +309,7 @@
 }
 
 .ui.year.sgcard>.content>.header {
-  color: #4b525a;
+  color: @fontTitleColor ;
   font-family: PingFang-SC-Medium;
   margin-bottom: 30px;
 }
@@ -322,7 +326,7 @@
 
 .ui.year.sgcard>.ui.horizontal.list>.item {
   font-size: 20px;
-  color: #4b525a;
+  color: @fontTitleColor ;
   font-family: Avenir-Heavy;
   text-align: center;
 }
@@ -330,11 +334,11 @@
 .ui.year.sgcard>.ui.horizontal.list>.item>.header {
   font-family: Avenir-Heavy;
   font-size: 20px;
-  color: #4b525a;
+  color: @fontTitleColor;
 }
 
 .ui.year.sgcard>.ui.horizontal.list>.item>.description {
-  font-family: PingFang-SC-Regular;
-  font-size: 14px;
-  color: #9199a3;
+  font-family: @fontName;
+  font-size: @fontFooterSize;
+  color: @fontGrayColor;
 }
