@@ -101,7 +101,7 @@
     Gender Colors
 --------------------*/
 
-@maleColor : #ff8ACA;
+@maleColor :  #00cddd;
 @femaleColor : #ff8ACA;
 
 /*-------------------

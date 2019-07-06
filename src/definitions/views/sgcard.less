@@ -96,7 +96,6 @@
 }
 
 
-
 /**********************************
         .ui.child.sgcard
 ***********************************/
@@ -124,10 +123,8 @@
 }
 
 .ui.child.sgcard>.content {
-  margin: 40px 40px 20px 20px;
+  margin: 40px 55px 20px 35px;
 }
-
-.ui.child.sgcard>.content>.ui.grid>.column {}
 
 .ui.child.sgcard>.content>.ui.grid>.column>.content {
   position: relative;
@@ -237,23 +234,28 @@
 }
 
 
-.ui.field>{
+
+
+/************************
+        layout
+*************************/
+
+.ui.cards.segment {
+  width: 100%;
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  background: rgb(170, 250, 170);
+  background:none;
+  padding: 0px;
+  margin: 0px;
 }
-.ui.field>.ui.sgcard{
-  margin-right: 30px;
+.ui.cards.segment>.ui.sgcard{
+  margin-right: 20px;
   margin-top: 20px;
 }
-// .ui.field>.field>.ui.sgcard{
-//   margin-left:calc((100%-265*n)/(n-1));
-// }
 // .ui.field>.cols {
 //   display: flex;
-//   // justify-content: space-between;
-//   justify-content:flex-start;
+//   justify-content: space-between;
 //   flex-wrap: wrap;
 // }
 
@@ -285,7 +287,7 @@
 // }
 
 // .ui.field>.five.cols>.ui.sgcard {
-//   margin-right: calc((100% - 265*5)/4);
+//   width: calc((100% - 80px)/5);
 // }
 
 // .ui.field>.five.cols>.ui.class.sgcard:first-child {
