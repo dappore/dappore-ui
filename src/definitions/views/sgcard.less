@@ -75,7 +75,7 @@
 
 
 /********************
-   .ui.sglabel
+   .ui.number.sglabel
 *********************/
 
 .ui.number.sglabel {
@@ -95,113 +95,6 @@
   float: left;
 }
 
-.ui.field {
-  margin: auto;
-  width: 100%;
-  // display: flex;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
-  // background: palegreen;
-}
-
-.ui.field>.cols {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-/********************
-   six sgcards
-*********************/
-.ui.field>.six.cols {
-  width: 100%;
-  min-width: 1440px;
-}
-
-.ui.field>.six.cols>.ui.sgcard {
-  width: calc((100% - 100px)/6);
-}
-
-// .ui.field>.six.cols>.ui.sgcard:first-child {
-//   margin-left: 0;
-// }
-
-// .ui.field>.six.cols>.ui.sgcard:last-child {
-//   margin-right: 0;
-// }
-
-/********************
-   five sgcards
-*********************/
-.ui.field>.five.cols {
-  width: 100%;
-}
-
-.ui.field>.five.cols>.ui.sgcard {
-  width: calc((100% - 80px)/5);
-}
-
-// .ui.field>.five.cols>.ui.class.sgcard:first-child {
-//   margin-left: 0;
-// }
-
-// .ui.field>.five.cols>.ui.class.sgcard:last-child {
-//   margin-right: 0;
-// }
-
-/********************
-   four sgcards
-*********************/
-.ui.field>.four.cols {
-  width: 100%;
-}
-
-.ui.field>.four.cols>.ui.sgcard {
-  width: calc((100% - 60px)/4);
-}
-
-// .ui.field>.four.cols>.ui.class.sgcard:first-child {
-//   margin-left: 0;
-// }
-
-// .ui.field>.four.cols>.ui.class.sgcard:last-child {
-//   margin-right: 0;
-// }
-
-
-/********************
-   three sgcards
-*********************/
-.ui.field>.three.cols {
-  width: 100%;
-}
-
-.ui.field>.three.cols>.ui.sgcard {
-  width: calc((100% - 40px)/3);
-}
-
-// .ui.field>.three.cols>.ui.class.sgcard:first-child {
-//   margin-left: 0;
-// }
-
-// .ui.field>.three.cols>.ui.class.sgcard:last-child {
-//   margin-right: 0;
-// }
-
-/********************
-   two sgcards
-*********************/
-.ui.field>.two.cols {
-  width: 100%;
-}
-
-.ui.field>.two.cols>.ui.sgcard {
-  width: calc((100% - 20px)/2);
-}
-
-// .ui.field>.two.cols>.ui.sgcard:first-child {
-//   margin-left: 0;
-// }
 
 
 /**********************************
@@ -342,3 +235,117 @@
   font-size: @fontFooterSize;
   color: @fontGrayColor;
 }
+
+
+.ui.field>{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  background: rgb(170, 250, 170);
+}
+.ui.field>.ui.sgcard{
+  margin-right: 30px;
+  margin-top: 20px;
+}
+// .ui.field>.field>.ui.sgcard{
+//   margin-left:calc((100%-265*n)/(n-1));
+// }
+// .ui.field>.cols {
+//   display: flex;
+//   // justify-content: space-between;
+//   justify-content:flex-start;
+//   flex-wrap: wrap;
+// }
+
+/********************
+   six sgcards
+*********************/
+// .ui.field>.six.cols {
+//   width: 100%;
+//   min-width: 1440px;
+// }
+
+// .ui.field>.six.cols>.ui.sgcard {
+//   width: calc((100% - 100px)/6);
+// }
+
+// .ui.field>.six.cols>.ui.sgcard:first-child {
+//   margin-left: 0;
+// }
+
+// .ui.field>.six.cols>.ui.sgcard:last-child {
+//   margin-right: 0;
+// }
+
+/********************
+   five sgcards
+*********************/
+// .ui.field>.five.cols {
+//   width: 100%;
+// }
+
+// .ui.field>.five.cols>.ui.sgcard {
+//   margin-right: calc((100% - 265*5)/4);
+// }
+
+// .ui.field>.five.cols>.ui.class.sgcard:first-child {
+//   margin-left: 0;
+// }
+
+// .ui.field>.five.cols>.ui.class.sgcard:last-child {
+//   margin-right: 0;
+// }
+
+/********************
+   four sgcards
+*********************/
+// .ui.field>.four.cols {
+//   width: 100%;
+// }
+
+// .ui.field>.four.cols>.ui.sgcard {
+//   width: calc((100% - 60px)/4);
+// }
+
+// .ui.field>.four.cols>.ui.class.sgcard:first-child {
+//   margin-left: 0;
+// }
+
+// .ui.field>.four.cols>.ui.class.sgcard:last-child {
+//   margin-right: 0;
+// }
+
+
+/********************
+   three sgcards
+*********************/
+// .ui.field>.three.cols {
+//   width: 100%;
+// }
+
+// .ui.field>.three.cols>.ui.sgcard {
+//   width: calc((100% - 40px)/3);
+// }
+
+// .ui.field>.three.cols>.ui.class.sgcard:first-child {
+//   margin-left: 0;
+// }
+
+// .ui.field>.three.cols>.ui.class.sgcard:last-child {
+//   margin-right: 0;
+// }
+
+/********************
+   two sgcards
+*********************/
+// .ui.field>.two.cols {
+//   width: 100%;
+// }
+
+// .ui.field>.two.cols>.ui.sgcard {
+//   width: calc((100% - 20px)/2);
+// }
+
+// .ui.field>.two.cols>.ui.sgcard:first-child {
+//   margin-left: 0;
+// }
