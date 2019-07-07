@@ -13,3 +13,54 @@ $(document).ready(function(){
       })
   });
 });
+$(document).ready(function(){
+  var proArr = ["安徽","河南","河北","江苏"];
+  var cityArr = [
+      ["合肥","蚌埠","亳州","阜阳"],
+      ["郑州","开封","商丘","焦作"],
+      ["石家庄","邯郸","衡水"],
+      ["苏州","杭州","无锡","南京"]
+  ]
+  var couArr = [
+      [
+          ["合县1","合县2","合县3","合县4"],
+          ["蚌县1","蚌县2","蚌县3","蚌县4"],
+          ["亳县1","亳县2","亳县3","亳县4"],
+          ["阜县1","阜县2","阜县3","阜县4"],
+      ],
+      [
+          ["郑县1","郑县2","郑县3","郑县4"],
+          ["开县1","开县2","开县3","开县4"],
+          ["商县1","商县2","商县3","商县4"],
+          ["焦县1","焦县2","焦县3","焦县4"],
+      ],
+      [
+          ["石县1","石县2","石县3","石县4"],
+          ["邯县1","邯县2","邯县3","邯县4"],
+          ["衡县1","衡县2","衡县3","衡县4"],
+      ],
+      [
+          ["苏县1","苏县2","苏县3","苏县4"],
+          ["杭县1","杭县2","杭县3","杭县4"],
+          ["无县1","无县2","无县3","无县4"],
+          ["南县1","南县2","南县3","南县4"],
+      ],
+  ]
+  createNope(proArr,0);
+  $(".dependent.field>.field select")[0].onchange = function(){
+      $(".dependent.field>.field select")[1].length = 1;
+      $(".dependent.field>.field select")[2].length = 1;
+      Index = this.selectedIndex-1;
+      createNope(cityArr[Index],1);
+  }
+  $(".dependent.field>.field select")[1].onchange = function(){
+      $(".dependent.field>.field select")[2].length = 1;
+      createNope(couArr[Index][this.selectedIndex-1],2);
+  }
+  function createNope(Arr,sum){
+      $.each(Arr,function(index,value){
+          $(".dependent.field>.field select").eq(sum).append("<option>"+value+"</option>");
+      })
+  }
+  
+})
