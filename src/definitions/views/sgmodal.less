@@ -1,3 +1,5 @@
+@import (multiple) '../../site/globals/site.variables';
+
 .ui.sgmodal {
   width: 917px;
   height: 708px;
@@ -6,6 +8,14 @@
   position: relative;
   margin: auto;
   overflow: auto;
+  background: #fff;
+  border-bottom: 30px solid #fff;
+}
+
+.ui.sgmodal>.ui.form>.ui.primary.button {
+  font-size: 16px;
+  font-family: PingFang-SC-Medium;
+  margin-left: 160px;
 }
 
 .ui.sgmodal>.header {
@@ -96,6 +106,10 @@
   background: #00cddd;
 }
 
+
+/************************
+    .image.field
+*************************/
 .ui.form>.image.field {
   width: 80px;
   height: 80px;
@@ -103,34 +117,42 @@
   border-radius: 4px;
 }
 
-// .ui.form>.image.field>.icon.plus {
-//   color: #dbe1e6;
-//   font-size: 30px;
-//   display: inline;
-//   line-height: 80px;
-// }
+.ui.form>.image.field {
+  display: flex;
+  position: relative;
+  font-size: 30px;
+  color: #dbe1e6;
+}
 
-.image.field>img {
+.ui.form>.image.field>img {
   width: 100%;
   border-radius: 4px;
 }
 
-.image.field>.ui.dimmer {
-  background: #edf2f5;
+.ui.form>.image.field>.icon.plus {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  align-self: center;
+  margin-left: -18px;
+  margin-top: -12px;
 }
 
-.image.field>.ui.dimmer>.icon.plus {
-  color: #dbe1e6;
-  font-size: 30px;
-}
 
 /************************
     .dependent.field
 *************************/
-.dependent.field>.field{
+.dependent.field> {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
-// .ui.form .field > .selection.dropdown{
-//   width: ;
-// }
+
+.ui.form>.dependent.field>.selection.dropdown {
+  width: 130px;
+  color: #9199a3;
+}
+
+.ui.form>.dependent.field>{
+  line-height: 37px;
+  color: #9199a3;
+}

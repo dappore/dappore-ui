@@ -1,18 +1,48 @@
 console.log('test');
-$('select.dropdown').dropdown();
+$("select.dropdown").dropdown();
+
+// .ui.sgcard
+
+
 $(".ui.sgcard .icon.close").click(function () {
   $(this).closest(".ui.sgcard").transition("fade");
 });
+
+
+// .ui.sgmodal
+
+
+//image field
 $(document).ready(function(){
-    $(".image.field").dimmer('show');
+    // $(".image.field").dimmer('show');
     $(".image.field").click(function () {
-    $(".image.field").dimmer('hide');
-    $("img").attr("src", "image/tom.jpg");
+    //   $(".image.field").dimmer('hide');
+      $(".icon.plus").hide();
+      $("img").attr("src", "image/tom.jpg");
       $(".image.field").click(function(){
-        $("img").attr("src", "image/nan.jpg");
+          $("img").attr("src", "image/nan.jpg");
       })
   });
 });
+ //select field
+$(document).ready(function(){
+    var courseArr = ["课程1", "课程2", "课程3", "课程4"];
+    createNope(courseArr, 0);
+    $(".select.field select").onchange=function(){
+        Index = this.selectedIndex - 1;
+        createNope(cityArr[Index], 1);
+    };
+    function createNope(Arr, sum) {
+        $.each(Arr, function (index, value) {
+            $(".select.field select").eq(sum).append("<option>" + value + "</option>");
+        })
+    }
+});
+
+
+
+
+//dependent field
 $(document).ready(function(){
   var proArr = ["安徽","河南","河北","江苏"];
   var cityArr = [
@@ -47,20 +77,26 @@ $(document).ready(function(){
       ],
   ]
   createNope(proArr,0);
-  $(".dependent.field>.field select")[0].onchange = function(){
-      $(".dependent.field>.field select")[1].length = 1;
-      $(".dependent.field>.field select")[2].length = 1;
+  $(".dependent.field select")[0].onchange = function(){
+      $(".dependent.field select")[1].length = 1;
+      $(".dependent.field select")[2].length = 1;
       Index = this.selectedIndex-1;
       createNope(cityArr[Index],1);
   }
-  $(".dependent.field>.field select")[1].onchange = function(){
-      $(".dependent.field>.field select")[2].length = 1;
+  $(".dependent.field select")[1].onchange = function(){
+      $(".dependent.field select")[2].length = 1;
       createNope(couArr[Index][this.selectedIndex-1],2);
+      $(".dependent.field select")[0].onchange = function () {
+          $(".dependent.field select")[1].length = 1;
+          $(".dependent.field select")[2].length = 1;
+          Index = this.selectedIndex - 1;
+          createNope(cityArr[Index], 1);
+      }
   }
   function createNope(Arr,sum){
       $.each(Arr,function(index,value){
-          $(".dependent.field>.field select").eq(sum).append("<option>"+value+"</option>");
+          $(".dependent.field select").eq(sum).append("<option>"+value+"</option>");
       })
   }
-  
+
 })
