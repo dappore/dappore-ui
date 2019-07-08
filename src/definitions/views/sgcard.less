@@ -1,8 +1,6 @@
 @import (multiple) '../../site/globals/site.variables';
 
-/********************
-   .ui.class.sgcard
-*********************/
+
 .ui.sgcard {
   width: 265px;
   border: 1px solid rgba(52, 57, 61, 0.11);
@@ -25,39 +23,11 @@
 }
 
 /********************
-   .ui.literal.sgavatar
+   .ui.class.sgcard/.ui..booking.sgavatar> .group.content
 *********************/
-.ui.literal.sgavatar {
-  font-size: 24px;
-}
 
-/********************
-   .ui.literal.sgavatar/color
-*********************/
-.ui.literal.teal.sgavatar {
-  background: @primaryColor;
-}
-
-.ui.literal.yellow.sgavatar {
-  background: @warningColor;
-}
-
-.ui.literal.green.sgavatar {
-  background: @greenColor;
-}
-
-.ui.literal.blue.sgavatar {
-  background: @blueColor;
-}
-
-.ui.literal.orange.sgavatar {
-  background: @pinkColor;
-}
-
-/********************
-   .group.content
-*********************/
-.ui.class.sgcard>.group.content {
+.ui.class.sgcard>.group.content,
+.ui.booking.sgcard>.group.content {
   position: absolute;
   left: 84px;
   top: 25px;
@@ -67,12 +37,20 @@
 /********************
    .group.conteent>header
 *********************/
-.ui.class.sgcard>.group.content>.header {
+.ui.class.sgcard>.group.content>.header,
+.ui.booking.sgcard>.group.content>.header {
   font-size: @fontTitleSize2;
   color: @fontTitleColor;
   font-family: @sgcardHeaderFont;
 }
 
+.ui.booking.sgcard>.group.content>.description {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  font-size: @fontCaptionSize;
+  color: @fontGrayColor;
+}
 
 /********************
    .ui.number.sglabel
@@ -80,7 +58,6 @@
 
 .ui.number.sglabel {
   width: 35px;
-  height: 14px;
   position: relative;
   line-height: 14px;
   font-size: @fontFooterSize;
@@ -245,11 +222,12 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  background:none;
+  background: none;
   padding: 0px;
   margin: 0px;
 }
-.ui.cards.segment > .ui.sgcard{
+
+.ui.cards.segment>.ui.sgcard {
   margin-right: 20px;
   margin-top: 20px;
 }

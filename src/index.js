@@ -10,7 +10,9 @@ $(".ui.sgcard .icon.close").click(function () {
 
 
 // .ui.sgmodal
-
+$(".ui.sgmodal>.icon.close").click(function () {
+    $(this).closest(".ui.sgmodal").transition("fade");
+});
 
 //image field
 $(document).ready(function(){
@@ -50,7 +52,7 @@ $(document).ready(function(){
       ["郑州","开封","商丘","焦作"],
       ["石家庄","邯郸","衡水"],
       ["苏州","杭州","无锡","南京"]
-  ]
+  ];
   var couArr = [
       [
           ["合县1","合县2","合县3","合县4"],
@@ -75,24 +77,20 @@ $(document).ready(function(){
           ["无县1","无县2","无县3","无县4"],
           ["南县1","南县2","南县3","南县4"],
       ],
-  ]
+  ];
   createNope(proArr,0);
   $(".dependent.field select")[0].onchange = function(){
       $(".dependent.field select")[1].length = 1;
       $(".dependent.field select")[2].length = 1;
+      $(".dependent.field select")[1][0].value="1";
       Index = this.selectedIndex-1;
       createNope(cityArr[Index],1);
-  }
+  };
   $(".dependent.field select")[1].onchange = function(){
       $(".dependent.field select")[2].length = 1;
       createNope(couArr[Index][this.selectedIndex-1],2);
-      $(".dependent.field select")[0].onchange = function () {
-          $(".dependent.field select")[1].length = 1;
-          $(".dependent.field select")[2].length = 1;
-          Index = this.selectedIndex - 1;
-          createNope(cityArr[Index], 1);
-      }
-  }
+      $(".dependent.field select")[2][0].value = "1";
+  };
   function createNope(Arr,sum){
       $.each(Arr,function(index,value){
           $(".dependent.field select").eq(sum).append("<option>"+value+"</option>");
