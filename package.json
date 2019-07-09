@@ -1,10 +1,10 @@
 {
-  "name": "sg-web-ui",
+  "name": "dappore-ui",
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/work-design/work-design-ui.git"
+    "url": "git+https://github.com/dappore/dappore-ui.git"
   },
   "author": "qinmingyuan <mingyuan0715@foxmail.com>",
   "license": "MIT",
