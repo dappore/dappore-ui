@@ -47,6 +47,7 @@
   },
   "homepage": "https://github.com/work-design/work-design-ui#readme",
   "directories": {
-    "example": "examples"
+    "example": "examples",
+    "dist": "dist"
   }
 }
