@@ -46,8 +46,8 @@
     "url": "https://github.com/work-design/work-design-ui/issues"
   },
   "homepage": "https://github.com/work-design/work-design-ui#readme",
-  "directories": {
-    "example": "examples",
-    "dist": "dist"
-  }
+  "files": [
+    "dist",
+    "src"
+  ]
 }
