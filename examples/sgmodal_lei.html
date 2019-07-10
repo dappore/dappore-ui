@@ -8,24 +8,21 @@
   <script src="main_css.js"></script>
   <script src="main_js.js"></script>
   <script src="semantic_js.js"></script>
-  <style>
-  body{
-    background: teal;
-  }
-  </style>
 </head>
 <body>
 <div class="ui container">
 
 
 
-    <div class="ui sgmodal">
+    <div class="ui infor modal">
       <i class="close icon"></i>
       <div class="header">添加课程</div>
-      <div class="ui divider"></div>
       <div class="ui form">
 
-
+  <div class="input field">
+    <label>课程名称</label>
+    <input type="text">
+  </div>
 
       <div class="select field">
         <label>课程类型</label>
@@ -34,10 +31,7 @@
         </select>
       </div>
 
-     <div class="input field">
-       <label>课程名称</label>
-       <input type="text">
-     </div>
+
 
 
      <div class="text field">
@@ -47,8 +41,8 @@
 
 
 
-      <div class="check field">
-          <label>选择性别</label>
+      <div class="radio field">
+          <label>单选</label>
           <div class="inline fields">
             <div class="field">
               <div class="ui radio checkbox">
@@ -67,6 +61,7 @@
 
 
 
+
         <div class="image field">
            <img src="image/background.jpg" alt="">
               <i class="icon plus"></i>
@@ -74,28 +69,91 @@
 
 
         <div class="dependent field">
-               <select class="ui  dropdown" >
-                  <option value="">选择省区</option>
-                </select>
-                -
-                <select class="ui  dropdown">
-                    <option value="">选择市区</option>
-                </select>
-                -
-                <select class="ui  dropdown">
-                <option value="">选择县区</option>
-              </select>
-       </div>
+          <label>职级1</label>
+              <div class="field">
+                  <select class="ui dropdown">
+                    <option value="">教研部门</option>
+                  </select>
+                  -
+                  <select class="ui dropdown">
+                    <option value="">托育教研部</option>
+                  </select>
+                  -
+                  <select class="ui dropdown">
+                    <option value="">教研组员</option>
+                  </select>
+              </div>
+        </div>
+
+
+                <div class="attach field">
+                  <label>职级2</label>
+                  <div class="field">
+                    <select class="ui dropdown">
+                      <option value="">教研部门</option>
+                    </select>
+                    <div class="ui icon label">
+                      <i class="icon close"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="post content">
+                  11
+                </div>
+                <div class="add field">
+                  <div class="ui icon label">
+                    <i class="icon plus"></i>
+                    <label>添加职位</label>
+                  </div>
+                </div>
+
+
+
      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt in ad laboriosam odit ab numquam modi tempora, consequatur eos possimus accusantium, nobis veniam facilis exercitationem quibusdam repellat. Dignissimos, odio quod.</p>
      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, libero? Saepe vitae hic consequatur accusamus enim corporis debitis nemo, illo quisquam molestiae aut dolor deleniti earum. Totam voluptatum vitae non.</p>
      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad similique accusantium a ipsa incidunt voluptatum, ducimus deserunt earum eos minima illo quisquam tempore temporibus quis quae repudiandae maiores rem assumenda?</p>
      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quod ea distinctio amet quis corrupti eum, laborum perspiciatis sunt possimus quisquam est sed, eaque nam voluptas esse illo nulla placeat!</p>
 
 
+    <div class="toggle field">
+      <label for="">状态</label>
+        <div class="ui toggle checkbox">
+          <input type="checkbox" name="public">
+          <label></label>
+        </div>
+    </div>
 
-      <div class="ui primary button">
-        确认添加
+<div class="check field">
+          <label>复选</label>
+  <div class="inline fields">
+    <div class="field">
+      <div class="ui checkbox">
+        <input type="checkbox" name="frequency1" checked="checked">
+        <label>1</label>
       </div>
+    </div>
+    <div class="field">
+      <div class="ui checkbox checkbox">
+        <input type="checkbox" name="frequency1">
+        <label>2</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui  checkbox">
+        <input type="checkbox" name="frequency1">
+        <label>3</label>
+      </div>
+    </div>
+    <div class="field">
+      <div class="ui checkbox">
+        <input type="checkbox" name="frequency1">
+        <label>4</label>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       </div>
     </div>
     </div>

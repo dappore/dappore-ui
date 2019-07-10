@@ -1,5 +1,6 @@
 console.log('test');
 $("select.dropdown").dropdown();
+$(".post.content>.attach.field>.field>.ui.dropdown").dropdown();
 
 // .ui.sgcard
 
@@ -9,9 +10,16 @@ $(".ui.sgcard .icon.close").click(function () {
 });
 
 
+
+
+
 // .ui.sgmodal
-$(".ui.sgmodal>.icon.close").click(function () {
-    $(this).closest(".ui.sgmodal").transition("fade");
+
+
+$('.ui.infor.modal').modal('show');
+// $('.select.field>.ui.dropdown').dropdown();
+$(".ui.infor.modal>.icon.close").click(function () {
+    $(this).closest(".ui.infor.modal").transition("fade");
 });
 
 //image field
@@ -32,7 +40,7 @@ $(document).ready(function(){
     createNope(courseArr, 0);
     $(".select.field select").onchange=function(){
         Index = this.selectedIndex - 1;
-        createNope(cityArr[Index], 1);
+        // createNope(cityArr[Index], 1);
     };
     function createNope(Arr, sum) {
         $.each(Arr, function (index, value) {
@@ -40,13 +48,48 @@ $(document).ready(function(){
         })
     }
 });
+//attach field
+$(document).ready(function () {
+    var postArr = ["职位1", "职位2", "职位3", "职位4"];
+    createNope(postArr, 0);
+    $(".attach.field>.field select").onchange = function () {
+        Index = this.selectedIndex - 1;
+        // createNope(cityArr[Index], 1);
+    };
+    function createNope(Arr, sum) {
+        $.each(Arr, function (index, value) {
+            $(".attach.field>.field select").eq(sum).append("<option>" + value + "</option>");
+        })
+    };
+    $(".attach.field>.field>.ui.icon.label>.icon.close").click(function () {
+        $(this).closest(".attach.field").transition("fade");
+    });
+    // $(".attach.field>.field>.ui.icon.label>.icon.close").click(function () {
+    //     $(this).closest(".attach.field").transition("fade");
+    // });
+    //add attach field
+    $(".add.field").click(function(){
 
+        $(".post.content").append(
+          "<div><label>职级2</label><div><select><option>职位</option></select><div><i></i></div></div></div>"
+        );
+        $(".post.content>div").addClass("attach field");
+        $(".post.content>.attach.field>div").addClass("field");
+        $(".post.content>.attach.field>.field>select").addClass("ui dropdown");
+        $(".post.content>.attach.field>.field>div").addClass("ui icon label");
+        $(".post.content>.attach.field>.field>.ui.icon.label>i").addClass("icon close");
+        $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").click(function () {
+            $(this).closest(".post.content>.attach.field").transition("fade");
+        });
+    });
+
+});
 
 
 
 //dependent field
 $(document).ready(function(){
-  var proArr = ["安徽","河南","河北","江苏"];
+  var proArr = ["安徽", "河南", "河北", "江苏", "教研部门"];
   var cityArr = [
       ["合肥","蚌埠","亳州","阜阳"],
       ["郑州","开封","商丘","焦作"],
@@ -79,21 +122,21 @@ $(document).ready(function(){
       ],
   ];
   createNope(proArr,0);
-  $(".dependent.field select")[0].onchange = function(){
-      $(".dependent.field select")[1].length = 1;
-      $(".dependent.field select")[2].length = 1;
-      $(".dependent.field select")[1][0].value="1";
+  $(".dependent.field>.field select")[0].onchange = function(){
+      $(".dependent.field>.field select")[1].length = 1;
+      $(".dependent.field>.field select")[2].length = 1;
+      $(".dependent.field>.field select")[1][0].value="1";
       Index = this.selectedIndex-1;
       createNope(cityArr[Index],1);
   };
-  $(".dependent.field select")[1].onchange = function(){
-      $(".dependent.field select")[2].length = 1;
+  $(".dependent.field>.field select")[1].onchange = function(){
+      $(".dependent.field>.field select")[2].length = 1;
       createNope(couArr[Index][this.selectedIndex-1],2);
-      $(".dependent.field select")[2][0].value = "1";
+      $(".dependent.field>.field select")[2][0].value = "1";
   };
   function createNope(Arr,sum){
       $.each(Arr,function(index,value){
-          $(".dependent.field select").eq(sum).append("<option>"+value+"</option>");
+          $(".dependent.field>.field select").eq(sum).append("<option>"+value+"</option>");
       })
   }
 
