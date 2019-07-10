@@ -70,21 +70,34 @@ $(document).ready(function () {
     //add attach field
     $(".add.field").click(function(){
 
-        $(".post.content").append(
+        $(".content").append(
           "<div><label>职级2</label><div><select><option>职位</option></select><div><i></i></div></div></div>"
         );
-        $(".post.content>div").addClass("attach field");
-        $(".post.content>.attach.field>div").addClass("field");
-        $(".post.content>.attach.field>.field>select").addClass("ui dropdown");
-        $(".post.content>.attach.field>.field>div").addClass("ui icon label");
-        $(".post.content>.attach.field>.field>.ui.icon.label>i").addClass("icon close");
-        $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").click(function () {
-            $(this).closest(".post.content>.attach.field").transition("fade");
-        });
+        $(".content>div").addClass("attach field");
+        $(".content>.attach.field>div").addClass("field");
+        $(".content>.attach.field>.field>select").addClass("ui dropdown");
+        $(".content>.attach.field>.field>div").addClass("ui icon label");
+        $(".content>.attach.field>.field>.ui.icon.label>i").addClass("icon close");
+        
+        // $(".content>.attach.field>.field>.ui.icon.label .icon.close").click(function () {
+        //     $(this).closest(".content>.attach.field").transition("fade");
+        // });
+        // $(function(){
+        //     $('.evals>li').each(function(index){
+        //       $(this).on('click',function(){
+        //         $('.text').val($('.evals>li').eq(index).html());
+        //       })
+        //     })
+        //   })
+        $(".content>.attach.field").each(function(index){
+            var x=$(".content>.attach.field").eq(index);
+            x.click(function(){
+                $(this).closest(".content>.attach.field").eq(index).transition("fade");
+            })
     });
 
 });
-
+})
 
 
 //dependent field
