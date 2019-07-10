@@ -39,8 +39,8 @@
 
                 <div class="action">
                     <div class="ui button">
-                        <!-- <i class="user icon"></i> -->
-                        +添加宝宝
+                        <i class="fas fa-plus"></i>
+                        添加宝宝
                     </div>
                 </div>
             </div>
@@ -77,9 +77,10 @@
             <table class="ui selectable table">
                 <thead>
                     <tr>
-                        <th>宝宝</th>
-                        <th>年龄</th>
-                        <th>家长</th>
+                        <th>头像</th>
+                        <th>单行</th>
+                        <th>双行</th>
+                        <th>列表</th>
                         <th>操作</th>
                     </tr>
                 </thead>
@@ -101,6 +102,29 @@
                             <div class="content">周子辰</div>
                             <div class="small content">辰辰</div>
                         </td>
+
+                        <td class="popup item">
+                                <div class="content">市场部门-销售员工...</div>
+                                <div class="ui popup top left transition hidden">
+                                    <div class="ui list">
+                                        <div class="item">
+                                            <div class="content">销售部门-销售员工</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">销售部门-销售员工</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="content">销售部门-销售员工</div>
+                                        </div>
+                                        <div class="action item">
+                                            <div class="ui button">
+                                                <i class="fas fa-plus"></i>
+                                                添加职级
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
 
                         <td class="item">
                             <div class="ui sgaction">
@@ -131,6 +155,29 @@
                             <div class="small content">辰辰</div>
                         </td>
 
+                        <td class="popup item">
+                            <div class="content">市场部门-销售员工...</div>
+                            <div class="ui popup top left transition hidden">
+                                <div class="ui list">
+                                    <div class="item">
+                                        <div class="content">销售部门-销售员工</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="content">销售部门-销售员工</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="content">销售部门-销售员工</div>
+                                    </div>
+                                    <div class="action item">
+                                        <div class="ui button">
+                                            <i class="fas fa-plus"></i>
+                                            添加职级
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+
                         <td class="item">
                             <div class="ui sgaction">
                                 <a data-tooltip="日志" href="" class="positive action"><i
@@ -145,7 +192,7 @@
 
                 <tfoot>
                     <tr>
-                        <td colspan="4">
+                        <td colspan="5">
                             <div class="ui sgpagination">
                                 <div class="disable previous">上一页</div>
                                 <div class="items">
@@ -184,6 +231,12 @@
         window.onload = function () {
             $('.ui.dropdown')
                 .dropdown()
+                ;
+
+            $('.ui.sgrows > table > tbody > tr > .popup > .content')
+                .popup({
+                    hoverable: true
+                })
                 ;
         }
     </script>
