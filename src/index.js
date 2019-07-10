@@ -1,7 +1,8 @@
 console.log('test');
 $("select.dropdown").dropdown();
 $(".post.content>.attach.field>.field>.ui.dropdown").dropdown();
-
+$('.ui.form>.toggle.field>.ui.checkbox').checkbox();
+$(".ui.form>.check.field>.inline.fields>.field>.ui.checkbox").checkbox();
 // .ui.sgcard
 
 
@@ -15,6 +16,23 @@ $(".ui.sgcard .icon.close").click(function () {
 
 // .ui.sgmodal
 
+    $(document).ready(function(){
+        $('.ui.form')
+            .form({
+                fields: {
+                    email: {
+                        identifier: "email",
+                        rules: [
+                            {
+                                type: 'email',
+                                optional: true,
+                                prompt: "邮箱格式错误，请重新输入",
+                            },
+                        ]
+                    },
+                }
+            });
+    });
 
 $('.ui.infor.modal').modal('show');
 // $('.select.field>.ui.dropdown').dropdown();
@@ -49,55 +67,68 @@ $(document).ready(function(){
     }
 });
 //attach field
-$(document).ready(function () {
-    var postArr = ["职位1", "职位2", "职位3", "职位4"];
-    createNope(postArr, 0);
-    $(".attach.field>.field select").onchange = function () {
-        Index = this.selectedIndex - 1;
-        // createNope(cityArr[Index], 1);
-    };
-    function createNope(Arr, sum) {
-        $.each(Arr, function (index, value) {
-            $(".attach.field>.field select").eq(sum).append("<option>" + value + "</option>");
-        })
-    };
-    $(".attach.field>.field>.ui.icon.label>.icon.close").click(function () {
-        $(this).closest(".attach.field").transition("fade");
+$(document).ready(function() {
+  var postArr = ["职位1", "职位2", "职位3", "职位4"];
+  createNope(postArr, 0);
+  $(".attach.field>.field select").onchange = function() {
+    Index = this.selectedIndex - 1;
+    // createNope(cityArr[Index], 1);
+  };
+  function createNope(Arr, sum) {
+    $.each(Arr, function(index, value) {
+      $(".attach.field>.field select")
+        .eq(sum)
+        .append("<option>" + value + "</option>");
     });
-    // $(".attach.field>.field>.ui.icon.label>.icon.close").click(function () {
-    //     $(this).closest(".attach.field").transition("fade");
-    // });
-    //add attach field
-    $(".add.field").click(function(){
-
-        $(".content").append(
-          "<div><label>职级2</label><div><select><option>职位</option></select><div><i></i></div></div></div>"
-        );
-        $(".content>div").addClass("attach field");
-        $(".content>.attach.field>div").addClass("field");
-        $(".content>.attach.field>.field>select").addClass("ui dropdown");
-        $(".content>.attach.field>.field>div").addClass("ui icon label");
-        $(".content>.attach.field>.field>.ui.icon.label>i").addClass("icon close");
-        
-        // $(".content>.attach.field>.field>.ui.icon.label .icon.close").click(function () {
-        //     $(this).closest(".content>.attach.field").transition("fade");
-        // });
-        // $(function(){
-        //     $('.evals>li').each(function(index){
-        //       $(this).on('click',function(){
-        //         $('.text').val($('.evals>li').eq(index).html());
-        //       })
+  }
+  $(".attach.field>.field>.ui.icon.label>.icon.close").click(function() {
+    $(this)
+      .closest(".attach.field")
+      .transition("fade");
+  });
+  // $(".attach.field>.field>.ui.icon.label>.icon.close").click(function () {
+  //     $(this).closest(".attach.field").transition("fade");
+  // });
+  //add attach field
+  $(".add.field").click(function() {
+    $(".post.content").append(
+      "<div><label>职级2</label><div><select><option>职位</option></select><div><i></i></div></div></div>"
+    );
+    $(".post.content>div").addClass("attach field");
+    $(".post.content>.attach.field>div").addClass("field");
+    $(".post.content>.attach.field>.field>select").addClass("ui dropdown");
+    $(".post.content>.attach.field>.field>select.dropdown").dropdown();
+    $(".post.content>.attach.field>.field>div:last").addClass("ui icon label");
+    $(".post.content>.attach.field>.field>.ui.icon.label>i").addClass("icon close");
+    // $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").each(function(index){
+        // $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").eq(index).click(function(){
+        //     $(".post.content>.attach.field").each(function(i){
+        //         if(i==index){
+        //             $(".post.content>.attach.field").eq(i).remove();
+        //         }
         //     })
-        //   })
-        $(".content>.attach.field").each(function(index){
-            var x=$(".content>.attach.field").eq(index);
-            x.click(function(){
-                $(this).closest(".content>.attach.field").eq(index).transition("fade");
+        // })
+         // });
+        $(".post.content>.attach.field").each(function(i){
+            $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").each(function(index){
+                $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").eq(index).click(function(){
+                      if(i==index){
+                          $(".post.content>.attach.field").eq(i).remove();
+                      }
+                })
             })
-    });
+        })
 
+  });
 });
-})
+
+
+
+
+
+
+
+
 
 
 //dependent field
