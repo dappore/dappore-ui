@@ -41,7 +41,8 @@
 .ui.booking.sgcard>.group.content>.header {
   font-size: @fontTitleSize2;
   color: @fontTitleColor;
-  font-family: @sgcardHeaderFont;
+  font-family: @fontName;
+  font-weight: bold;
 }
 
 .ui.booking.sgcard>.group.content>.description {
@@ -84,7 +85,7 @@
   border-radius: @componentBorderRadius;
   font-size: @fontCaptionSize;
   color: white;
-  font-family: PingFang-SC-Regular;
+  font-family: @fontName;
   line-height: 24px;
   text-align: center;
 }
@@ -111,7 +112,7 @@
 
 .ui.child.sgcard>.content>.ui.grid>.column>.content>.header {
   margin-bottom: 6px;
-  font-family: PingFang-SC-Regular;
+  font-family: @fontName;
 }
 
 .ui.child.sgcard>.content>.ui.grid>.column>.content>.description {
@@ -120,14 +121,12 @@
   top: 0px;
   font-size: @fontCaptionSize;
   color: @fontGrayColor;
-  font-family: PingFang-SC-Regular;
 }
 
 .ui.child.sgcard>.description {
   font-size: @fontCaptionSize;
   color: @fontGrayColor;
   text-align: center;
-  font-family: PingFang-SC-Regular;
   width: 80%;
   margin: 0 auto;
   margin-top: 5px;

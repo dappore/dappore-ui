@@ -78,6 +78,14 @@
   max-height: 24em;
 }
 
+.ui.form>.large.text.field>textarea {
+  color: #4b525a;
+  border-radius: 4px;
+  min-height: 10em;
+  height: 5em;
+  max-height: 24em;
+}
+
 /************************
     .check.field/.radio.field
 *************************/
@@ -246,18 +254,9 @@
   padding-bottom: 3px;
 }
 
-// .toggle.field>.ui.toggle.checkbox .box {
-//   color: #00cddd;
-// }
 
-// .toggle.field>.ui.toggle.checkbox input:checked~.box,
-// .toggle.field>.ui.toggle.checkbox input:checked~label {
-//   color: #00cddd  !important;
-// }
 .ui.form>.ui.error.message {
-  width: 300px;
-  position: fixed;
-  top: 400px;
+  width: 280px;
   z-index: 9999;
   background: #000;
   border-radius: 8px;
@@ -269,4 +268,33 @@
 
 .ui.form>.ui.error.message .list:not(.ui) li:before {
   display: none;
+}
+
+
+
+.ui.form>.detail.field>.inline.field>label {
+  font-size: 18px;
+  font-family: PingFang-SC-Regular;
+  width: 90px;
+  text-align-last: justify;
+  text-align: justify;
+  text-justify: distribute-all-lines;
+  color: #4b525a;
+  position: relative;
+}
+
+.ui.form>.detail.field>.inline.field>label:after {
+  content: ":";
+  position: absolute;
+  right: -6px;
+}
+
+.ui.form>.detail.field>.inline.field>p {
+  border: 1px solid #E8E8E8;
+  border-radius: 4px;
+  width: 150px;
+  font-size: 16px;
+  color: #4b525a;
+  padding: 5px;
+  font-family: PingFang-SC-Regular;
 }

@@ -1,8 +1,8 @@
 console.log('test');
 $("select.dropdown").dropdown();
-$(".post.content>.attach.field>.field>.ui.dropdown").dropdown();
 $('.ui.form>.toggle.field>.ui.checkbox').checkbox();
 $(".ui.form>.check.field>.inline.fields>.field>.ui.checkbox").checkbox();
+$(".ui.form>.radio.field>.inline.fields>.field>.ui.checkbox").checkbox();
 // .ui.sgcard
 
 
@@ -42,16 +42,16 @@ $(".ui.infor.modal>.icon.close").click(function () {
 
 //image field
 $(document).ready(function(){
-    // $(".image.field").dimmer('show');
-    $(".image.field").click(function () {
-    //   $(".image.field").dimmer('hide');
-      $(".icon.plus").hide();
-      $("img").attr("src", "image/tom.jpg");
-      $(".image.field").click(function(){
-          $("img").attr("src", "image/nan.jpg");
-      })
-  });
-});
+    $(".ui.form>.image.field").click(function () {
+        $(".ui.form>.image.field>.icon.plus").hide();
+        $(".ui.form>.image.field>img").attr("src", "image/tom.jpg");
+        $(".ui.form>.image.field").click(function () {
+            $(".ui.form>.image.field>img").attr("src", "image/nan.jpg");
+        })
+    });
+})
+
+
  //select field
 $(document).ready(function(){
     var courseArr = ["课程1", "课程2", "课程3", "课程4"];
@@ -80,11 +80,9 @@ $(document).ready(function() {
         .eq(sum)
         .append("<option>" + value + "</option>");
     });
-  }
+  };
   $(".attach.field>.field>.ui.icon.label>.icon.close").click(function() {
-    $(this)
-      .closest(".attach.field")
-      .transition("fade");
+    $(this).closest(".attach.field").transition("fade");
   });
   // $(".attach.field>.field>.ui.icon.label>.icon.close").click(function () {
   //     $(this).closest(".attach.field").transition("fade");
@@ -100,26 +98,39 @@ $(document).ready(function() {
     $(".post.content>.attach.field>.field>select.dropdown").dropdown();
     $(".post.content>.attach.field>.field>div:last").addClass("ui icon label");
     $(".post.content>.attach.field>.field>.ui.icon.label>i").addClass("icon close");
-    // $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").each(function(index){
-        // $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").eq(index).click(function(){
-        //     $(".post.content>.attach.field").each(function(i){
-        //         if(i==index){
-        //             $(".post.content>.attach.field").eq(i).remove();
-        //         }
-        //     })
-        // })
-         // });
-        $(".post.content>.attach.field").each(function(i){
-            $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").each(function(index){
-                $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").eq(index).click(function(){
-                      if(i==index){
-                          $(".post.content>.attach.field").eq(i).remove();
-                      }
-                })
+    $(".post.content>.attach.field>.field>.ui.icon.label>i").attr("name", "close");
+    //   $(".field .ui.icon.label").click(function() {
+    //       let index = alert($(".field .ui.icon.label").index(this));
+    //         $(".post.content .attach.field")
+    //         .eq(index)
+    //         .remove();
+
+    //     });
+    $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").each(function(index){
+        $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").eq(index).click(function(){
+            $(".post.content>.attach.field").each(function(i){
+                if(i===index){
+                    $(".post.content>.attach.field").eq(i).hide();
+                }
+
             })
         })
-
+         });
   });
+
+
+
+    $(".post.content>.attach.field").each(function (i) {
+        if ($(".post.content>.attach.field").length <= 5) {
+
+
+
+        }else{
+            return false;
+        }
+    })
+
+
 });
 
 
