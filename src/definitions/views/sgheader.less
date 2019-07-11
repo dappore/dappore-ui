@@ -20,7 +20,7 @@
 
 .ui.sgheader > div {
     padding: 20px;
-    border-top: 1px solid #DBE1E6;
+    border-top: 1px solid @dividedColor;
 }
 
 .ui.sgheader > div:first-child {
@@ -43,8 +43,8 @@
 	box-shadow: 0px 2px 11px 0px 
 		rgba(255, 189, 0, 0.2);
     border-radius: 4px;
-    font-weight: 300;
-    font-size: @fontSize;
+    // font-weight: 300;
+    font-size: @fontBodySize;
     color: white;
     margin: 0;
 }
@@ -55,7 +55,7 @@
 
 .ui.sgsearch {
     
-    font-size: @fontSize;
+    font-size: @fontBodySize;
 
     display: flex;
     align-items: center;
@@ -70,17 +70,17 @@
 .ui.sgsearch > .ui.input > input {
     color: #999999;
     border-radius: 4px;
-    font-weight: 300;
+    // font-weight: 300;
 }
 
 .ui.sgsearch > .ui.button {
-    font-size: @fontSize;
-    font-weight: 300;
+    font-size: @fontBodySize;
+    // font-weight: 300;
     width: 68px;
     height: 40px;
     padding: 0;
     margin: 0 5px;
-    line-height: 38px;
+    line-height: 40px;
     border-radius: 4px;
 }
 
@@ -115,6 +115,23 @@
 .ui.sgfilter {
     display: flex;
     align-items: center;
+
+    & .ui.dropdown {
+        font-size: @fontBodySize;
+
+        & .item {
+            font-size: @fontBodySize;
+
+            &:hover {
+                font-weight: unset;
+            }
+        }
+
+        & .selected.item {
+            font-weight: unset;
+            color: @primaryColor;
+        }
+    }
 }
 
 .ui.sgfilter > div {

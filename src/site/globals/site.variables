@@ -11,7 +11,7 @@
        Fonts
 --------------------*/
 
-@fontName          : 'PingFangSC-Regular, Microsoft YaHei, Avenir';
+@fontName          : 'PingFangSC-Light', 'Microsoft YaHei', 'Avenir';
 
 @headerFont        : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @pageFont          : @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
@@ -36,11 +36,16 @@
 @fontSize : 16px;
 
 @fontHeaderSize : 26px;
-@fontTitleSize1 : 22px;
-@fontTitleSize2 : 18px;
-@fontBodySize : 16px;
-@fontCaptionSize : 14px;
-@fontFooterSize : 13px;
+
+@fontTitleSize1 : 16px;
+@fontTitleSize2 : 22px;
+@fontTitleSize3 : 18px;
+
+@fontBodySize : 14px;
+
+@fontCaptionSize : 13px;
+
+@fontFooterSize : 12px;
 /*-------------------
       Spacing
 --------------------*/
