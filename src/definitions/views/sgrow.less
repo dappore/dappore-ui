@@ -76,7 +76,7 @@
 --------------------*/
 
 .ui.divided.sgrows > table > tbody > tr:not(:first-child) {
-    border-top: 1px solid rgba(237, 242, 245, 1);
+    border-top: 1px solid @dividedColor;
 }
 
 /*--------------
@@ -181,6 +181,14 @@
 .ui.sgrows > table > tbody > tr > .popup.item .ui.popup {
     margin: 0;
     padding: 0;
+    box-shadow: 0px 0px 44px 0px 
+		rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+    border: solid 1px #ebf0f4;
+    &::before {
+        box-shadow: 0px 0px 44px 0px 
+		rgba(0, 0, 0, 0.06);
+    }
 }
 
 .ui.sgrows > table > tbody > tr > .popup.item .ui.popup > .ui.list {
@@ -203,7 +211,7 @@
             margin: 0;
             padding: 0;
             height: 46px;
-            min-width: 194px;
+            min-width: 174px;
             color: @primaryColor;
             background-color: unset;
             font-size: @fontBodySize;

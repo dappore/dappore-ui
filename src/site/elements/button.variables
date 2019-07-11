@@ -1,1 +1,3 @@
 @verticalMargin: 0.25em;
+
+@fontWeight: unset;

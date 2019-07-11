@@ -110,7 +110,7 @@
                                     <i class="fas fa-caret-down"></i>
                                 </div>
                             </div>
-                            <div class="ui popup top left transition hidden">
+                            <div class="ui popup bottom right transition hidden">
                                 <div class="ui list">
                                     <div class="item">
                                         <div class="content">销售部门-销售员工</div>
@@ -243,7 +243,9 @@
 
             $('.ui.sgrows > table > tbody > tr > .popup > .content')
                 .popup({
-                    hoverable: true
+                    hoverable: true,
+                    position: 'bottom left',
+                    distanceAway: 5
                 })
                 ;
         }
