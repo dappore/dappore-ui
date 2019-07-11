@@ -32,8 +32,9 @@
 
 .ui.sgrows > table > tbody > tr > td {
     border-top: 0px !important;
-    height: 88px;
-    font-size: 16px;
+    height: 70px;
+    font-size: @fontBodySize;
+    font-weight: unset;
     color: rgba(75, 82, 90, 1);
     padding: 0;
 }
@@ -46,8 +47,8 @@
     height: 50px;
     background-color: #eef6f6;
     color: #9199a3;
-    font-size: 14px;
-    font-weight: unset;
+    font-size: @fontCaptionSize;
+    font-weight: 300;
 }
 
 /*--------------
@@ -142,8 +143,8 @@
 --------------------*/
 
 .ui.sgrows > table > tbody > tr > td > .small.content {
-    font-size: 14px;
-	color: rgba(145, 153, 163, 1);
+    font-size: @fontCaptionSize;
+    color: rgba(145, 153, 163, 1);
 }
 
 /*-------------------
@@ -155,13 +156,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 50px;
-    margin: 19px 0;
+    margin: 14px 0;
     justify-content: center;
     align-items: flex-start;
 }
 
 .ui.sgrows > table > tbody > tr > .avatar.item > .sgavatar {
-    height: 100%;
+    height: 100%-20px;
 }
 
 .ui.sgrows > table > tbody > tr > .avatar.item > .content {
@@ -201,7 +202,7 @@
             margin: 0;
             padding: 0;
             height: 46px;
-            width: 100%;
+            min-width: 194px;
             color: @primaryColor;
             background-color: unset;
             font-size: @fontBodySize;
