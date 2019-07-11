@@ -168,3 +168,45 @@
     margin-left: 12px;
     width: 100%;
 }
+
+/*-------------------
+      Content - Popup
+--------------------*/
+
+.ui.sgrows > table > tbody > tr > .popup.item {
+    position: relative;
+}
+
+.ui.sgrows > table > tbody > tr > .popup.item .ui.popup {
+    margin: 0;
+    padding: 0;
+}
+
+.ui.sgrows > table > tbody > tr > .popup.item .ui.popup > .ui.list {
+    text-align: center;
+
+    & .item {
+        margin: 0;
+        padding: 0;
+    }
+
+    & .item > .content {
+        padding: 18px 25px;
+    }
+    
+    & .action.item {
+        border-top: 1px solid @dividedColor;
+
+        & .ui.button {
+            margin: 0;
+            padding: 0;
+            height: 46px;
+            width: 100%;
+            color: @primaryColor;
+            background-color: unset;
+            font-size: @fontBodySize;
+            line-height: 46px;
+            font-weight: unset;
+        }
+    }
+}
