@@ -65,12 +65,20 @@
     padding: 0;
     padding-right: 5px;
     min-height: 40px;
+    width: 250px;
+
+    &:not(:first-child) {
+        padding-left: 5px;
+    }
 }
 
 .ui.sgsearch > .ui.input > input {
     color: #999999;
     border-radius: 4px;
     // font-weight: 300;
+    border: none;
+    background-color: #f6f8fa;
+    line-height: 14px;
 }
 
 .ui.sgsearch > .ui.button {
@@ -106,42 +114,16 @@
 }
 
 
-
-
 /*--------------
-      SG Filter
+      Filter
 ---------------*/
 
-.ui.sgfilter {
+.ui.sgheader > .filter {
     display: flex;
     align-items: center;
 
-    & .ui.dropdown {
-        font-size: @fontBodySize;
-
-        & .item {
-            font-size: @fontBodySize;
-
-            &:hover {
-                font-weight: unset;
-            }
-        }
-
-        & .selected.item {
-            font-weight: unset;
-            color: @primaryColor;
-        }
+    & .ui.sgfilter {
+        margin-right: 20px;
     }
 }
 
-.ui.sgfilter > div {
-    margin: 0 5px;
-}
-
-.ui.sgfilter > div:first-child {
-    margin-left: 0;
-}
-
-.ui.sgfilter > .ui.dropdown {
-    border-radius: 4px;
-}

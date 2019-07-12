@@ -1,0 +1,52 @@
+
+/*******************************
+            Theme
+*******************************/
+
+@import (multiple) '../../site/globals/site.variables';
+
+/*******************************
+            Standard
+*******************************/
+
+/*--------------
+      SG Filter
+---------------*/
+
+.ui.sgfilter {
+    display: flex;
+    align-items: center;
+
+    & .ui.dropdown {
+        font-size: @fontBodySize;
+
+        & .item {
+            font-size: @fontBodySize;
+
+            &:hover {
+                font-weight: unset;
+            }
+        }
+
+        & .selected.item {
+            font-weight: unset;
+            color: @primaryColor;
+        }
+    }
+}
+
+.ui.sgfilter > .header {
+    font-size: @fontBodySize;
+}
+
+.ui.sgfilter > .ui.dropdown {
+    margin: 0;
+}
+
+.ui.sgfilter > div:first-child {
+    margin-left: 0;
+}
+
+.ui.sgfilter > .ui.dropdown {
+    border-radius: 4px;
+}
