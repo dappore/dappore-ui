@@ -25,12 +25,18 @@
 /********************
    .ui.class.sgcard/.ui..booking.sgavatar> .group.content
 *********************/
+.ui.class.sgcard,
+.ui.booking.sgcard {
+  display: flex;
+  justify-content: flex-start;
+}
 
 .ui.class.sgcard>.group.content,
 .ui.booking.sgcard>.group.content {
-  position: absolute;
-  left: 84px;
-  top: 25px;
+  // position: absolute;
+  // left: 84px;
+  // top: 25px;
+  margin-left: 12px;
 }
 
 
@@ -39,7 +45,7 @@
 *********************/
 .ui.class.sgcard>.group.content>.header,
 .ui.booking.sgcard>.group.content>.header {
-  font-size: @fontTitleSize2;
+  font-size: @fontTitleSize3;
   color: @fontTitleColor;
   font-family: @fontName;
   font-weight: bold;
@@ -221,7 +227,7 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  background: none;
+  background: transparent;
   padding: 0px;
   margin: 0px;
 }
