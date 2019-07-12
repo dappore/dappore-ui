@@ -14,8 +14,6 @@
 ---------------*/
 
 .ui.sgrows {
-    
-    
     width: 100%;
 
     & table {
@@ -49,6 +47,17 @@
     color: #9199a3;
     font-size: @fontCaptionSize;
     font-weight: 300;
+}
+
+.ui.sgrows:not(.footer) > table > tbody > tr {
+    &:last-child {
+        & .td:first-child {
+            border-radius: 0 0 0 8px;
+        }
+        & .td:last-child {
+            border-radius: 0 0 8px 0;
+        }
+    }
 }
 
 /*--------------
@@ -96,6 +105,15 @@
 ---------------*/
 
 .ui.sgrows > table > thead > tr {
+
+    &:first-child {
+        & .th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+        & .th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+    }
 
     & th {
         padding: 0;
