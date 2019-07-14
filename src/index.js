@@ -100,24 +100,16 @@ $(document).ready(function() {
     $(".post.content>.attach.field>.field>select.dropdown").dropdown();
     $(".post.content>.attach.field>.field>div:last").addClass("ui icon label");
     $(".post.content>.attach.field>.field>.ui.icon.label>i").addClass("icon close");
-    // $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").each(function(index){
-        // $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").eq(index).click(function(){
-        //     $(".post.content>.attach.field").each(function(i){
-        //         if(i==index){
-        //             $(".post.content>.attach.field").eq(i).remove();
-        //         }
-        //     })
-        // })
-         // });
-        $(".post.content>.attach.field").each(function(i){
-            $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").each(function(index){
-                $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").eq(index).click(function(){
-                      if(i==index){
-                          $(".post.content>.attach.field").eq(i).remove();
-                      }
-                })
+    $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").each(function(index){
+        $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").eq(index).click(function(){
+            $(".post.content>.attach.field").each(function(i){
+                if(i==index){
+                    $(".post.content>.attach.field").eq(i).hide();
+                }
             })
         })
+         });
+
 
   });
 });
