@@ -14,8 +14,6 @@
 ---------------*/
 
 .ui.sgrows {
-    
-    
     width: 100%;
 
     & table {
@@ -32,8 +30,9 @@
 
 .ui.sgrows > table > tbody > tr > td {
     border-top: 0px !important;
-    height: 88px;
-    font-size: 16px;
+    height: 70px;
+    font-size: @fontBodySize;
+    font-weight: unset;
     color: rgba(75, 82, 90, 1);
     padding: 0;
 }
@@ -46,8 +45,19 @@
     height: 50px;
     background-color: #eef6f6;
     color: #9199a3;
-    font-size: 14px;
-    font-weight: unset;
+    font-size: @fontCaptionSize;
+    font-weight: 300;
+}
+
+.ui.sgrows:not(.footer) > table > tbody > tr {
+    &:last-child {
+        & .td:first-child {
+            border-radius: 0 0 0 8px;
+        }
+        & .td:last-child {
+            border-radius: 0 0 8px 0;
+        }
+    }
 }
 
 /*--------------
@@ -75,7 +85,7 @@
 --------------------*/
 
 .ui.divided.sgrows > table > tbody > tr:not(:first-child) {
-    border-top: 1px solid rgba(237, 242, 245, 1);
+    border-top: 1px solid @dividedColor;
 }
 
 /*--------------
@@ -95,6 +105,15 @@
 ---------------*/
 
 .ui.sgrows > table > thead > tr {
+
+    &:first-child {
+        & th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+        & th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+    }
 
     & th {
         padding: 0;
@@ -142,8 +161,8 @@
 --------------------*/
 
 .ui.sgrows > table > tbody > tr > td > .small.content {
-    font-size: 14px;
-	color: rgba(145, 153, 163, 1);
+    font-size: @fontCaptionSize;
+    color: rgba(145, 153, 163, 1);
 }
 
 /*-------------------
@@ -155,13 +174,13 @@
     flex-direction: column;
     flex-wrap: wrap;
     height: 50px;
-    margin: 19px 0;
+    margin: 14px 0;
     justify-content: center;
     align-items: flex-start;
 }
 
 .ui.sgrows > table > tbody > tr > .avatar.item > .sgavatar {
-    height: 100%;
+    height: 100%-20px;
 }
 
 .ui.sgrows > table > tbody > tr > .avatar.item > .content {
@@ -180,6 +199,14 @@
 .ui.sgrows > table > tbody > tr > .popup.item .ui.popup {
     margin: 0;
     padding: 0;
+    box-shadow: 0px 0px 44px 0px 
+		rgba(0, 0, 0, 0.06);
+	border-radius: 8px;
+    border: solid 1px #ebf0f4;
+    &::before {
+        box-shadow: 0px 0px 44px 0px 
+		rgba(0, 0, 0, 0.06);
+    }
 }
 
 .ui.sgrows > table > tbody > tr > .popup.item .ui.popup > .ui.list {
@@ -191,6 +218,7 @@
     }
 
     & .item > .content {
+        font-size: @fontBodySize;
         padding: 18px 25px;
     }
     
@@ -201,7 +229,7 @@
             margin: 0;
             padding: 0;
             height: 46px;
-            width: 100%;
+            min-width: 174px;
             color: @primaryColor;
             background-color: unset;
             font-size: @fontBodySize;

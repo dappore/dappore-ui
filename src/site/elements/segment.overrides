@@ -5,3 +5,8 @@
 .ui.horizontal.segments > .segment {
   border: none;
 }
+
+.ui.segment {
+  border: none;
+  border-radius: 8px;
+}
