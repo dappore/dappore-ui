@@ -12,19 +12,20 @@
   border-bottom: 30px solid #fff;
   border-top: 1px solid #fff;
 }
+
 .ui.infor.modal>.header {
   padding-top: 40px;
   padding-left: 40px;
-  font-size: 26px;
-  color: #4b525a;
+  font-size: @fontHeaderSize;
+  color: @fontTitleColor;
 }
 
 .ui.infor.modal>.close.icon {
   position: absolute;
   top: 20px;
   right: 20px;
-  font-size: 16px;
-  color: #9199a3;
+  font-size: @fontSize;
+  color: @fontGrayColor;
 }
 
 /************************
@@ -39,47 +40,57 @@
     .select.field
 *************************/
 .ui.form>.select.field>label {
-  font-size: 16px;
-  color: #4b525a;
+  font-size: @fontSize;
+  color: @fontTitleColor;
+  margin: 0px;
+  margin-top: 24px;
+  margin-bottom: 7px;
 }
 
 .select.field>.ui.dropdown {
-  color: #4b525a;
-  border-radius: 4px;
+  color: @fontTitleColor;
+  border-radius: @componentBorderRadius;
 }
 
 /************************
     .input.field
 *************************/
+
 .ui.form>.input.field>label {
-  font-size: 16px;
-  color: #4b525a;
+  font-size: @fontSize;
+  color: @fontTitleColor;
+  margin: 0px;
+  margin-top: 24px;
+  margin-bottom: 7px;
 }
 
 .input.field>input {
-  color: #4b525a;
-  border-radius: 4px;
+  color: @fontTitleColor;
+  border-radius: @componentBorderRadius;
 }
 
 /************************
     .text.field
 *************************/
 .ui.form>.text.field>label {
-  font-size: 16px;
-  color: #4b525a;
+  font-size: @fontSize;
+  color: @fontTitleColor ;
+  margin: 0px;
+  margin-top: 24px;
+  margin-bottom: 7px;
 }
 
 .ui.form>.text.field>textarea {
-  color: #4b525a;
-  border-radius: 4px;
+  color: @fontTitleColor ;
+  border-radius: @componentBorderRadius;
   min-height: 5em;
   height: 5em;
   max-height: 24em;
 }
 
 .ui.form>.large.text.field>textarea {
-  color: #4b525a;
-  border-radius: 4px;
+  color: @fontTitleColor ;
+  border-radius: @componentBorderRadius;
   min-height: 10em;
   height: 5em;
   max-height: 24em;
@@ -90,29 +101,37 @@
 *************************/
 .ui.form>.radio.field>label,
 .ui.form>.check.field>label {
-  font-size: 16px;
-  color: #4b525a;
+  font-size: @fontSize;
+  color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 24px;
+}
+
+.ui.form>.radio.field>.inline.fields>.field>.ui.radio.checkbox,
+.ui.form>.check.field>.inline.fields>.field>.ui.checkbox {
+  margin-top: 7px;
 }
 
 .ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>label,
 .ui.form>.check.field>.inline.fields>.field>.ui.checkbox>label {
-  font-size: 14px;
+  font-size: @fontBodySize ;
   font-family: PingFang-SC-Medium;
-  color: #4b525a;
+  color: @fontTitleColor ;
 
 }
 
 
 .ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>input+label:after,
 .ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
-  background: #00cddd;
+  background: @primaryColor;
 }
 
 
 .ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
   color: white;
-  border-radius: 4px;
+  border-radius: @componentBorderRadius;
 }
 
 /************************
@@ -121,8 +140,10 @@
 .ui.form>.image.field {
   width: 80px;
   height: 80px;
-  background: #edf2f5;
-  border-radius: 4px;
+  background: @dividedColor;
+  border-radius: @componentBorderRadius;
+  margin: 0px;
+  margin-top: 24px;
 }
 
 .ui.form>.image.field {
@@ -134,7 +155,7 @@
 
 .ui.form>.image.field>img {
   width: 100%;
-  border-radius: 4px;
+  border-radius: @componentBorderRadius;
 }
 
 .ui.form>.image.field>.icon.plus {
@@ -152,12 +173,15 @@
 *************************/
 .ui.form>.dependent.field {
   float: left;
+  margin-top: 24px;
 }
 
 .ui.form>.dependent.field>label {
-  font-size: 16px;
-  color: #4b525a;
+  font-size: @fontSize;
+  color: @fontTitleColor;
   font-family: PingFang-SC-Regular;
+  margin: 0px;
+  margin-bottom: 7px;
 }
 
 .ui.form>.dependent.field>.field {
@@ -168,14 +192,14 @@
 
 .ui.form>.dependent.field>.field>.selection.dropdown {
   width: 130px;
-  color: #9199a3;
-  font-size: 14px;
+  color: @fontGrayColor;
+  font-size: @fontBodySize;
   text-align: center;
 }
 
 .ui.form>.dependent.field>.field {
   line-height: 35px;
-  color: #9199a3;
+  color: @fontGrayColor;
 }
 
 
@@ -184,9 +208,12 @@
 *************************/
 
 .ui.form>.attach.field>label {
-  font-size: 16px;
-  color: #4b525a;
+  font-size: @fontSize;
+  color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
+  margin: 0px;
+  margin-top: 24px;
+  margin-bottom: 7px;
 }
 
 .ui.form>.attach.field>.field {
@@ -198,8 +225,8 @@
 
 .ui.form>.attach.field>.field>.ui.dropdown {
   width: 130px;
-  color: #9199a3;
-  font-size: 14px;
+  color: @fontGrayColor;
+  font-size: @fontBodySize;
 }
 
 .ui.form>.attach.field>.field>.ui.icon.label {
@@ -211,27 +238,30 @@
    post content
 *************************/
 
-.ui.form>.content>.attach.field>label {
-  font-size: 16px;
-  color: #4b525a;
+.ui.form>.post.content>.attach.field>label {
+  font-size: @fontSize;
+  color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
+  margin: 0px;
+  margin-top: 24px;
+  margin-bottom: 7px;
 }
 
-.ui.form>.content>.attach.field>.field {
+.ui.form>.post.content>.attach.field>.field {
   display: flex;
   justify-content: flex-start;
   flex-flow: nowrap;
   align-items: center;
 }
 
-.ui.form>.content>.attach.field>.field>.ui.dropdown {
+.ui.form>.post.content>.attach.field>.field>.ui.dropdown {
   width: 130px;
-  color: #9199a3;
-  font-size: 14px;
+  color: @fontGrayColor;
+  font-size: @fontBodySize;
 }
 
-.ui.form>.content>.attach.field>.field>.ui.icon.label {
-  border-radius: 14px;
+.ui.form>.post.content>.attach.field>.field>.ui.icon.label {
+  border-radius: @fontBodySize;
   margin-left: 6px;
 }
 
@@ -239,7 +269,7 @@
     .add.attach.field
 *************************/
 .add.field>.ui.label {
-  background: #00cddd;
+  background: @primaryColor;
   color: #fff;
   margin-top: 10px;
 }
@@ -248,10 +278,11 @@
     .toggle.field
 *************************/
 .toggle.field>label {
-  font-size: 16px;
-  color: #4b525a;
+  font-size: @fontSize;
+  color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
+  margin: 0px;
 }
 
 
@@ -259,9 +290,9 @@
   width: 280px;
   z-index: 9999;
   background: #000;
-  border-radius: 8px;
+  border-radius: @containerBorderRadius;
   opacity: 0.6;
-  font-size: 16px;
+  font-size: @fontSize;
   font-family: PingFang-SC-Regular;
   color: #fff;
 }
@@ -271,16 +302,18 @@
 }
 
 
+.ui.form>.detail.field {
+  margin: 0px;
+  margin-top: 10px;
+}
 
 .ui.form>.detail.field>.inline.field>label {
-  font-family: PingFang-SC-Regular;
-  font-size: 16px;
+  font-size: @fontBodySize;
   width: 90px;
-  text-align-last: justify;
-  text-align: justify;
-  text-justify: distribute-all-lines;
-  color: #4b525a;
+  text-align: right;
+  color: @fontTitleColor ;
   position: relative;
+  font-weight: 500;
 }
 
 .ui.form>.detail.field>.inline.field>label:after {
@@ -290,10 +323,10 @@
 }
 
 .ui.form>.detail.field>.inline.field>p {
-  border-radius: 4px;
+  border-radius: @componentBorderRadius;
   width: 150px;
-  font-size: 16px;
-  color: #4b525a;
+  font-size: @fontBodySize;
+  color: @fontTitleColor ;
   padding: 5px;
-  font-family: PingFang-SC-Regular;
+  font-weight: 500;
 }
