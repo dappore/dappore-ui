@@ -1,8 +1,5 @@
 console.log('test');
-$("select.dropdown").dropdown();
-$('.ui.form>.toggle.field>.ui.checkbox').checkbox();
-$(".ui.form>.check.field>.inline.fields>.field>.ui.checkbox").checkbox();
-$(".ui.form>.radio.field>.inline.fields>.field>.ui.checkbox").checkbox();
+
 // .ui.sgcard
 
 
@@ -17,6 +14,10 @@ $(".ui.sgcard .icon.close").click(function () {
 // .ui.sgmodal
 
     $(document).ready(function(){
+        $("select.dropdown").dropdown();
+        $('.ui.form>.toggle.field>.ui.checkbox').checkbox();
+        $(".ui.form>.check.field>.inline.fields>.field>.ui.checkbox").checkbox();
+        $(".ui.form>.radio.field>.inline.fields>.field>.ui.checkbox").checkbox();
         $('.ui.form')
             .form({
                 fields: {
@@ -96,9 +97,9 @@ $(document).ready(function() {
     $(".post.content>.attach.field>div").addClass("field");
     $(".post.content>.attach.field>.field>select").addClass("ui dropdown");
     $(".post.content>.attach.field>.field>select.dropdown").dropdown();
-    $(".post.content>.attach.field>.field>div:last").addClass("ui icon label");
-    $(".post.content>.attach.field>.field>.ui.icon.label>i").addClass("icon close");
-      $(".post.content>.attach.field>.field>.ui.icon.label>i").attr("name", "close");
+    $(".post.content>.attach.field>.field>div:last").addClass("ui icon circular label");
+    $(".post.content>.attach.field>.field>.ui.icon.circular.label>i").addClass("icon close");
+    //   $(".post.content>.attach.field>.field>.ui.icon.label>i").attr("name", "close");
     //   $(".post.content>.attach.field").each(function(i){
     //       $(".post.content>.attach.field").eq(i)
     //       var post1Arr = ["职位1", "职位2"];
@@ -141,12 +142,12 @@ $(document).ready(function() {
 
 //dependent field
 $(document).ready(function(){
-  var proArr = ["安徽", "河南", "河北", "江苏", "教研部门"];
+  var proArr = ["安徽省", "河南省", "河北省", "江苏省", "教研部门"];
   var cityArr = [
-      ["合肥","蚌埠","亳州","阜阳"],
-      ["郑州","开封","商丘","焦作"],
-      ["石家庄","邯郸","衡水"],
-      ["苏州","杭州","无锡","南京"]
+    ["合肥市", "蚌埠市", "亳州市", "阜阳市"],
+    ["郑州市", "开封市", "商丘市", "焦作市"],
+    ["石家庄市", "邯郸市", "衡水市"],
+    ["苏州市", "杭州市", "无锡市", "南京市"]
   ];
   var couArr = [
       [

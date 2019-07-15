@@ -2,14 +2,15 @@
 
 .ui.infor.modal {
   width: 48% !important;
-  height: 708px;
+  min-width: 425px;
+  height: 680px;
   box-shadow: 0px 8px 7px rgba(52, 57, 61, 0.1);
-  border-radius: 8px;
+  border-radius: @containerBorderRadius;
   position: relative;
   margin: auto;
   overflow: auto;
   background: #fff;
-  border-bottom: 30px solid #fff;
+  padding-bottom: 30px;
   border-top: 1px solid #fff;
 }
 
@@ -32,14 +33,14 @@
 .ui.sgmodal>.ui.form
 *************************/
 .ui.infor.modal>.ui.form {
-  margin: 0 auto;
-  width: 48%;
+  margin-left: 26%;
+  margin-right: 26%;
 }
 
 /************************
     .select.field
 *************************/
-.ui.form>.select.field>label {
+.ui.infor.modal>.ui.form>.select.field>label {
   font-size: @fontSize;
   color: @fontTitleColor;
   margin: 0px;
@@ -47,7 +48,7 @@
   margin-bottom: 7px;
 }
 
-.select.field>.ui.dropdown {
+.ui.infor.modal>.ui.form>.select.field>.ui.dropdown {
   color: @fontTitleColor;
   border-radius: @componentBorderRadius;
 }
@@ -56,7 +57,7 @@
     .input.field
 *************************/
 
-.ui.form>.input.field>label {
+.ui.infor.modal>.ui.form>.input.field>label {
   font-size: @fontSize;
   color: @fontTitleColor;
   margin: 0px;
@@ -64,7 +65,7 @@
   margin-bottom: 7px;
 }
 
-.input.field>input {
+.ui.infor.modal>.ui.form>.input.field>input {
   color: @fontTitleColor;
   border-radius: @componentBorderRadius;
 }
@@ -72,7 +73,7 @@
 /************************
     .text.field
 *************************/
-.ui.form>.text.field>label {
+.ui.infor.modal>.ui.form>.text.field>label {
   font-size: @fontSize;
   color: @fontTitleColor ;
   margin: 0px;
@@ -80,7 +81,7 @@
   margin-bottom: 7px;
 }
 
-.ui.form>.text.field>textarea {
+.ui.infor.modal>.ui.form>.text.field>textarea {
   color: @fontTitleColor ;
   border-radius: @componentBorderRadius;
   min-height: 5em;
@@ -88,7 +89,7 @@
   max-height: 24em;
 }
 
-.ui.form>.large.text.field>textarea {
+.ui.infor.modal>.ui.form>.large.text.field>textarea {
   color: @fontTitleColor ;
   border-radius: @componentBorderRadius;
   min-height: 10em;
@@ -99,8 +100,8 @@
 /************************
     .check.field/.radio.field
 *************************/
-.ui.form>.radio.field>label,
-.ui.form>.check.field>label {
+.ui.infor.modal>.ui.form>.radio.field>label,
+.ui.infor.modal>.ui.form>.check.field>label {
   font-size: @fontSize;
   color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
@@ -109,13 +110,13 @@
   margin-top: 24px;
 }
 
-.ui.form>.radio.field>.inline.fields>.field>.ui.radio.checkbox,
-.ui.form>.check.field>.inline.fields>.field>.ui.checkbox {
+.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.radio.checkbox,
+.ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox {
   margin-top: 7px;
 }
 
-.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>label,
-.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>label {
+.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>label,
+.ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>label {
   font-size: @fontBodySize ;
   font-family: PingFang-SC-Medium;
   color: @fontTitleColor ;
@@ -123,13 +124,13 @@
 }
 
 
-.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>input+label:after,
-.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
+.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>input+label:after,
+.ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
   background: @primaryColor;
 }
 
 
-.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
+.ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
   color: white;
   border-radius: @componentBorderRadius;
 }
@@ -137,7 +138,7 @@
 /************************
     .image.field
 *************************/
-.ui.form>.image.field {
+.ui.infor.modal>.ui.form>.image.field {
   width: 80px;
   height: 80px;
   background: @dividedColor;
@@ -146,19 +147,19 @@
   margin-top: 24px;
 }
 
-.ui.form>.image.field {
+.ui.infor.modal>.ui.form>.image.field {
   display: flex;
   position: relative;
   font-size: 30px;
   color: #dbe1e6;
 }
 
-.ui.form>.image.field>img {
+.ui.infor.modal>.ui.form>.image.field>img {
   width: 100%;
   border-radius: @componentBorderRadius;
 }
 
-.ui.form>.image.field>.icon.plus {
+.ui.infor.modal>.ui.form>.image.field>.icon.plus {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -171,12 +172,12 @@
 /************************
     .dependent.field
 *************************/
-.ui.form>.dependent.field {
+.ui.infor.modal>.ui.form>.dependent.field {
   float: left;
   margin-top: 24px;
 }
 
-.ui.form>.dependent.field>label {
+.ui.infor.modal>.ui.form>.dependent.field>label {
   font-size: @fontSize;
   color: @fontTitleColor;
   font-family: PingFang-SC-Regular;
@@ -184,20 +185,30 @@
   margin-bottom: 7px;
 }
 
-.ui.form>.dependent.field>.field {
+.ui.infor.modal>.ui.form>.dependent.field>.field {
   display: flex;
   justify-content: space-between;
   flex-flow: nowrap;
 }
 
-.ui.form>.dependent.field>.field>.selection.dropdown {
-  width: 130px;
+.ui.infor.modal>.ui.form>.dependent.field>.field>.selection.dropdown {
+  padding: 9.5px 30px 9px 8px;
+  width: auto !important;
+  white-space: nowrap;
   color: @fontGrayColor;
   font-size: @fontBodySize;
   text-align: center;
 }
 
-.ui.form>.dependent.field>.field {
+.ui.infor.modal>.ui.form>.dependent.field>.field>.ui.dropdown>.menu>.item,
+.ui.infor.modal>.ui.form>.dependent.field>.field>.selection.dropdown>.menu>.item {
+  margin: 0px;
+  width: auto !important;
+  white-space: nowrap;
+  padding: 13px 4px 13px 1px !important;
+}
+
+.ui.infor.modal>.ui.form>.dependent.field>.field {
   line-height: 35px;
   color: @fontGrayColor;
 }
@@ -207,38 +218,47 @@
     .attach.field
 *************************/
 
-.ui.form>.attach.field>label {
-  font-size: @fontSize;
-  color: @fontTitleColor ;
-  font-family: PingFang-SC-Regular;
-  margin: 0px;
-  margin-top: 24px;
-  margin-bottom: 7px;
-}
+// .ui.infor.modal>.ui.form>.attach.field>label {
+//   font-size: @fontSize;
+//   color: @fontTitleColor ;
+//   font-family: PingFang-SC-Regular;
+//   margin: 0px;
+//   margin-top: 24px;
+//   margin-bottom: 7px;
+// }
 
-.ui.form>.attach.field>.field {
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: nowrap;
-  align-items: center;
-}
+// .ui.infor.modal>.ui.form>.attach.field>.field {
+//   display: flex;
+//   justify-content: flex-start;
+//   flex-flow: nowrap;
+//   align-items: center;
+// }
 
-.ui.form>.attach.field>.field>.ui.dropdown {
-  width: 130px;
-  color: @fontGrayColor;
-  font-size: @fontBodySize;
-}
+// .ui.infor.modal>.ui.form>.attach.field>.field>.ui.dropdown {
+//   color: @fontGrayColor;
+//   font-size: @fontBodySize;
+//   padding: 9.5px 30px 9px 8px;
+//   width: auto !important;
+//   white-space: nowrap;
+// }
 
-.ui.form>.attach.field>.field>.ui.icon.label {
-  border-radius: 14px;
-  margin-left: 6px;
-}
+// .ui.infor.modal>.ui.form>.attach.field>.field>.ui.dropdown>.menu>.item,
+// .ui.infor.modal>.ui.form>.attach.field>.field>.selection.dropdown>.menu>.item {
+//   margin: 0px;
+//   width: auto !important;
+//   white-space: nowrap;
+//   padding: 13px 8px 13px 8px !important;
+// }
+
+// .ui.infor.modal>.ui.form>.attach.field>.field>.ui.icon.label {
+//   margin-left: 6px;
+// }
 
 /************************
    post content
 *************************/
 
-.ui.form>.post.content>.attach.field>label {
+.ui.infor.modal>.ui.form>.post.content>.attach.field>label {
   font-size: @fontSize;
   color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
@@ -247,37 +267,53 @@
   margin-bottom: 7px;
 }
 
-.ui.form>.post.content>.attach.field>.field {
+.ui.infor.modal>.ui.form>.post.content>.attach.field>.field {
   display: flex;
   justify-content: flex-start;
   flex-flow: nowrap;
   align-items: center;
 }
 
-.ui.form>.post.content>.attach.field>.field>.ui.dropdown {
-  width: 130px;
+.ui.infor.modal>.ui.form>.post.content>.attach.field>.field>.ui.dropdown {
   color: @fontGrayColor;
   font-size: @fontBodySize;
+  padding: 9.5px 30px 9px 8px;
+  width: auto !important;
+  white-space: nowrap;
 }
 
-.ui.form>.post.content>.attach.field>.field>.ui.icon.label {
-  border-radius: @fontBodySize;
+.ui.infor.modal>.ui.form>.post.content>.attach.field>.field>.ui.dropdown>.menu>.item,
+.ui.infor.modal>.ui.form>.post.content>.attach.field>.field>.selection.dropdown>.menu>.item {
+  margin: 0px;
+  width: auto !important;
+  white-space: nowrap;
+  padding: 13px 8px 13px 8px !important;
+}
+
+.ui.infor.modal>.ui.form>.post.content>.attach.field>.field>.ui.icon.circular.label {
+  // border-radius: 15px;
   margin-left: 6px;
 }
 
 /************************
     .add.attach.field
 *************************/
-.add.field>.ui.label {
-  background: @primaryColor;
-  color: #fff;
+.ui.infor.modal>.ui.form>.add.field {
+  color: #4a90e2;
   margin-top: 10px;
+  font-size: @fontSize;
+}
+
+.ui.infor.modal>.ui.form>.add.field::before {
+  content: "\f067";
+  font-family: @iconFont ;
+  font-size: @fontFooterSize;
 }
 
 /************************
     .toggle.field
 *************************/
-.toggle.field>label {
+.ui.infor.modal>.ui.form>.toggle.field>label {
   font-size: @fontSize;
   color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
@@ -285,9 +321,10 @@
   margin: 0px;
 }
 
-
-.ui.form>.ui.error.message {
-  width: 280px;
+/************************
+    .ui.error.message
+*************************/
+.ui.infor.modal>.ui.form>.ui.error.message {
   z-index: 9999;
   background: #000;
   border-radius: @containerBorderRadius;
@@ -295,36 +332,45 @@
   font-size: @fontSize;
   font-family: PingFang-SC-Regular;
   color: #fff;
+
 }
 
-.ui.form>.ui.error.message .list:not(.ui) li:before {
+.ui.infor.modal>.ui.form>.ui.error.message>.list>li {
+  padding: 0px;
+  margin: 0px;
+  white-space: normal;
+  text-align: center;
+}
+
+.ui.infor.modal>.ui.form>.ui.error.message .list:not(.ui) li:before {
   display: none;
+  text-align: center;
+
 }
 
 
-.ui.form>.detail.field {
+.ui.infor.modal>.ui.form>.detail.field {
   margin: 0px;
   margin-top: 10px;
 }
 
-.ui.form>.detail.field>.inline.field>label {
-  font-size: @fontBodySize;
+.ui.infor.modal>.ui.form>.detail.field>.inline.field>label {
   width: 90px;
+  font-size: @fontBodySize;
   text-align: right;
   color: @fontTitleColor ;
   position: relative;
   font-weight: 500;
 }
 
-.ui.form>.detail.field>.inline.field>label:after {
+.ui.infor.modal>.ui.form>.detail.field>.inline.field>label:after {
   content: ":";
   position: absolute;
   right: -6px;
 }
 
-.ui.form>.detail.field>.inline.field>p {
+.ui.infor.modal>.ui.form>.detail.field>.inline.field>p {
   border-radius: @componentBorderRadius;
-  width: 150px;
   font-size: @fontBodySize;
   color: @fontTitleColor ;
   padding: 5px;
