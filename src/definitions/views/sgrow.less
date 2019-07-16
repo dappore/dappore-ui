@@ -51,13 +51,14 @@
 
 .ui.sgrows:not(.footer) > table > tbody > tr {
     &:last-child {
-        & .td:first-child {
-            border-radius: 0 0 0 8px;
+        & td:first-child {
+            border-bottom-left-radius: @containerBorderRadius;
         }
-        & .td:last-child {
-            border-radius: 0 0 8px 0;
+        & td:last-child {
+            border-bottom-right-radius: @containerBorderRadius;
         }
     }
+    
 }
 
 /*--------------
@@ -65,19 +66,10 @@
 ---------------*/
 
 .ui.sgrows > .ui.selectable.table > tbody {
-    
 
     & tr:hover {
         background-color: rgba(238, 246, 246, 1);
         cursor: pointer;
-    }
-
-    & tr:last-child > td:first-child {
-        border-bottom-left-radius: @containerBorderRadius;
-    }
-
-    & tr:last-child > td:last-child {
-        border-bottom-right-radius: @containerBorderRadius;
     }
 }
 
