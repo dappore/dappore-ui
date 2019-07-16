@@ -51,13 +51,14 @@
 
 .ui.sgrows:not(.footer) > table > tbody > tr {
     &:last-child {
-        & .td:first-child {
-            border-radius: 0 0 0 8px;
+        & td:first-child {
+            border-bottom-left-radius: @containerBorderRadius;
         }
-        & .td:last-child {
-            border-radius: 0 0 8px 0;
+        & td:last-child {
+            border-bottom-right-radius: @containerBorderRadius;
         }
     }
+    
 }
 
 /*--------------
@@ -65,18 +66,10 @@
 ---------------*/
 
 .ui.sgrows > .ui.selectable.table > tbody {
-    
 
     & tr:hover {
         background-color: rgba(238, 246, 246, 1);
-    }
-
-    & tr:last-child > td:first-child {
-        border-bottom-left-radius: @containerBorderRadius;
-    }
-
-    & tr:last-child > td:last-child {
-        border-bottom-right-radius: @containerBorderRadius;
+        cursor: pointer;
     }
 }
 
@@ -169,7 +162,7 @@
       Content - Avatar
 --------------------*/
 
-.ui.sgrows > table > tbody > tr > .avatar.item {
+.ui.sgrows > table > tbody > tr > .avatar.item > .row {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -179,11 +172,11 @@
     align-items: flex-start;
 }
 
-.ui.sgrows > table > tbody > tr > .avatar.item > .sgavatar {
+.ui.sgrows > table > tbody > tr > .avatar.item > .row > .sgavatar {
     height: 100%-20px;
 }
 
-.ui.sgrows > table > tbody > tr > .avatar.item > .content {
+.ui.sgrows > table > tbody > tr > .avatar.item > .row > .content {
     margin-left: 12px;
     width: 100%;
 }
