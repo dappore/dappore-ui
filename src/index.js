@@ -1,4 +1,7 @@
 console.log('test');
+$(".ui.checkbox").checkbox();
+$("select.dropdown").dropdown();
+$(".ui.infor.modal>.ui.form>radio.field>.inline.fields>.field>.ui.radio.checkbox").checkbox();
 
 // .ui.sgcard
 
@@ -10,14 +13,37 @@ $(".ui.sgcard .icon.close").click(function () {
 
 
 
-
 // .ui.sgmodal
+$('.ui.infor.modal').modal('show');
 
-    $(document).ready(function(){
-        $("select.dropdown").dropdown();
-        $('.ui.form>.toggle.field>.ui.checkbox').checkbox();
-        $(".ui.form>.check.field>.inline.fields>.field>.ui.checkbox").checkbox();
-        $(".ui.form>.radio.field>.inline.fields>.field>.ui.checkbox").checkbox();
+        // $('.ui.form>.toggle.field>.ui.checkbox').checkbox();
+        // $(".ui.form>.check.field>.inline.fields>.field>.ui.checkbox").checkbox();
+
+        // $(".ui.form>.inline.fields>.field>.ui.checkbox").checkbox();
+        $(".ui.form>.avatar.field>.image.field").click(function() {
+            $("#open_image").trigger("click");
+        });
+        //在input file内容改变的时候触发事件
+        $('#open_image').change(function () {
+            $(".ui.form>.avatar.field>.image.field>.icon.plus").hide();
+            //获取input file的files文件数组;
+            //$('#open_image')获取的是jQuery对象，.get(0)转为原生对象;
+            //这边默认只能选一个，但是存放形式仍然是数组，所以取第一个元素使用[0];
+            var file = $('#open_image').get(0).files[0];
+            //创建用来读取此文件的对象
+            var reader = new FileReader();
+            //使用该对象读取file文件
+            reader.readAsDataURL(file);
+            //读取文件成功后执行的方法函数
+            reader.onload = function (e) {
+                //读取成功后返回的一个参数e，整个的一个进度事件
+                // console.log(e);
+                //选择所要显示图片的img，要赋值给img的src就是e中target下result里面
+                //的base64编码格式的地址
+                $('#imgshow').get(0).src = e.target.result;
+            }
+        });
+
         $('.ui.form')
             .form({
                 fields: {
@@ -33,28 +59,28 @@ $(".ui.sgcard .icon.close").click(function () {
                     },
                 }
             });
-    });
 
-$('.ui.infor.modal').modal('show');
+
+
 // $('.select.field>.ui.dropdown').dropdown();
 $(".ui.infor.modal>.icon.close").click(function () {
     $(this).closest(".ui.infor.modal").transition("fade");
 });
 
 //image field
-$(document).ready(function(){
-    $(".ui.form>.image.field").click(function () {
-        $(".ui.form>.image.field>.icon.plus").hide();
-        $(".ui.form>.image.field>img").attr("src", "image/tom.jpg");
-        $(".ui.form>.image.field").click(function () {
-            $(".ui.form>.image.field>img").attr("src", "image/nan.jpg");
-        })
-    });
-})
+// $(document).ready(function(){
+//     $(".ui.form>.image.field").click(function () {
+//         $(".ui.form>.image.field>.icon.plus").hide();
+//         $(".ui.form>.image.field>img").attr("src", "image/tom.jpg");
+//         $(".ui.form>.image.field").click(function () {
+//             $(".ui.form>.image.field>img").attr("src", "image/nan.jpg");
+//         })
+//     });
+// })
 
 
  //select field
-$(document).ready(function(){
+
     var courseArr = ["课程1", "课程2", "课程3", "课程4"];
     createNope(courseArr, 0);
     $(".select.field select").onchange=function(){
@@ -65,23 +91,10 @@ $(document).ready(function(){
         $.each(Arr, function (index, value) {
             $(".select.field select").eq(sum).append("<option>" + value + "</option>");
         })
-    }
-});
+    };
+
 //attach field
-$(document).ready(function() {
-  var postArr = ["职位1", "职位2", "职位3", "职位4"];
-  createNope(postArr, 0);
-  $(".attach.field>.field select").onchange = function() {
-    Index = this.selectedIndex - 1;
-    // createNope(cityArr[Index], 1);
-  };
-  function createNope(Arr, sum) {
-    $.each(Arr, function(index, value) {
-      $(".attach.field>.field select")
-        .eq(sum)
-        .append("<option>" + value + "</option>");
-    });
-  };
+
   $(".attach.field>.field>.ui.icon.label>.icon.close").click(function() {
     $(this).closest(".attach.field").transition("fade");
   });
@@ -99,25 +112,6 @@ $(document).ready(function() {
     $(".post.content>.attach.field>.field>select.dropdown").dropdown();
     $(".post.content>.attach.field>.field>div:last").addClass("ui icon circular label");
     $(".post.content>.attach.field>.field>.ui.icon.circular.label>i").addClass("icon close");
-    //   $(".post.content>.attach.field>.field>.ui.icon.label>i").attr("name", "close");
-    //   $(".post.content>.attach.field").each(function(i){
-    //       $(".post.content>.attach.field").eq(i)
-    //       var post1Arr = ["职位1", "职位2"];
-    //       createNope(post1Arr, 0);
-    //       $(
-    //         ".post.content>.attach.field>.field select"
-    //       ).onchange = function() {
-    //         Index = this.selectedIndex - 1;
-    //         // createNope(cityArr[Index], 1);
-    //       };
-    //       function createNope(Arr, sum) {
-    //           $.each(Arr, function (index, value) {
-    //               $(".post.content>.attach.field>.field select")
-    //                   .eq(sum)
-    //                   .append("<option>" + value + "</option>");
-    //           });
-    //       };
-    //   });
     $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").each(function(index){
         $(".post.content>.attach.field>.field>.ui.icon.label>.icon.close").eq(index).click(function(){
             $(".post.content>.attach.field").each(function(i){
@@ -129,7 +123,6 @@ $(document).ready(function() {
          });
   });
 
-});
 
 
 

@@ -8,84 +8,105 @@
   <script src="main_css.js"></script>
   <script src="main_js.js"></script>
   <script src="semantic_js.js"></script>
+
+
+
 </head>
 <body>
-<div class="ui container">
 
 
 
-    <div class="ui infor modal">
-      <i class="close icon"></i>
+
+<div class="ui infor modal">
+    <i class="close icon"></i>
     <div class="header">添加课程</div>
-  <div class="ui form">
+    <div class="ui form">
+        <div class="input field">
+            <label>课程名称</label>
+            <input type="text">
+        </div>
+
+        <div class="select field">
+            <label>课程类型</label>
+            <select class="ui dropdown">
+                <option value=""></option>
+            </select>
+        </div>
 
 
+        <div class="text field">
+            <label>描述</label>
+            <textarea></textarea>
+        </div>
 
-  <div class="input field">
-    <label>课程名称</label>
-    <input type="text">
-  </div>
-
-      <div class="select field">
-        <label>课程类型</label>
-        <select class="ui dropdown">
-            <option value=""></option>
-        </select>
-      </div>
-
-
+        <div class="radio1 field">
+            <label>单选</label>
+            <div class="field">
+                <input type="radio" name="sex1" value="male" /> Male
+                <input type="radio" name="sex1" value="female" /> Female
+            </div>
+        </div>
 
 
-     <div class="text field">
-       <label>描述</label>
-       <textarea></textarea>
-     </div>
-
-  <div class="inline fields">
-    <label for="fruit">Select your favorite fruit:</label>
-    <div class="field">
-      <div class="ui radio checkbox">
-        <input type="radio" name="fruit" checked="" tabindex="0" class="hidden">
-        <label>Apples</label>
-      </div>
-    </div>
-    <div class="field">
-      <div class="ui radio checkbox">
-        <input type="radio" name="fruit" tabindex="0" class="hidden">
-        <label>Oranges</label>
-      </div>
-    </div>
-  </div>
-
-
-      <div class="radio field">
+        <div class="radio field">
           <label>单选</label>
           <div class="inline fields">
             <div class="field">
               <div class="ui radio checkbox">
-                <input type="radio" name="sex" checked="checked">
+                <input type="radio" name="sex" checked="checked" tabindex="0">
                 <label>男</label>
               </div>
             </div>
             <div class="field">
               <div class="ui radio checkbox">
-                <input type="radio" name="sex">
+                <input type="radio" name="sex" tabindex="0">
                 <label>女</label>
               </div>
             </div>
           </div>
         </div>
 
+          <div class="inline fields">
+            <label>How often do you use checkboxes?</label>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="frequency" checked="checked">
+                <label>Once a week</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="frequency">
+                <label>2-3 times a week</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="frequency">
+                <label>Once a day</label>
+              </div>
+            </div>
+            <div class="field">
+              <div class="ui radio checkbox">
+                <input type="radio" name="frequency">
+                <label>Twice a day</label>
+              </div>
+            </div>
+          </div>
 
-  <div class="large text field">
-    <label>描述(large)</label>
-    <textarea></textarea>
-  </div>
+
+        <div class="large text field">
+            <label>描述(large)</label>
+            <textarea></textarea>
+        </div>
 
 
-        <div class="image field">
-           <img src="image/background.jpg" alt="">
-              <i class="icon plus"></i>
+        <div class="avatar field">
+           <div class="image field">
+                <img src="image/background.jpg" alt="" id="imgshow">
+                <i class="icon plus"></i>
+           </div>
+                <input id="open_image" type="file" accept="image/*" />
         </div>
 
 
@@ -120,95 +141,86 @@
 
 
 
-                <div class="post content">
+          <div class="post content"></div>
+          <div class="add field">
+              添加职位
+          </div>
+
+          <div class="toggle field">
+            <label for="">状态</label>
+              <div class="ui toggle checkbox">
+                <input type="checkbox" name="public">
+                <label></label>
+              </div>
+          </div>
+
+          <div class="check field">
+                    <label>复选</label>
+            <div class="inline fields">
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="frequency1" checked="checked">
+                  <label>1</label>
                 </div>
-                <div class="add field">
-                  添加职位
+              </div>
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="frequency1">
+                  <label>2</label>
                 </div>
+              </div>
+              <div class="field">
+                <div class="ui  checkbox">
+                  <input type="checkbox" name="frequency1">
+                  <label>3</label>
+                </div>
+              </div>
+              <div class="field">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="frequency1">
+                  <label>4</label>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <div class="toggle field">
-      <label for="">状态</label>
-        <div class="ui toggle checkbox">
-          <input type="checkbox" name="public">
-          <label></label>
-        </div>
+
+
+          <div class="input field">
+            <label>电话/邮箱</label>
+            <input type="text" name="email">
+          </div>
+          <div class="ui error message"></div>
+          <div class="ui primary submit button">Submit</div>
+
+
+          <div class="detail field">
+            <div class="inline field">
+            <label>姓名</label>
+            <p>菜菜1</p>
+            </div>
+          </div>
+          <div class="detail field">
+            <div class="inline field">
+              <label>哈哈哈</label>
+              <p>菜菜1</p>
+            </div>
+          </div>
+          <div class="detail field">
+            <div class="inline field">
+              <label>哈哈哈哈</label>
+              <p>菜菜1</p>
+            </div>
+          </div>
+          <div class="detail field">
+            <div class="inline field">
+              <label>哈哈哈哈哈</label>
+              <p>菜菜1</p>
+            </div>
+          </div>
+
     </div>
-
-<div class="check field">
-          <label>复选</label>
-  <div class="inline fields">
-    <div class="field">
-      <div class="ui checkbox">
-        <input type="checkbox" name="frequency1" checked="checked">
-        <label>1</label>
-      </div>
     </div>
-    <div class="field">
-      <div class="ui checkbox">
-        <input type="checkbox" name="frequency1">
-        <label>2</label>
-      </div>
-    </div>
-    <div class="field">
-      <div class="ui  checkbox">
-        <input type="checkbox" name="frequency1">
-        <label>3</label>
-      </div>
-    </div>
-    <div class="field">
-      <div class="ui checkbox">
-        <input type="checkbox" name="frequency1">
-        <label>4</label>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-<div class="input field">
-  <label>电话/邮箱</label>
-  <input type="text" name="email">
-</div>
-<div class="ui error message"></div>
-<div class="ui primary submit button">Submit</div>
-
-
-<div class="detail field">
-  <div class="inline field">
-  <label>姓名</label>
-  <p>菜菜1</p>
-  </div>
-</div>
-<div class="detail field">
-  <div class="inline field">
-    <label>哈哈哈</label>
-    <p>菜菜1</p>
-  </div>
-</div>
-<div class="detail field">
-  <div class="inline field">
-    <label>哈哈哈哈</label>
-    <p>菜菜1</p>
-  </div>
-</div>
-<div class="detail field">
-  <div class="inline field">
-    <label>哈哈哈哈哈</label>
-    <p>菜菜1</p>
-  </div>
-</div>
-
-
-
-
-
-
-
-        </div>
-      </div>
-    </div>
-
 
 
 <script src="index_js.js"></script>

@@ -100,6 +100,8 @@
 /************************
     .check.field/.radio.field
 *************************/
+.ui.infor.modal>.ui.form>.radio.field>.ui.checkbox>input.hidden {}
+
 .ui.infor.modal>.ui.form>.radio.field>label,
 .ui.infor.modal>.ui.form>.check.field>label {
   font-size: @fontSize;
@@ -138,7 +140,7 @@
 /************************
     .image.field
 *************************/
-.ui.infor.modal>.ui.form>.image.field {
+.ui.infor.modal>.ui.form>.avatar.field>.image.field {
   width: 80px;
   height: 80px;
   background: @dividedColor;
@@ -147,19 +149,24 @@
   margin-top: 24px;
 }
 
-.ui.infor.modal>.ui.form>.image.field {
+.ui.infor.modal>.ui.form>.avatar.field>#open_image {
+  visibility: hidden;
+  float: left;
+}
+
+.ui.infor.modal>.ui.form>.avatar.field>.image.field {
   display: flex;
   position: relative;
   font-size: 30px;
   color: #dbe1e6;
 }
 
-.ui.infor.modal>.ui.form>.image.field>img {
+.ui.infor.modal>.ui.form>.avatar.field>.image.field>img {
   width: 100%;
   border-radius: @componentBorderRadius;
 }
 
-.ui.infor.modal>.ui.form>.image.field>.icon.plus {
+.ui.infor.modal>.ui.form>.avatar.field>.image.field>.icon.plus {
   position: absolute;
   left: 50%;
   top: 50%;
