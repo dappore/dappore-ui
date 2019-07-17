@@ -57,7 +57,7 @@
     .input.field
 *************************/
 
-.ui.infor.modal>.ui.form>.input.field>label {
+.ui.infor.modal>.ui.form>.input.field>.header {
   font-size: @fontSize;
   color: @fontTitleColor;
   margin: 0px;
@@ -65,9 +65,19 @@
   margin-bottom: 7px;
 }
 
-.ui.infor.modal>.ui.form>.input.field>input {
+.ui.infor.modal>.ui.form>.input.field>.ui.input {
   color: @fontTitleColor;
   border-radius: @componentBorderRadius;
+}
+
+.ui.infor.modal>.ui.form>.input.required.field {
+  position: relative;
+}
+
+.ui.infor.modal>.ui.form>.input.required.field>span {
+  position: absolute;
+  right: -35px;
+  top: 35px;
 }
 
 /************************
@@ -100,8 +110,6 @@
 /************************
     .check.field/.radio.field
 *************************/
-.ui.infor.modal>.ui.form>.radio.field>.ui.checkbox>input.hidden {}
-
 .ui.infor.modal>.ui.form>.radio.field>label,
 .ui.infor.modal>.ui.form>.check.field>label {
   font-size: @fontSize;
@@ -112,7 +120,7 @@
   margin-top: 24px;
 }
 
-.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.radio.checkbox,
+.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox,
 .ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox {
   margin-top: 7px;
 }
@@ -125,17 +133,34 @@
 
 }
 
+.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>label:before {
+  z-index: -9999;
+}
 
 .ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>input+label:after,
 .ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
   background: @primaryColor;
 }
 
-
 .ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
   color: white;
   border-radius: @componentBorderRadius;
 }
+
+// .ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>label:before {
+//   border-radius: 500rem;
+//   padding: 1px;
+//   text-align: center;
+//   z-index: -9999;
+// }
+
+
+// .ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>input+label:after {
+//   font-size: 12px;
+//   color: @primaryColor;
+//   content: "\f111";
+//   font-family: 'Font Awesome 5 Free';
+// }
 
 /************************
     .image.field
@@ -184,7 +209,7 @@
   margin-top: 24px;
 }
 
-.ui.infor.modal>.ui.form>.dependent.field>label {
+.ui.infor.modal>.ui.form>.dependent.field>.header {
   font-size: @fontSize;
   color: @fontTitleColor;
   font-family: PingFang-SC-Regular;
@@ -205,6 +230,7 @@
   color: @fontGrayColor;
   font-size: @fontBodySize;
   text-align: center;
+  margin-right: 10px;
 }
 
 .ui.infor.modal>.ui.form>.dependent.field>.field>.ui.dropdown>.menu>.item,
@@ -219,6 +245,7 @@
   line-height: 35px;
   color: @fontGrayColor;
 }
+
 
 
 /************************
