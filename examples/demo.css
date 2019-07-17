@@ -1,8 +1,100 @@
 
 body {
-    background-color: rgba(0, 205, 221, 1) !important;
+    background-image: linear-gradient(to bottom right, #00D0BB, #00BCCB) !important;
 }
 
 .ui.container {
     padding: 20px;
+}
+
+body > .navigator {
+    border-bottom: solid #00C4B4 1px;
+    height: 72px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+body > .navigator > .ui.button {
+    background: unset;
+    color: white;
+    margin: 0;
+}
+
+
+body > main {
+    display: flex;
+}
+
+body > main > .menu {
+    width: 165px;
+    border-right: solid #00C4B4 1px;
+}
+
+body > main > .menu > .ui.menu {
+    background-color: unset;
+    border: unset;
+    box-shadow: unset;
+    
+}
+
+body > main > .menu > .ui.menu > .item {
+    padding: 0;
+    height: 60px;
+}
+
+body > main > .menu > .ui.menu > .item > .title {
+    padding: 20px 26px;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+
+body > main > .menu > .ui.menu > .item > .active.title {
+    background-color: #ffffff3d;
+    border-left: solid #ffbd00 4px;
+    padding-left: 22px;
+}
+
+body > main > .menu > .ui.menu > .item > .title > i {
+    margin-right: 8px;
+}
+
+body > main > .menu > .ui.menu > .item > .title::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f105';
+    position: absolute;
+    right: 20px;
+    color: #ffffff99;
+}
+
+body > main > .menu > .ui.menu > .item > .active.title::after {
+    font-family: 'Font Awesome 5 Free';
+    content: '\f107';
+}
+
+body > main > .menu > .ui.menu > .item > .content > .item {
+    height: 44px;
+}
+
+body > main > .menu > .ui.menu > .item > .content > .item {
+    padding-left: 80px;
+    font-size: 16px;
+    color: white;
+}
+
+body > main > .menu > .ui.menu > .item > .content > .item:hover {
+    color: white;
+}
+
+body > main > .menu > .ui.menu > .item > .content > .active.item {
+    background-color: #ffffff3d;
+}
+
+
+
+
+
+body > main > .content {
+    margin: auto;
 }

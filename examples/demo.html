@@ -25,230 +25,268 @@
 
 <body>
 
-    <div class="ui container">
-        <div class="ui sgheader">
-            <div class="search">
-                <form class="ui sgsearch">
-                    <div class="ui input">
-                        <input type="text" placeholder="输入搜索的关键词…">
-                    </div>
+    <div class="navigator">
+        <div class="ui button">
+            <i class="fas fa-globe"></i>
+            Language
+        </div>
+        <div class="ui button">
+            <i class="fas fa-bell"></i>
+            Messages
+        </div>
+        <div class="ui button">
+            Profile
+        </div>
+    </div>
 
-                    <div class="ui input">
-                        <input type="text" placeholder="输入搜索的关键词…">
-                    </div>
-
-                    <div class="ui submit button">搜索</div>
-                    <div class="ui reset button">重置</div>
-                </form>
-
-                <div class="action">
-                    <div class="ui button">
-                        <i class="fas fa-plus"></i>
-                        添加宝宝
+    <main>
+        <div class="menu">
+            <div class="ui vertical fluid accordion menu">
+                <div class="item">
+                    <a class="title">
+                        <i class="fas fa-users fa-fw"></i>
+                        标题
+                    </a>
+                    <div class="menu content">
+                        <a class="item">路径</a>
+                        <a class="item">路径</a>
+                        <a class="item">路径</a>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="filter">
-                <div class="ui sgfilter">
-                    <div class="header">状态：</div>
-                    <div class="ui selection dropdown">
-                        <input type="hidden" name="gender">
-                        <i class="dropdown icon"></i>
-                        <div class="default text">Gender</div>
-                        <div class="menu">
-                            <div class="item">all</div>
-                            <div class="item">Male</div>
-                            <div class="item">Female</div>
+        <div class="content">
+            <div class="ui container">
+                <div class="ui sgheader">
+                    <div class="search">
+                        <form class="ui sgsearch">
+                            <div class="ui input">
+                                <input type="text" placeholder="输入搜索的关键词…">
+                            </div>
+
+                            <div class="ui input">
+                                <input type="text" placeholder="输入搜索的关键词…">
+                            </div>
+
+                            <div class="ui submit button">搜索</div>
+                            <div class="ui reset button">重置</div>
+                        </form>
+
+                        <div class="action">
+                            <div class="ui button">
+                                <i class="fas fa-plus"></i>
+                                添加宝宝
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="ui sgfilter">
-                    <div class="header">状态：</div>
-                    <div class="ui selection dropdown">
-                        <input type="hidden" name="gender">
-                        <i class="dropdown icon"></i>
-                        <div class="default text">Gender</div>
-                        <div class="menu">
-                            <div class="item">all</div>
-                            <div class="item">Male</div>
-                            <div class="item">Female</div>
+                    <div class="filter">
+                        <div class="ui sgfilter">
+                            <div class="header">状态：</div>
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="gender">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Gender</div>
+                                <div class="menu">
+                                    <div class="item">all</div>
+                                    <div class="item">Male</div>
+                                    <div class="item">Female</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui sgfilter">
+                            <div class="header">状态：</div>
+                            <div class="ui selection dropdown">
+                                <input type="hidden" name="gender">
+                                <i class="dropdown icon"></i>
+                                <div class="default text">Gender</div>
+                                <div class="menu">
+                                    <div class="item">all</div>
+                                    <div class="item">Male</div>
+                                    <div class="item">Female</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
                 </div>
+
             </div>
 
-        </div>
+            <div class="ui container">
+                <div class="ui divided sgrows">
 
-    </div>
+                    <table class="ui selectable table">
+                        <thead>
+                            <tr>
+                                <th>头像</th>
+                                <th>单行</th>
+                                <th>双行</th>
+                                <th>列表</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
 
-    <div class="ui container">
-        <div class="ui divided sgrows">
-
-            <table class="ui selectable table">
-                <thead>
-                    <tr>
-                        <th>头像</th>
-                        <th>单行</th>
-                        <th>双行</th>
-                        <th>列表</th>
-                        <th>操作</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td class="avatar item">
-                            <div class="row">
-                                <div class="ui male literal sgavatar">
-                                    王
-                                </div>
-                                <div class="content">周子辰</div>
-                            </div>
-                        </td>
-
-                        <td class="item">
-                            <div class="content">2岁</div>
-                        </td>
-
-                        <td class="item">
-                            <div class="content">周子辰</div>
-                            <div class="small content">辰辰</div>
-                        </td>
-
-                        <td class="popup item">
-                            <div class="content">
-                                <div class="content">
-                                    市场部门-销售员工
-                                    <i class="fas fa-caret-down"></i>
-                                </div>
-                            </div>
-                            <div class="ui popup bottom right transition hidden">
-                                <div class="ui list">
-                                    <div class="item">
-                                        <div class="content">销售部门-销售员工</div>
+                        <tbody>
+                            <tr>
+                                <td class="avatar item">
+                                    <div class="row">
+                                        <div class="ui male literal sgavatar">
+                                            王
+                                        </div>
+                                        <div class="content">周子辰</div>
                                     </div>
-                                    <div class="item">
-                                        <div class="content">销售部门-销售员工</div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="content">销售部门-销售员工</div>
-                                    </div>
-                                    <div class="action item">
-                                        <div class="ui button">
-                                            <i class="fas fa-plus"></i>
-                                            添加职级
+                                </td>
+
+                                <td class="item">
+                                    <div class="content">2岁</div>
+                                </td>
+
+                                <td class="item">
+                                    <div class="content">周子辰</div>
+                                    <div class="small content">辰辰</div>
+                                </td>
+
+                                <td class="popup item">
+                                    <div class="content">
+                                        <div class="content">
+                                            市场部门-销售员工
+                                            <i class="fas fa-caret-down"></i>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </td>
-
-                        <td class="item">
-                            <div class="ui sgaction">
-                                <a data-tooltip="日志" href="" class="positive action"><i
-                                        class="far fa-sticky-note"></i></a>
-                                <a data-tooltip="编辑" href="" class="positive action"><i class="far fa-edit"></i></a>
-                                <a data-tooltip="删除" href="" class="negative action"><i
-                                        class="far fa-trash-alt"></i></a>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr>
-                        <td class="avatar item">
-                            <div class="row">
-                                <div class="ui female sgavatar">
-                                    <img src="./images/avatar/male.jpg">
-                                </div>
-                                <div class="content">周子辰</div>
-                                <div class="small content">辰辰</div>
-                            </div>
-                        </td>
-
-                        <td class="item">
-                            <div class="content">2岁</div>
-                        </td>
-
-                        <td class="item">
-                            <div class="content">周子辰</div>
-                            <div class="small content">辰辰</div>
-                        </td>
-
-                        <td class="popup item">
-                            <div class="content">
-                                市场部门-销售员工
-                                <i class="fas fa-caret-down"></i>
-                            </div>
-                            <div class="ui popup top left transition hidden">
-                                <div class="ui list">
-                                    <div class="item">
-                                        <div class="content">销售部门-销售员工</div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="content">销售部门-销售员工</div>
-                                    </div>
-                                    <div class="item">
-                                        <div class="content">销售部门-销售员工</div>
-                                    </div>
-                                    <div class="action item">
-                                        <div class="ui button">
-                                            <i class="fas fa-plus"></i>
-                                            添加职级
+                                    <div class="ui popup bottom right transition hidden">
+                                        <div class="ui list">
+                                            <div class="item">
+                                                <div class="content">销售部门-销售员工</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="content">销售部门-销售员工</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="content">销售部门-销售员工</div>
+                                            </div>
+                                            <div class="action item">
+                                                <div class="ui button">
+                                                    <i class="fas fa-plus"></i>
+                                                    添加职级
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </td>
+                                </td>
 
-                        <td class="item">
-                            <div class="ui sgaction">
-                                <a data-tooltip="日志" href="" class="positive action"><i
-                                        class="far fa-sticky-note"></i></a>
-                                <a data-tooltip="编辑" href="" class="positive action"><i class="far fa-edit"></i></a>
-                                <a data-tooltip="删除" href="" class="negative action"><i
-                                        class="far fa-trash-alt"></i></a>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-
-                <!-- <tfoot>
-                    <tr>
-                        <td colspan="5">
-                            <div class="ui sgpagination">
-                                <div class="disable previous">上一页</div>
-                                <div class="items">
-                                    <div class="active item">1</div>
-                                    <div class="item">2</div>
-                                    <div class="item">3</div>
-                                    <div class="item">4</div>
-                                    <div class="item">5</div>
-                                    <div class="item">6</div>
-                                    <div class="disable item">...</div>
-                                    <div class="item">20</div>
-                                </div>
-                                <div class="next">下一页</div>
-                                <div class="total">共20页</div>
-                                <div class="jump">
-                                    跳转到
-                                    <div class="ui input">
-                                        <input type="text">
+                                <td class="item">
+                                    <div class="ui sgaction">
+                                        <a data-tooltip="日志" href="" class="positive action"><i
+                                                class="far fa-sticky-note"></i></a>
+                                        <a data-tooltip="编辑" href="" class="positive action"><i
+                                                class="far fa-edit"></i></a>
+                                        <a data-tooltip="删除" href="" class="negative action"><i
+                                                class="far fa-trash-alt"></i></a>
                                     </div>
-                                    页
-                                </div>
-                                <div class="go">确定</div>
-                            </div>
-                        </td>
-                    </tr>
-                </tfoot> -->
+                                </td>
+                            </tr>
 
-            </table>
+                            <tr>
+                                <td class="avatar item">
+                                    <div class="row">
+                                        <div class="ui female sgavatar">
+                                            <img src="./images/avatar/male.jpg">
+                                        </div>
+                                        <div class="content">周子辰</div>
+                                        <div class="small content">辰辰</div>
+                                    </div>
+                                </td>
 
+                                <td class="item">
+                                    <div class="content">2岁</div>
+                                </td>
+
+                                <td class="item">
+                                    <div class="content">周子辰</div>
+                                    <div class="small content">辰辰</div>
+                                </td>
+
+                                <td class="popup item">
+                                    <div class="content">
+                                        市场部门-销售员工
+                                        <i class="fas fa-caret-down"></i>
+                                    </div>
+                                    <div class="ui popup top left transition hidden">
+                                        <div class="ui list">
+                                            <div class="item">
+                                                <div class="content">销售部门-销售员工</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="content">销售部门-销售员工</div>
+                                            </div>
+                                            <div class="item">
+                                                <div class="content">销售部门-销售员工</div>
+                                            </div>
+                                            <div class="action item">
+                                                <div class="ui button">
+                                                    <i class="fas fa-plus"></i>
+                                                    添加职级
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td class="item">
+                                    <div class="ui sgaction">
+                                        <a data-tooltip="日志" href="" class="positive action"><i
+                                                class="far fa-sticky-note"></i></a>
+                                        <a data-tooltip="编辑" href="" class="positive action"><i
+                                                class="far fa-edit"></i></a>
+                                        <a data-tooltip="删除" href="" class="negative action"><i
+                                                class="far fa-trash-alt"></i></a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                        <!-- <tfoot>
+                                            <tr>
+                                                <td colspan="5">
+                                                    <div class="ui sgpagination">
+                                                        <div class="disable previous">上一页</div>
+                                                        <div class="items">
+                                                            <div class="active item">1</div>
+                                                            <div class="item">2</div>
+                                                            <div class="item">3</div>
+                                                            <div class="item">4</div>
+                                                            <div class="item">5</div>
+                                                            <div class="item">6</div>
+                                                            <div class="disable item">...</div>
+                                                            <div class="item">20</div>
+                                                        </div>
+                                                        <div class="next">下一页</div>
+                                                        <div class="total">共20页</div>
+                                                        <div class="jump">
+                                                            跳转到
+                                                            <div class="ui input">
+                                                                <input type="text">
+                                                            </div>
+                                                            页
+                                                        </div>
+                                                        <div class="go">确定</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tfoot> -->
+
+                    </table>
+
+                </div>
+
+            </div>
         </div>
+    </main>
 
-    </div>
+
 
     <script src="index_js.js"></script>
     <script type="text/javascript">
@@ -263,6 +301,10 @@
                     position: 'bottom left',
                     distanceAway: 5
                 })
+                ;
+
+            $('.ui.accordion')
+                .accordion()
                 ;
         }
     </script>
