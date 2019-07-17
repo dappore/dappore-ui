@@ -1,12 +1,14 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Getting Started</title>
-
   <script src="main_css.js"></script>
   <script src="main_js.js"></script>
-  
+  <script src="semantic_js.js"></script>
   <style>
     body{
         background:#777;
@@ -15,6 +17,13 @@
 </head>
 
 <body>
+          <div class="avatar field">
+            <div class="image field">
+              <img src="image/background.jpg" alt="" id="imgshow">
+              <i class="icon plus"></i>
+            </div>
+            <input id="open_image" type="file" />
+          </div>
   <div class="ui aligned centered container basic segment">
     <div class="ui aligned centered container basic segment">
       <div class="ui fluid inverted borderless menu" style="background:rgba(0,0,0,0);margin-top:100px;" s>
@@ -88,7 +97,7 @@
       <div class="six wide column"></div>
     </div>
   </div>
-
+<script src="index_js.js"></script>
 </body>
 
 </html>

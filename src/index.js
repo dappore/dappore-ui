@@ -19,12 +19,17 @@ $('.ui.infor.modal').modal('show');
         // $('.ui.form>.toggle.field>.ui.checkbox').checkbox();
         // $(".ui.form>.check.field>.inline.fields>.field>.ui.checkbox").checkbox();
 
-        // $(".ui.form>.inline.fields>.field>.ui.checkbox").checkbox();
-        $(".ui.form>.avatar.field>.image.field").click(function() {
-            $("#open_image").trigger("click");
+        $(".ui.form>.inline.fields>.field>.ui.checkbox").checkbox();
+        $(".ui.form>.avatar.field>.image.field").click(function(evt) {
+            console.log(evt.target.id);
+            if (evt.target.id != $("#open_image").id) {
+                $("#open_image").click();
+            }
         });
+
         //在input file内容改变的时候触发事件
         $('#open_image').change(function () {
+
             $(".ui.form>.avatar.field>.image.field>.icon.plus").hide();
             //获取input file的files文件数组;
             //$('#open_image')获取的是jQuery对象，.get(0)转为原生对象;
