@@ -16,9 +16,6 @@ $(".ui.sgcard .icon.close").click(function () {
 // .ui.sgmodal
 $('.ui.infor.modal').modal('show');
 
-        // $('.ui.form>.toggle.field>.ui.checkbox').checkbox();
-        // $(".ui.form>.check.field>.inline.fields>.field>.ui.checkbox").checkbox();
-
         $(".ui.form>.inline.fields>.field>.ui.checkbox").checkbox();
         $(".ui.form>.avatar.field>.image.field").click(function(evt) {
             console.log(evt.target.id);
@@ -49,21 +46,7 @@ $('.ui.infor.modal').modal('show');
             }
         });
 
-        $('.ui.form')
-            .form({
-                fields: {
-                    email: {
-                        identifier: "email",
-                        rules: [
-                            {
-                                type: 'email',
-                                optional: true,
-                                prompt: "邮箱格式错误，请重新输入",
-                            },
-                        ]
-                    },
-                }
-            });
+
 
 
 
@@ -71,17 +54,6 @@ $('.ui.infor.modal').modal('show');
 $(".ui.infor.modal>.icon.close").click(function () {
     $(this).closest(".ui.infor.modal").transition("fade");
 });
-
-//image field
-// $(document).ready(function(){
-//     $(".ui.form>.image.field").click(function () {
-//         $(".ui.form>.image.field>.icon.plus").hide();
-//         $(".ui.form>.image.field>img").attr("src", "image/tom.jpg");
-//         $(".ui.form>.image.field").click(function () {
-//             $(".ui.form>.image.field>img").attr("src", "image/nan.jpg");
-//         })
-//     });
-// })
 
 
  //select field
@@ -112,6 +84,7 @@ $(".ui.infor.modal>.icon.close").click(function () {
       "<div><label>职级2</label><div><select><option>职位</option></select><div><i></i></div></div></div>"
     );
     $(".post.content>div").addClass("attach field");
+    $(".post.content>.attach.field>label").addClass("header");
     $(".post.content>.attach.field>div").addClass("field");
     $(".post.content>.attach.field>.field>select").addClass("ui dropdown");
     $(".post.content>.attach.field>.field>select.dropdown").dropdown();
@@ -127,16 +100,6 @@ $(".ui.infor.modal>.icon.close").click(function () {
         })
          });
   });
-
-
-
-
-
-
-
-
-
-
 
 //dependent field
 $(document).ready(function(){
@@ -191,4 +154,17 @@ $(document).ready(function(){
       })
   }
 
-})
+});
+//email validation
+$('.ui.form>.validation.field>.ui.input>input').change(function () {
+    var rgeEmail = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+    var regPhone = /^1[34578]\d{9}$/;
+    if (!rgeEmail.test($(".ui.form>.validation.field>.ui.input>input").val())) {
+        if (!regPhone.test($(".ui.form>.validation.field>.ui.input>input").val())){
+            $(".ui.form>.validation.field>.tip").css("display", "block").html("邮箱或者电话格式不正确，请重新输入！");
+            $(".ui.form>.validation.field>.ui.input>input").focus(function () {
+                $(".ui.form>.validation.field>.tip").css("display", "none");
+            });
+        }
+    }
+});

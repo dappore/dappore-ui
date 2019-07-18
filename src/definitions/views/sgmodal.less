@@ -14,14 +14,14 @@
   border-top: 1px solid #fff;
 }
 
-.ui.infor.modal>.header {
+.ui.infor.modal > .header {
   padding-top: 40px;
   padding-left: 40px;
   font-size: @fontHeaderSize;
   color: @fontTitleColor;
 }
 
-.ui.infor.modal>.close.icon {
+.ui.infor.modal > .close.icon {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -32,23 +32,27 @@
 /************************
 .ui.sgmodal>.ui.form
 *************************/
-.ui.infor.modal>.ui.form {
+.ui.infor.modal > .ui.form {
   margin-left: 26%;
   margin-right: 26%;
+}
+
+.ui.infor.modal > .ui.form > .field {
+  margin-top: 24px;
 }
 
 /************************
     .select.field
 *************************/
-.ui.infor.modal>.ui.form>.select.field>label {
+.ui.infor.modal > .ui.form > .select.field > .header {
   font-size: @fontSize;
   color: @fontTitleColor;
   margin: 0px;
-  margin-top: 24px;
+  // margin-top: 24px;
   margin-bottom: 7px;
 }
 
-.ui.infor.modal>.ui.form>.select.field>.ui.dropdown {
+.ui.infor.modal > .ui.form > .select.field > .ui.dropdown {
   color: @fontTitleColor;
   border-radius: @componentBorderRadius;
 }
@@ -56,25 +60,24 @@
 /************************
     .input.field
 *************************/
-
-.ui.infor.modal>.ui.form>.input.field>.header {
+.ui.infor.modal > .ui.form > .input.field > .header {
   font-size: @fontSize;
   color: @fontTitleColor;
   margin: 0px;
-  margin-top: 24px;
+  // margin-top: 24px;
   margin-bottom: 7px;
 }
 
-.ui.infor.modal>.ui.form>.input.field>.ui.input {
+.ui.infor.modal > .ui.form > .input.field > .ui.input {
   color: @fontTitleColor;
   border-radius: @componentBorderRadius;
 }
 
-.ui.infor.modal>.ui.form>.input.required.field {
+.ui.infor.modal > .ui.form > .input.required.field {
   position: relative;
 }
 
-.ui.infor.modal>.ui.form>.input.required.field>span {
+.ui.infor.modal > .ui.form > .input.required.field > span {
   position: absolute;
   right: -35px;
   top: 35px;
@@ -83,15 +86,15 @@
 /************************
     .text.field
 *************************/
-.ui.infor.modal>.ui.form>.text.field>label {
+.ui.infor.modal > .ui.form > .text.field > .header {
   font-size: @fontSize;
   color: @fontTitleColor ;
   margin: 0px;
-  margin-top: 24px;
+  // margin-top: 24px;
   margin-bottom: 7px;
 }
 
-.ui.infor.modal>.ui.form>.text.field>textarea {
+.ui.infor.modal > .ui.form > .text.field > textarea {
   color: @fontTitleColor ;
   border-radius: @componentBorderRadius;
   min-height: 5em;
@@ -99,7 +102,7 @@
   max-height: 24em;
 }
 
-.ui.infor.modal>.ui.form>.large.text.field>textarea {
+.ui.infor.modal > .ui.form > .large.text.field > textarea {
   color: @fontTitleColor ;
   border-radius: @componentBorderRadius;
   min-height: 10em;
@@ -110,88 +113,73 @@
 /************************
     .check.field/.radio.field
 *************************/
-.ui.infor.modal>.ui.form>.radio.field>label,
-.ui.infor.modal>.ui.form>.check.field>label {
+.ui.infor.modal > .ui.form > .radio.field > label,
+.ui.infor.modal > .ui.form > .check.field > label {
   font-size: @fontSize;
   color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
   margin: 0px;
   padding: 0px;
-  margin-top: 24px;
+  // margin-top: 24px;
 }
 
-.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox,
-.ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox {
+.ui.infor.modal > .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox,
+.ui.infor.modal > .ui.form > .check.field > .inline.fields > .field > .ui.checkbox {
   margin-top: 7px;
 }
 
-.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>label,
-.ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>label {
+.ui.infor.modal > .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label,
+.ui.infor.modal > .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > label {
   font-size: @fontBodySize ;
   font-family: PingFang-SC-Medium;
   color: @fontTitleColor ;
 
 }
 
-.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>label:before {
+.ui.infor.modal > .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label:before {
   z-index: -9999;
 }
 
-.ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>input+label:after,
-.ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
+.ui.infor.modal > .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > input+label:after,
+.ui.infor.modal > .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
   background: @primaryColor;
 }
 
-.ui.infor.modal>.ui.form>.check.field>.inline.fields>.field>.ui.checkbox>input+label:after {
+.ui.infor.modal > .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
   color: white;
   border-radius: @componentBorderRadius;
 }
 
-// .ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>label:before {
-//   border-radius: 500rem;
-//   padding: 1px;
-//   text-align: center;
-//   z-index: -9999;
-// }
-
-
-// .ui.infor.modal>.ui.form>.radio.field>.inline.fields>.field>.ui.checkbox>input+label:after {
-//   font-size: 12px;
-//   color: @primaryColor;
-//   content: "\f111";
-//   font-family: 'Font Awesome 5 Free';
-// }
-
 /************************
     .image.field
 *************************/
-.ui.infor.modal>.ui.form>.avatar.field>.image.field {
+.ui.infor.modal > .ui.form > .avatar.field > .image.field {
   width: 80px;
   height: 80px;
   background: @dividedColor;
   border-radius: @componentBorderRadius;
   margin: 0px;
-  margin-top: 24px;
+  // margin-top: 24px;
 }
 
-.ui.infor.modal>.ui.form>.avatar.field>#open_image {
+.ui.infor.modal > .ui.form > .avatar.field > #open_image {
   visibility: hidden;
   float: left;
 }
 
-.ui.infor.modal>.ui.form>.avatar.field>.image.field {
+.ui.infor.modal > .ui.form > .avatar.field > .image.field {
   display: flex;
   position: relative;
   font-size: 30px;
   color: #dbe1e6;
 }
 
-.ui.infor.modal>.ui.form>.avatar.field>.image.field>img {
+.ui.infor.modal > .ui.form > .avatar.field > .image.field > img {
   width: 100%;
   border-radius: @componentBorderRadius;
 }
 
-.ui.infor.modal>.ui.form>.avatar.field>.image.field>.icon.plus {
+.ui.infor.modal > .ui.form > .avatar.field > .image.field > .icon.plus {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -204,26 +192,26 @@
 /************************
     .dependent.field
 *************************/
-.ui.infor.modal>.ui.form>.dependent.field {
-  float: left;
-  margin-top: 24px;
+.ui.infor.modal > .ui.form > .dependent.field {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  position: relative;
 }
 
-.ui.infor.modal>.ui.form>.dependent.field>.header {
+.ui.infor.modal > .ui.form > .dependent.field > .field {
+  line-height: 30px;
+  color: @fontGrayColor;
+}
+
+.ui.infor.modal > .ui.form > .dependent.field > .header {
   font-size: @fontSize;
   color: @fontTitleColor;
-  font-family: PingFang-SC-Regular;
-  margin: 0px;
-  margin-bottom: 7px;
+  position: absolute;
+  top: -22px;
 }
 
-.ui.infor.modal>.ui.form>.dependent.field>.field {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: nowrap;
-}
-
-.ui.infor.modal>.ui.form>.dependent.field>.field>.selection.dropdown {
+.ui.infor.modal > .ui.form > .dependent.field > .field > .selection.dropdown {
   padding: 9.5px 30px 9px 8px;
   width: auto !important;
   white-space: nowrap;
@@ -233,82 +221,36 @@
   margin-right: 10px;
 }
 
-.ui.infor.modal>.ui.form>.dependent.field>.field>.ui.dropdown>.menu>.item,
-.ui.infor.modal>.ui.form>.dependent.field>.field>.selection.dropdown>.menu>.item {
+.ui.infor.modal > .ui.form > .dependent.field > .field > .ui.dropdown > .menu > .item,
+.ui.infor.modal > .ui.form > .dependent.field > .field > .selection.dropdown > .menu > .item {
   margin: 0px;
   width: auto !important;
   white-space: nowrap;
   padding: 13px 4px 13px 1px !important;
 }
 
-.ui.infor.modal>.ui.form>.dependent.field>.field {
-  line-height: 35px;
-  color: @fontGrayColor;
-}
-
-
-
-/************************
-    .attach.field
-*************************/
-
-// .ui.infor.modal>.ui.form>.attach.field>label {
-//   font-size: @fontSize;
-//   color: @fontTitleColor ;
-//   font-family: PingFang-SC-Regular;
-//   margin: 0px;
-//   margin-top: 24px;
-//   margin-bottom: 7px;
-// }
-
-// .ui.infor.modal>.ui.form>.attach.field>.field {
-//   display: flex;
-//   justify-content: flex-start;
-//   flex-flow: nowrap;
-//   align-items: center;
-// }
-
-// .ui.infor.modal>.ui.form>.attach.field>.field>.ui.dropdown {
-//   color: @fontGrayColor;
-//   font-size: @fontBodySize;
-//   padding: 9.5px 30px 9px 8px;
-//   width: auto !important;
-//   white-space: nowrap;
-// }
-
-// .ui.infor.modal>.ui.form>.attach.field>.field>.ui.dropdown>.menu>.item,
-// .ui.infor.modal>.ui.form>.attach.field>.field>.selection.dropdown>.menu>.item {
-//   margin: 0px;
-//   width: auto !important;
-//   white-space: nowrap;
-//   padding: 13px 8px 13px 8px !important;
-// }
-
-// .ui.infor.modal>.ui.form>.attach.field>.field>.ui.icon.label {
-//   margin-left: 6px;
-// }
 
 /************************
    post content
 *************************/
 
-.ui.infor.modal>.ui.form>.post.content>.attach.field>label {
+.ui.infor.modal > .ui.form > .post.content > .attach.field > .header {
   font-size: @fontSize;
   color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
   margin: 0px;
-  margin-top: 24px;
+  // margin-top: 24px;
   margin-bottom: 7px;
 }
 
-.ui.infor.modal>.ui.form>.post.content>.attach.field>.field {
+.ui.infor.modal > .ui.form > .post.content > .attach.field > .field {
   display: flex;
   justify-content: flex-start;
   flex-flow: nowrap;
   align-items: center;
 }
 
-.ui.infor.modal>.ui.form>.post.content>.attach.field>.field>.ui.dropdown {
+.ui.infor.modal > .ui.form > .post.content > .attach.field > .field > .ui.dropdown {
   color: @fontGrayColor;
   font-size: @fontBodySize;
   padding: 9.5px 30px 9px 8px;
@@ -316,15 +258,15 @@
   white-space: nowrap;
 }
 
-.ui.infor.modal>.ui.form>.post.content>.attach.field>.field>.ui.dropdown>.menu>.item,
-.ui.infor.modal>.ui.form>.post.content>.attach.field>.field>.selection.dropdown>.menu>.item {
+.ui.infor.modal > .ui.form > .post.content > .attach.field > .field > .ui.dropdown > .menu > .item,
+.ui.infor.modal > .ui.form > .post.content > .attach.field > .field > .selection.dropdown > .menu > .item {
   margin: 0px;
   width: auto !important;
   white-space: nowrap;
   padding: 13px 8px 13px 8px !important;
 }
 
-.ui.infor.modal>.ui.form>.post.content>.attach.field>.field>.ui.icon.circular.label {
+.ui.infor.modal > .ui.form > .post.content > .attach.field > .field > .ui.icon.circular.label {
   // border-radius: 15px;
   margin-left: 6px;
 }
@@ -332,13 +274,13 @@
 /************************
     .add.attach.field
 *************************/
-.ui.infor.modal>.ui.form>.add.field {
+.ui.infor.modal > .ui.form > .add.field {
   color: #4a90e2;
   margin-top: 10px;
   font-size: @fontSize;
 }
 
-.ui.infor.modal>.ui.form>.add.field::before {
+.ui.infor.modal > .ui.form > .add.field::before {
   content: "\f067";
   font-family: @iconFont ;
   font-size: @fontFooterSize;
@@ -347,7 +289,7 @@
 /************************
     .toggle.field
 *************************/
-.ui.infor.modal>.ui.form>.toggle.field>label {
+.ui.infor.modal > .ui.form > .toggle.field > .header {
   font-size: @fontSize;
   color: @fontTitleColor ;
   font-family: PingFang-SC-Regular;
@@ -356,39 +298,36 @@
 }
 
 /************************
-    .ui.error.message
+    .validation.field
 *************************/
-.ui.infor.modal>.ui.form>.ui.error.message {
+.ui.infor.modal > .ui.form > .validation.field > .header {
+  font-size: @fontSize;
+  color: @fontTitleColor;
+  margin: 0px;
+  // margin-top: 24px;
+  margin-bottom: 7px;
+}
+
+.ui.infor.modal > .ui.form > .validation.field > .tip {
   z-index: 9999;
   background: #000;
   border-radius: @containerBorderRadius;
   opacity: 0.6;
   font-size: @fontSize;
-  font-family: PingFang-SC-Regular;
   color: #fff;
-
-}
-
-.ui.infor.modal>.ui.form>.ui.error.message>.list>li {
-  padding: 0px;
-  margin: 0px;
-  white-space: normal;
   text-align: center;
-}
-
-.ui.infor.modal>.ui.form>.ui.error.message .list:not(.ui) li:before {
+  padding: 15px 5px;
+  margin-top: 24px;
   display: none;
-  text-align: center;
-
 }
 
 
-.ui.infor.modal>.ui.form>.detail.field {
+.ui.infor.modal > .ui.form > .detail.field {
   margin: 0px;
   margin-top: 10px;
 }
 
-.ui.infor.modal>.ui.form>.detail.field>.inline.field>label {
+.ui.infor.modal > .ui.form > .detail.field > .inline.field > label {
   width: 90px;
   font-size: @fontBodySize;
   text-align: right;
@@ -397,13 +336,13 @@
   font-weight: 500;
 }
 
-.ui.infor.modal>.ui.form>.detail.field>.inline.field>label:after {
+.ui.infor.modal > .ui.form > .detail.field > .inline.field > label:after {
   content: ":";
   position: absolute;
   right: -6px;
 }
 
-.ui.infor.modal>.ui.form>.detail.field>.inline.field>p {
+.ui.infor.modal > .ui.form > .detail.field > .inline.field > p {
   border-radius: @componentBorderRadius;
   font-size: @fontBodySize;
   color: @fontTitleColor ;
