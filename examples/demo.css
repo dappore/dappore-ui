@@ -27,7 +27,6 @@ body > main {
 }
 
 body > main > .menu {
-    width: 165px;
     border-right: solid #00C4B4 1px;
 }
 
@@ -35,12 +34,12 @@ body > main > .menu > .ui.menu {
     background-color: unset;
     border: unset;
     box-shadow: unset;
-    
+    width: 165px;
 }
 
 body > main > .menu > .ui.menu > .item {
     padding: 0;
-    height: 60px;
+    
 }
 
 body > main > .menu > .ui.menu > .item > .title {
@@ -48,6 +47,7 @@ body > main > .menu > .ui.menu > .item > .title {
     color: white;
     font-size: 18px;
     position: relative;
+    height: 50px;
 }
 
 body > main > .menu > .ui.menu > .item > .active.title {
