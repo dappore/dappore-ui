@@ -22,29 +22,22 @@
 }
 
 /*--------------
-      Tree - .title
+      Tree - .item
 ---------------*/
 
-.ui.sgtree > .ui.accordion .title {
-    margin: 0 !important;
-    padding: 0 !important;
+.ui.sgtree > .ui.accordion > .item, .ui.sgtree > .ui.accordion .content > .item {
     height: 50px;
     line-height: 50px;
     font-size: 16px;
     color: #4b525a;
-    
-    &::before {
-        margin-right: 14px;
-        color: #d8d8d8;
-        content: '\f0da';
-        font-family: @iconFont;
-    }
+    margin-left: 26px;
 
     position: relative;
 
-    & .ui.dropdown {
+    .ui.dropdown {
         position: absolute;
         right: 0;
+        top: 0;
         width: 16px+44px*2;
         height: 100%;
         text-align: center;
@@ -86,6 +79,33 @@
     }
 }
 
+/*--------------
+      Tree - .title
+---------------*/
+
+.ui.sgtree > .ui.accordion .title {
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #4b525a;
+    
+    &::before {
+        margin-right: 14px;
+        color: #d8d8d8;
+        content: '\f0da';
+        font-family: @iconFont;
+    }
+
+    position: relative;
+
+    .ui.dropdown {
+        .ui.sgtree > .ui.accordion > .item > .ui.dropdown();
+    }
+    
+}
+
 .ui.sgtree > .ui.accordion .active.title {
     color: #4b525a;
 
@@ -118,5 +138,11 @@
 
     & .active.item {
         color: #00cddd;
+    }
+
+    position: relative;
+
+    & .ui.dropdown {
+        .ui.sgtree > .ui.accordion > .item > .ui.dropdown();
     }
 }
