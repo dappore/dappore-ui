@@ -93,44 +93,24 @@
                         </div>
                     </div>
                     <div class="active content">
-                        <div class="accordion">
-                            <div class="active title">
-                                Level 1A
-                            </div>
-                            <div class="active content">
-                                <div class="accordion">
-                                    <div class="title">
-                                        Level 1A-A
-                                    </div>
-                                    <div class="content">
-                                        <a class="item">Level 1A-A Contents</a>
-                                        <div class="ui dropdown">
-                                            <div class="menu">
-                                                <div class="item">Applications</div>
-                                                <div class="item">International Students</div>
-                                                <div class="item">Scholarships</div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="title">
-                                        Level 1A-B
-                                    </div>
-                                    <div class="content">
-                                        <div class="item">Level 1A-B Contents</div>
-                                    </div>
+                        <div class="item">
+                            Level 2
+                            <div class="ui dropdown">
+                                <div class="menu">
+                                    <div class="item">Applications</div>
+                                    <div class="item">International Students</div>
+                                    <div class="item">Scholarships</div>
                                 </div>
                             </div>
-                            <div class="title">
-                                Level 1B
-                            </div>
-                            <div class="content">
-                                Level 1B Contents
-                            </div>
-                            <div class="title">
-                                Level 1C
-                            </div>
-                            <div class="content">
-                                Level 1C Contents
+                        </div>
+                        <div class="item">
+                            Level 2
+                            <div class="ui dropdown">
+                                <div class="menu">
+                                    <div class="item">Applications</div>
+                                    <div class="item">International Students</div>
+                                    <div class="item">Scholarships</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -397,7 +377,7 @@
                 .accordion()
                 ;
 
-            $('.ui.sgtree > .ui.accordion .title .ui.dropdown').on('click', function(event) {
+            $('.ui.sgtree > .ui.accordion .title .ui.dropdown').on('click', function (event) {
                 event.stopPropagation();
             });
         }
