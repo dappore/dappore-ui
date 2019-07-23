@@ -26,11 +26,12 @@
 ---------------*/
 
 .ui.sgtree > .ui.accordion > .item, .ui.sgtree > .ui.accordion .content > .item {
-    height: 50px;
-    line-height: 50px;
-    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
     color: #4b525a;
     margin-left: 26px;
+    cursor: pointer;
 
     position: relative;
 
@@ -38,7 +39,7 @@
         position: absolute;
         right: 0;
         width: 16px+44px*2;
-        height: 50px;
+        height: 40px;
         text-align: center;
 
         &::before {
@@ -85,9 +86,9 @@
 .ui.sgtree > .ui.accordion .title {
     margin: 0 !important;
     padding: 0 !important;
-    height: 50px;
-    line-height: 50px;
-    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
     color: #4b525a;
     
     &::before {
@@ -122,17 +123,11 @@
     margin: 0 !important;
     padding: 0 !important;
     padding-left: 40px !important;
-    line-height: 50px;
+    line-height: 40px;
     color: #4b525a;
     
     & .accordion {
         margin: 0;
-    }
-
-    & a {
-        color: #4b525a;
-        cursor: pointer;
-        
     }
 
     & .active.item {
