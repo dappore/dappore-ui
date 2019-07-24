@@ -79,6 +79,54 @@
         </div>
 
         <div class="content">
+
+            <div class="ui sgtree">
+                <div class="ui accordion">
+                    <div class="active title">
+                        Level 1
+                        <div class="ui dropdown">
+                            <div class="menu">
+                                <div class="item">Applications</div>
+                                <div class="item">International Students</div>
+                                <div class="item">Scholarships</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="active content">
+                        <div class="item">
+                            Level 2
+                            <div class="ui dropdown">
+                                <div class="menu">
+                                    <div class="item">Applications</div>
+                                    <div class="item">International Students</div>
+                                    <div class="item">Scholarships</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            Level 2
+                            <div class="ui dropdown">
+                                <div class="menu">
+                                    <div class="item">Applications</div>
+                                    <div class="item">International Students</div>
+                                    <div class="item">Scholarships</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        Level 2
+                        <div class="ui dropdown">
+                            <div class="menu">
+                                <div class="item">Applications</div>
+                                <div class="item">International Students</div>
+                                <div class="item">Scholarships</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="ui container">
                 <div class="ui sgheader">
                     <div class="search">
@@ -328,6 +376,10 @@
             $('.ui.accordion')
                 .accordion()
                 ;
+
+            $('.ui.sgtree > .ui.accordion .title .ui.dropdown').on('click', function (event) {
+                event.stopPropagation();
+            });
         }
     </script>
 
