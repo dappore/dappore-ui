@@ -210,9 +210,19 @@
         padding: 0;
     }
 
+    & .item:not(.action) {
+
+        &:first-child {
+            padding-top: 13px;
+        }
+        &:last-child {
+            padding-bottom: 10px;
+        }
+    }
+
     & .item > .content {
         font-size: @fontBodySize;
-        padding: 18px 25px;
+        padding: 12px 25px;
     }
     
     & .action.item {
