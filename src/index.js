@@ -2,7 +2,9 @@ console.log('test');
 $(".ui.checkbox").checkbox();
 $("select.dropdown").dropdown();
 $(".ui.infor.modal>.ui.form>radio.field>.inline.fields>.field>.ui.radio.checkbox").checkbox();
-
+$('.ui.longer.modal')
+    .modal('show')
+    ;
 // .ui.sgcard
 
 
