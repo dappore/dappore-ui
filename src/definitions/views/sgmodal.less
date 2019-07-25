@@ -182,10 +182,10 @@
     .dependent.field
 *************************/
 .ui.infor.modal > .content > .ui.form > .dependent.field {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
   position: relative;
-}
-.ui.infor.modal > .content > .ui.form > .dependent.field{
-  margin-top: 24px;
 }
 .ui.infor.modal > .content > .ui.form > .dependent.field > .field {
   margin: 0px;
@@ -194,7 +194,8 @@
 }
 
 .ui.infor.modal > .content > .ui.form > .dependent.field > .header {
-  display: block;
+  position: absolute;
+  margin-top:-26px;
 }
 
 .ui.infor.modal > .content > .ui.form > .dependent.field > .field > .selection.dropdown {
@@ -219,17 +220,23 @@
 /************************
     .dependent.field > .inline.fields
 *************************/
-.ui.infor.modal > .content > .ui.form > .dependent.field > .inline.fields {
+.ui.infor.modal > .content > .ui.form > .dependents.field {
+  position: relative;
+}
+.ui.infor.modal > .content > .ui.form > .dependents.field > .header {
+  display: block;
+}
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields {
   margin-bottom: 0px;
 }
-.ui.infor.modal > .content > .ui.form > .dependent.field > .inline.fields > .field {
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field {
   line-height: 30px;
   color: @fontGrayColor;
   padding: 0px;
 }
 
 
-.ui.infor.modal > .content > .ui.form > .dependent.field > .inline.fields > .field > .selection.dropdown {
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown {
   padding: 9.5px 30px 9px 8px;
   width: auto !important;
   white-space: nowrap;
@@ -239,8 +246,8 @@
   margin-right: 10px;
 }
 
-.ui.infor.modal > .content > .ui.form > .dependent.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content > .ui.form > .dependent.field > .inline.fields > .field > .selection.dropdown > .menu > .item {
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item {
   margin: 0px;
   width: auto !important;
   // white-space: nowrap;
