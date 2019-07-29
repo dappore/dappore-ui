@@ -3,12 +3,20 @@
 
 .ui.sgcard {
   width: 265px;
-  border: 1px solid rgba(52, 57, 61, 0.11);
+  border: 1px solid #edf2f5;
   border-radius: @containerBorderRadius;
   padding: 20px;
-  box-shadow: 0px 8px 7px rgba(52, 57, 61, 0.11);
   position: relative;
   background: white;
+  
+}
+
+.ui.selectable.sgcard {
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.07);
+  }
 }
 
 /********************
@@ -47,7 +55,6 @@
 .ui.booking.sgcard>.group.content>.header {
   font-size: @fontTitleSize3;
   color: @fontTitleColor;
-  font-family: @fontName;
   font-weight: bold;
 }
 
@@ -91,7 +98,6 @@
   border-radius: @componentBorderRadius;
   font-size: @fontCaptionSize;
   color: white;
-  font-family: @fontName;
   line-height: 24px;
   text-align: center;
 }
@@ -118,7 +124,6 @@
 
 .ui.child.sgcard>.content>.ui.grid>.column>.content>.header {
   margin-bottom: 6px;
-  font-family: @fontName;
 }
 
 .ui.child.sgcard>.content>.ui.grid>.column>.content>.description {
@@ -161,6 +166,17 @@
   padding: 0px;
 }
 
+.ui.year.sgcard > a {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 30px;
+  height: 32px;
+  color: @fontGrayColor;
+  text-align: center;
+  line-height: 32px;
+}
+
 .ui.year.sgcard>.content>.ui.sgavatar {
   width: 64px;
   height: 64px;
@@ -182,16 +198,14 @@
 
 .ui.year.sgcard>.content>.header {
   color: @fontTitleColor ;
-  font-family: PingFang-SC-Medium;
   margin-bottom: 30px;
 }
 
 .ui.year.sgcard>.ui.horizontal.list {
-  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  margin: auto;
+  margin: 0;
   margin-bottom: 15px;
 
 }
@@ -199,18 +213,17 @@
 .ui.year.sgcard>.ui.horizontal.list>.item {
   font-size: 20px;
   color: @fontTitleColor ;
-  font-family: Avenir-Heavy;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .ui.year.sgcard>.ui.horizontal.list>.item>.header {
-  font-family: Avenir-Heavy;
   font-size: 20px;
   color: @fontTitleColor;
 }
 
 .ui.year.sgcard>.ui.horizontal.list>.item>.description {
-  font-family: @fontName;
   font-size: @fontFooterSize;
   color: @fontGrayColor;
 }
