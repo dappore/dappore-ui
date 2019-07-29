@@ -13,7 +13,7 @@
 .ui.infor.modal > .header {
   padding-top: 40px;
   padding-left: 40px;
-  font-size: @fontHeaderSize;
+  font-size: 18px;
   color: @fontTitleColor;
 }
 .ui.infor.modal > div:last-child{
@@ -28,7 +28,8 @@
 }
 
 /************************
-ui sgmodal > ui form
+ui sgmodal > content > ui form
+
 *************************/
 .ui.infor.modal > .content {
   width: 100%;
@@ -43,6 +44,7 @@ ui sgmodal > ui form
   display: block;
   margin-top: 10px;
   width: 90px;
+  font-size: 14px;
 }
 .ui.infor.modal > .content > .ui.form > .field {
   margin: 0px;
@@ -50,16 +52,33 @@ ui sgmodal > ui form
   position: relative;
 }
 .ui.infor.modal > .content > .ui.form > .field > .header {
-   font-size: @fontSize;
+  font-size: 14px;
   color: @fontTitleColor;
   margin: 0px;
   margin-bottom: 7px;
 }
 .ui.infor.modal > .content > .ui.form > .field > .ui.button {
   display: block;
-  width: 80px;
   margin: 0 auto;
+  font-size: 14px;
 }
+
+.ui.infor.modal > .scrolling.content > .ui.form input:not([type]),
+.ui.infor.modal > .scrolling.content > .ui.form input[type=date],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=datetime-local],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=email],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=file],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=number],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=password],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=search],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=tel],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=text],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=time],
+.ui.infor.modal > .scrolling.content > .ui.form input[type=url],
+.ui.infor.modal > .scrolling.content > .ui.form textare {
+  font-size: 14px;
+}
+
 
 /************************
     input field
@@ -319,11 +338,46 @@ ui sgmodal > ui form
 
 
 /************************
-  toggle field
+  ui toggle checkout
 *************************/
-.ui.infor.modal > .content > .ui.form > .toggle.field > .header {
-  padding-bottom: 4px;
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.checkbox .box,
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.checkbox label {
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: -71px;
+    color: #4b525a !important;
 }
+
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox input:checked~label {
+    color: #4b525a !important;
+}
+
+
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:before,
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:before {
+    position: absolute;
+    top: 24px;
+    left: 0px;
+}
+
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:after,
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:after {
+    margin-top: 24px;
+}
+
+
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:after,
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:before,
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:after,
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:before {
+    margin-left: 71px;
+}
+
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox input:checked~.box:before,
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox input:checked~label:before {
+    background-color: #00cddd !important;
+}
+
 
 /************************
   validation field
@@ -341,7 +395,9 @@ ui sgmodal > ui form
   display: none;
 }
 
-
+/************************
+  detail field
+*************************/
 .ui.infor.modal > .content > .ui.form > .detail.field {
   margin: 0px;
   margin-top: 10px;
