@@ -28,7 +28,7 @@
 }
 
 /************************
-.ui.sgmodal>.ui.form
+ui sgmodal > ui form
 *************************/
 .ui.infor.modal > .content {
   width: 100%;
@@ -38,6 +38,11 @@
   width: 50%;
   margin: auto;
   min-width: 200px;
+}
+.ui.infor.modal > .scrolling.content > .ui.form > a {
+  display: block;
+  margin-top: 10px;
+  width: 90px;
 }
 .ui.infor.modal > .content > .ui.form > .field {
   margin: 0px;
@@ -51,17 +56,13 @@
   margin-bottom: 7px;
 }
 .ui.infor.modal > .content > .ui.form > .field > .ui.button {
-  // position: absolute;
-  // left: 50%;
-  // top: 0px;
-  // margin-left: -40px;
   display: block;
   width: 80px;
   margin: 0 auto;
 }
 
 /************************
-    .input.field
+    input field
 *************************/
 
 .ui.infor.modal > .content > .ui.form > .field > .ui.input {
@@ -82,8 +83,9 @@
 }
 
 /************************
-    .text.field
+    text field
 *************************/
+
 .ui.infor.modal > .content > .ui.form > .text.field > textarea {
   color: @fontTitleColor ;
   border-radius: @componentBorderRadius;
@@ -101,7 +103,7 @@
 }
 
 /************************
-    .check.field/.radio.field
+  check field / radio field
 *************************/
 .ui.infor.modal > .content > .ui.form > .radio.field > .header,
 .ui.infor.modal > .content > .ui.form > .check.field > .header {
@@ -141,7 +143,7 @@
 }
 
 /************************
-    .image.field
+    image field
 *************************/
 .ui.infor.modal > .content > .ui.form > .avatar.field > .image.field {
   width: 80px;
@@ -179,7 +181,7 @@
 
 
 /************************
-    .dependent.field
+    dependent field
 *************************/
 .ui.infor.modal > .content > .ui.form > .dependent.field {
   display: flex;
@@ -218,19 +220,23 @@
 
 
 
-/************************
-    .dependent.field > .inline.fields
-*************************/
-.ui.infor.modal > .content > .ui.form > .dependents.field {
+/***********************************************************
+  dependents field / dependents field > dependents field
+************************************************************/
+.ui.infor.modal > .content > .ui.form > .dependents.field ,
+.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field {
   position: relative;
 }
-.ui.infor.modal > .content > .ui.form > .dependents.field > .header {
+.ui.infor.modal > .content > .ui.form > .dependents.field > .header ,
+.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field>.header {
   display: block;
 }
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields {
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields ,
+.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields {
   margin-bottom: 0px;
 }
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field {
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field ,
+.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field {
   line-height: 30px;
   color: @fontGrayColor;
   padding: 0px;
@@ -238,8 +244,10 @@
 
 .ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown {
   border: 1px solid rgb(219, 225, 230);
+  -webkit-transform: scale(1.01);
 }
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown {
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown ,
+.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown {
   padding: 9.5px 30px 9px 8px;
   width: auto !important;
   white-space: nowrap;
@@ -250,12 +258,26 @@
 }
 
 .ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item {
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item,
+.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
+.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item {
   margin: 0px;
   width: auto !important;
-  // white-space: nowrap;
   padding: 13px 4px 13px 1px !important;
 }
+
+/**************************************
+    dependents field > dependents field
+***************************************/
+.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field {
+  margin-top: 24px;
+}
+.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > a > .ui.circular.label > .close.icon {
+  margin: 0px;
+  padding: 0px;
+}
+
+
 /************************
    post content
 *************************/
@@ -283,12 +305,11 @@
 }
 
 .ui.infor.modal > .content > .ui.form > .post.content > .attach.field > .field > .ui.icon.circular.label {
-  // border-radius: 15px;
   margin-left: 6px;
 }
 
 /************************
-    .add.attach.field
+  add attach field
 *************************/
 .ui.infor.modal > .content > .ui.form > a > .add.field {
   color: #4a90e2;
@@ -298,14 +319,14 @@
 
 
 /************************
-    .toggle.field
+  toggle field
 *************************/
 .ui.infor.modal > .content > .ui.form > .toggle.field > .header {
   padding-bottom: 4px;
 }
 
 /************************
-    .validation.field
+  validation field
 *************************/
 .ui.infor.modal > .content > .ui.form > .validation.field > .tip {
   z-index: 9999;
