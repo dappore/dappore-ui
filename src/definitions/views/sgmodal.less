@@ -175,11 +175,11 @@ ui sgmodal > content > ui form
   margin-left: 0px !important;
   font-weight: 400;
 }
-.ui.infor.modal > .content > .ui.form > .field > .ui.checkbox > input+label:after {
+.ui.infor.modal > .content > .ui.form > .field > .ui.check.checkbox > input+label:after {
   background: @primaryColor;
 }
 
-.ui.infor.modal > .content > .ui.form > .field > .ui.checkbox > input+label:after {
+.ui.infor.modal > .content > .ui.form > .field > .ui.check.checkbox > input+label:after {
   color: white;
   border-radius: @componentBorderRadius;
 }
@@ -361,7 +361,7 @@ ui sgmodal > content > ui form
 
 
 /************************
-  ui toggle checkout
+  ui toggle checkbox
 *************************/
 .ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toogle.checkbox .box,
 .ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toogle.checkbox label {
@@ -379,21 +379,17 @@ ui sgmodal > content > ui form
 .ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:before,
 .ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:before {
     position: absolute;
-    top: 24px;
     left: 0px;
 }
 
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:after,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:after {
-    margin-top: 24px;
-}
+
 
 
 .ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:after,
 .ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:before,
 .ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:after,
 .ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:before {
-    margin-left: 71px;
+    // margin-left: 71px;
 }
 
 .ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox input:checked~.box:before,
