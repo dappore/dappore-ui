@@ -58,6 +58,7 @@ ui sgmodal > content > ui form
   color: @fontTitleColor;
   margin: 0px;
   margin-bottom: 7px;
+  font-weight: bold;
 }
 .ui.infor.modal > .content > .ui.form > .field > .ui.button {
   display: block;
@@ -159,6 +160,26 @@ ui sgmodal > content > ui form
 }
 
 .ui.infor.modal > .content > .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
+  color: white;
+  border-radius: @componentBorderRadius;
+}
+
+/************************
+     checkbox
+*************************/
+.ui.infor.modal > .content > .ui.form > .field > .ui.check.checkbox .box,
+.ui.infor.modal > .content > .ui.form > .field > .ui.check.checkbox >  label {
+  font-size: @fontBodySize ;
+  font-family: PingFang-SC-Medium;
+  color: @fontTitleColor ;
+  margin-left: 0px !important;
+  font-weight: 400;
+}
+.ui.infor.modal > .content > .ui.form > .field > .ui.checkbox > input+label:after {
+  background: @primaryColor;
+}
+
+.ui.infor.modal > .content > .ui.form > .field > .ui.checkbox > input+label:after {
   color: white;
   border-radius: @componentBorderRadius;
 }
@@ -342,8 +363,8 @@ ui sgmodal > content > ui form
 /************************
   ui toggle checkout
 *************************/
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.checkbox .box,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.checkbox label {
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toogle.checkbox .box,
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toogle.checkbox label {
     font-size: 14px;
     font-weight: 700;
     margin-left: -71px;
