@@ -37,7 +37,7 @@ ui sgmodal > content > ui form
   width: 100%;
   padding: 0px;
 }
-.ui.infor.modal > .content > .ui.form {
+.ui.infor.modal > .content > * {
   width: 50%;
   margin: auto;
   min-width: 200px;
@@ -477,3 +477,46 @@ ui sgmodal > content > ui form
 /***************************************************
     ui infor schedule modal
 ***************************************************/
+
+
+/************************
+  tab header
+*************************/
+.ui.infor.modal > .tab.header {
+  padding-bottom: 0px;
+}
+
+.ui.infor.modal > .tab.header > ul {
+  list-style-type: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.ui.infor.modal > .tab.header > ul > li {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  border-bottom: none;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+.ui.infor.modal > .tab.header > ul > li:hover {
+  cursor: default;
+}
+
+.ui.infor.modal > .tab.header > ul > li.active {
+  border-bottom: 3px solid @primaryColor;
+  color: @primaryColor;
+}
+
+.tab.show {
+  display: block;
+}
+
+.tab.hide {
+  display: none;
+}
