@@ -39,13 +39,29 @@
             </span>
           </div>
 
-         <div class="toggle field">
+          <div class="recharge field">
+             <label  class="header">充值</label>
+             <div class="inline fields">
+               <div class="field">
+                 <input type="text" placeholder="次数">
+               </div>
+               <div class="field">
+                 <input type="text" placeholder="价格">
+               </div>
+               <a href="#">
+                  <i class="circle icon"></i>
+               </a>
+             </div>
+          </div>
+           <a href="#"><i class="plus icon"></i>添加充值</a>
+
+         <!-- <div class="toggle field">
             <label class="header">状态</label>
             <div class="ui toggle checkbox">
               <input type="checkbox" name="public">
               <label></label>
             </div>
-          </div>
+          </div> -->
 
           <div class="field">
             <div class="header">权限</div>
@@ -240,6 +256,7 @@
           <div class="field">
             <input type="submit" value="创建" class="ui button">
           </div>
+
         </form>
       </div>
 
@@ -386,6 +403,16 @@
                 $('#imgshow').get(0).src = e.target.result;
             }
         });
+
+        $(".ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a").each(function(index){
+          $(".ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a").eq(index).click(function(){
+            $(".ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields").each(function(i){
+              if(index == i){
+               $(".ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields").eq(i).hide();
+              }
+            })
+          })
+        })
   </script>
 </body>
 

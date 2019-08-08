@@ -353,7 +353,7 @@ ui sgmodal > content > ui form
 /************************
   add attach field
 *************************/
-.ui.infor.modal > .content > .ui.form > a > .add.field {
+.ui.infor.modal > .content > .ui.form > a > {
   color: #4a90e2;
   margin-top: 10px;
   font-size: @fontSize;
@@ -448,3 +448,32 @@ ui sgmodal > content > ui form
   padding: 5px;
   font-weight: 500;
 }
+
+/***************************************************
+    recharge field
+***************************************************/
+.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .field > .input {
+  width: 100%;
+}
+.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a > i {
+  color: #dee0e3;
+  position: relative;
+}
+
+.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a > i:after {
+  content: "\f00d";
+  font-family: 'Font Awesome 5 Free';
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  left: 1px;
+  right: 0px;
+  top: 3px;
+}
+
+
+/***************************************************
+    ui infor schedule modal
+***************************************************/
