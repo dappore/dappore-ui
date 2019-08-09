@@ -3,8 +3,8 @@
 .ui.infor.modal {
   width: 48% !important;
   min-width: 450px;
-  max-height: 680px;
-  box-shadow: 0px 8px 7px rgba(52, 57, 61, 0.1);
+  // max-height: 680px;
+  // box-shadow: 0px 8px 7px rgba(52, 57, 61, 0.1);
   border-radius: @containerBorderRadius;
   margin: auto;
   background: #fff;
@@ -28,7 +28,19 @@
   color: @fontGrayColor;
 }
 
-
+/***************************
+ui infor modal > scrolling content > table
+***************************/
+.ui.infor.modal > .scrolling.content > table > tbody > tr td:first-child{
+    vertical-align: text-top;
+}
+.ui.infor.modal > .scrolling.content > table > tbody > tr:first-child > td {
+    padding-top: 20px;
+}
+.ui.infor.modal > .scrolling.content > table > tbody > tr > td {
+    border-top: 0px;
+    font-size: 14px;
+}
 /************************
 ui sgmodal > content > ui form
 
@@ -78,7 +90,9 @@ ui sgmodal > content > ui form
 .ui.infor.modal > .scrolling.content > .ui.form input[type=text],
 .ui.infor.modal > .scrolling.content > .ui.form input[type=time],
 .ui.infor.modal > .scrolling.content > .ui.form input[type=url],
-.ui.infor.modal > .scrolling.content > .ui.form textare {
+.ui.infor.modal > .scrolling.content > .ui.form textare,
+.ui.infor.modal > .content > .ui.form > .field > .ui.input > .ui.dropdown,
+ .ui.infor.modal > .content > .ui.form > .field > .ui.input > .ui.dropdown > .menu > .item{
   font-size: 14px;
 }
 
@@ -285,7 +299,10 @@ ui sgmodal > content > ui form
   padding: 0px;
 }
 
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown {
+.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown,
+.ui.infor.modal > .content > .ui.form > .dependent.field > .field > .ui.dropdown,
+.ui.infor.modal > .content > .ui.form > .field > .ui.input > textarea,
+.ui.infor.modal > .content > .ui.form > .field > .ui.input > .ui.dropdown {
   border: 1px solid rgb(219, 225, 230);
   -webkit-transform: scale(1.01);
 }
@@ -309,7 +326,9 @@ ui sgmodal > content > ui form
   padding: 13px 4px 13px 8px !important;
   font-size: 14px;
 }
-
+.ui.infor.modal > .scrolling.content > .ui.form > .dependents.field > .inline.fields > .field > a > .label > i {
+    margin:0px;
+}
 /**************************************
     dependents field > dependents field
 ***************************************/
@@ -365,10 +384,10 @@ ui sgmodal > content > ui form
 /************************
   ui toggle checkbox
 *************************/
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toogle.checkbox .box,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toogle.checkbox label {
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.checkbox .box,
+.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.checkbox label {
     font-size: 14px;
-    font-weight: 700;
+    font-weight: bold;
     margin-left: -71px;
     color: #4b525a !important;
 }
@@ -451,11 +470,30 @@ ui sgmodal > content > ui form
   font-weight: 500;
 }
 
-/***************************************************
-    recharge field
-***************************************************/
+/*********************************************************************
+    ui infor modal > scrolling content > ui form > recharge field
+**********************************************************************/
 
-
+.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .inline.fields > .ui.input {
+    width: 50%;
+    font-size: 14px;
+}
+.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .inline.fields > .ui.input > input {
+    width: 100% !important;
+}
+.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .inline.fields > a > .ui.circular.label > i {
+    margin: 0px;
+}
+.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .recharge.field > .inline.fileds > .ui.input {
+    width: 50%;
+    font-size: 14px;
+}
+.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input > input {
+    width: 100% !important;
+}
+.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .recharge.field > .inline.fields > a > .ui.circular.label > i {
+    margin: 0px;
+}
 
 
 /***************************************************
