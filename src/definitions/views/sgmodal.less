@@ -1,10 +1,10 @@
 @import (multiple) '../../site/globals/site.variables';
 
 .ui.dimmer {
-  background-color: rgba(0,0,0,.35);
+  background-color: rgba(0,0,0,.35) !important;
 }
 .ui.infor.modal .ui.dimmer {
-  background-color: rgba(0,0,0,.2);
+  background-color: rgba(0,0,0,.2) !important;
 }
 .ui.infor.modal {
   width: 48% !important;
@@ -12,7 +12,7 @@
   border-radius: @containerBorderRadius;
   margin: auto;
   border-top: 1px solid #fff;
-  box-shadow: 1px 3px 3px 0 rgba(0,0,0,0)
+  box-shadow: 1px 3px 3px 0 rgba(0,0,0,0);
 }
 .ui.infor.modal > .header {
   padding-top: 30px !important;
@@ -477,26 +477,34 @@ ui sgmodal > content > ui form
 /*********************************************************************
     ui infor modal > scrolling content > ui form > recharge field
 **********************************************************************/
-
-.ui.infor.modal > .content .ui.form > .recharge.field > .inline.fields > .ui.input {
+.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a,
+.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > a {
+    position: absolute;
+    right: -40px;
+}
+.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input,
+.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fileds > .ui.input  {
     width: 50%;
     font-size: 14px;
 }
-.ui.infor.modal > .content .ui.form > .recharge.field > .inline.fields > .ui.input > input {
+.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input > input,
+.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input > input {
     width: 100% !important;
 }
-.ui.infor.modal > .content .ui.form > .recharge.field > .inline.fields > a > .ui.circular.label > i {
+.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input:first-of-type,
+.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input:first-of-type {
+    margin: 0px 10px 0px 0px;
+}
+.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input:last-of-type,
+.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input:last-of-type {
+    margin: 0px 0px 0px 10px;
+}
+.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a > .ui.circular.label > i,
+.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > a > .ui.circular.label > i {
     margin: 0px;
 }
-.ui.infor.modal > .content .ui.form > .recharge.field > .recharge.field > .inline.fileds > .ui.input {
-    width: 50%;
-    font-size: 14px;
-}
-.ui.infor.modal > .content .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input > input {
-    width: 100% !important;
-}
-.ui.infor.modal > .content .ui.form > .recharge.field > .recharge.field > .inline.fields > a > .ui.circular.label > i {
-    margin: 0px;
+.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .recharge.field > .header {
+    display: none;
 }
 
 
