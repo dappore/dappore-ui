@@ -9,8 +9,6 @@
 .ui.infor.modal {
   width: 48% !important;
   min-width: 450px;
-  // max-height: 680px;
-  // box-shadow: 0px 8px 7px rgba(52, 57, 61, 0.1);
   border-radius: @containerBorderRadius;
   margin: auto;
   border-top: 1px solid #fff;
@@ -530,6 +528,7 @@ ui sgmodal > content > ui form
   margin-right: 20px;
   font-size: 18px;
   padding-bottom: 20px;
+  font-weight: normal;
 }
 
 .ui.infor.modal > .tab.header > ul > li:hover {
@@ -539,6 +538,7 @@ ui sgmodal > content > ui form
 .ui.infor.modal > .tab.header > ul > li.active {
   border-bottom: 3px solid @primaryColor;
   color: @primaryColor;
+  font-weight: bold;
 }
 
 .tab.show {
@@ -547,4 +547,21 @@ ui sgmodal > content > ui form
 
 .tab.hide {
   display: none;
+}
+
+/************************
+  multi modals
+*************************/
+.ui.infor.second.modal {
+  width: 32% !important;
+}
+
+.ui.infor.second.modal > .content > * {
+  width: 90%;
+  margin: auto;
+  min-width: 200px;
+}
+
+.ui.infor.third.modal {
+  width: 24% !important;
 }
