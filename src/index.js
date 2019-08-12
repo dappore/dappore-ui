@@ -1,7 +1,4 @@
 console.log('test');
-
-$(".ui.checkbox").checkbox();
-
 $("select.dropdown").dropdown();
 
 // $(".ui.infor.modal").modal("show");

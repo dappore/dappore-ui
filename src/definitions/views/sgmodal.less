@@ -1,12 +1,18 @@
 @import (multiple) '../../site/globals/site.variables';
 
+.ui.dimmer {
+  background-color: rgba(0,0,0,.35);
+}
+.ui.infor.modal .ui.dimmer {
+  background-color: rgba(0,0,0,.2);
+}
 .ui.infor.modal {
   width: 48% !important;
   min-width: 450px;
   border-radius: @containerBorderRadius;
   margin: auto;
-  background: #fff;
   border-top: 1px solid #fff;
+  box-shadow: 1px 3px 3px 0 rgba(0,0,0,0)
 }
 .ui.infor.modal > .header {
   padding-top: 30px !important;
