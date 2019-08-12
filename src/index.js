@@ -4,7 +4,7 @@ $(".ui.checkbox").checkbox();
 
 $("select.dropdown").dropdown();
 
-$(".ui.infor.modal").modal("show");
+// $(".ui.infor.modal").modal("show");
 
 $(".ui.infor.modal>.ui.form>radio.field>.inline.fields>.field>.ui.radio.checkbox").checkbox();
 $('.ui.longer.modal')
@@ -41,3 +41,21 @@ window.onload = function () {
         }
     }
 }
+
+// multi modals
+$('.coupled.modal')
+    .modal({
+        allowMultiple: true,
+    })
+;
+
+$('.second.modal')
+    .modal('attach events', '.first.modal .button')
+;
+
+$('.third.modal')
+    .modal('attach events', '.second.modal .button')
+;
+
+$('.first.modal')
+    .modal('show');
