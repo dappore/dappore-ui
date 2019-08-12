@@ -29,13 +29,13 @@
 /***************************
 ui infor modal > scrolling content > table
 ***************************/
-.ui.infor.modal > .scrolling.content > table > tbody > tr td:first-child{
+.ui.infor.modal > .content table > tbody > tr td:first-child{
     vertical-align: text-top;
 }
-.ui.infor.modal > .scrolling.content > table > tbody > tr:first-child > td {
+.ui.infor.modal > .content table > tbody > tr:first-child > td {
     padding-top: 20px;
 }
-.ui.infor.modal > .scrolling.content > table > tbody > tr > td {
+.ui.infor.modal > .content table > tbody > tr > td {
     border-top: 0px;
     font-size: 14px;
 }
@@ -52,45 +52,45 @@ ui sgmodal > content > ui form
   margin: auto;
   min-width: 200px;
 }
-.ui.infor.modal > .scrolling.content > .ui.form > a {
+.ui.infor.modal > .content .ui.form > a {
   display: block;
   margin-top: 10px;
   width: 90px;
   font-size: 14px;
 }
-.ui.infor.modal > .content > .ui.form > .field {
+.ui.infor.modal > .content .ui.form > .field {
   margin: 0px;
   margin-top: 24px;
   position: relative;
 }
-.ui.infor.modal > .content > .ui.form > .field > .header {
+.ui.infor.modal > .content .ui.form > .field > .header {
   font-size: 14px;
   color: @fontTitleColor;
   margin: 0px;
   margin-bottom: 7px;
   font-weight: bold;
 }
-.ui.infor.modal > .content > .ui.form > .field > .ui.button {
+.ui.infor.modal > .content .ui.form > .field > .ui.button {
   display: block;
   margin: 0 auto;
   font-size: 14px;
 }
 
-.ui.infor.modal > .scrolling.content > .ui.form input:not([type]),
-.ui.infor.modal > .scrolling.content > .ui.form input[type=date],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=datetime-local],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=email],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=file],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=number],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=password],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=search],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=tel],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=text],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=time],
-.ui.infor.modal > .scrolling.content > .ui.form input[type=url],
-.ui.infor.modal > .scrolling.content > .ui.form textare,
-.ui.infor.modal > .content > .ui.form > .field > .ui.input > .ui.dropdown,
- .ui.infor.modal > .content > .ui.form > .field > .ui.input > .ui.dropdown > .menu > .item{
+.ui.infor.modal > .content .ui.form input:not([type]),
+.ui.infor.modal > .content .ui.form input[type=date],
+.ui.infor.modal > .content .ui.form input[type=datetime-local],
+.ui.infor.modal > .content .ui.form input[type=email],
+.ui.infor.modal > .content .ui.form input[type=file],
+.ui.infor.modal > .content .ui.form input[type=number],
+.ui.infor.modal > .content .ui.form input[type=password],
+.ui.infor.modal > .content .ui.form input[type=search],
+.ui.infor.modal > .content .ui.form input[type=tel],
+.ui.infor.modal > .content .ui.form input[type=text],
+.ui.infor.modal > .content .ui.form input[type=time],
+.ui.infor.modal > .content .ui.form input[type=url],
+.ui.infor.modal > .content .ui.form textare,
+.ui.infor.modal > .content .ui.form > .field > .ui.input > .ui.dropdown,
+ .ui.infor.modal > .content .ui.form > .field > .ui.input > .ui.dropdown > .menu > .item{
   font-size: 14px;
 }
 
@@ -99,18 +99,18 @@ ui sgmodal > content > ui form
     input field
 *************************/
 
-.ui.infor.modal > .content > .ui.form > .field > .ui.input {
+.ui.infor.modal > .content .ui.form > .field > .ui.input {
   color: @fontTitleColor;
   border-radius: @componentBorderRadius;
 }
 
-.ui.infor.modal > .content > .ui.form > .input.required.field,
-.ui.infor.modal > .content > .ui.form > .input.error.field  {
+.ui.infor.modal > .content .ui.form > .input.required.field,
+.ui.infor.modal > .content .ui.form > .input.error.field  {
   position: relative;
 }
 
-.ui.infor.modal > .content > .ui.form > .input.required.field > span ,
-.ui.infor.modal > .content > .ui.form > .input.error.field > span{
+.ui.infor.modal > .content .ui.form > .input.required.field > span ,
+.ui.infor.modal > .content .ui.form > .input.error.field > span{
   position: absolute;
   right: -35px;
   top: 35px;
@@ -120,7 +120,7 @@ ui sgmodal > content > ui form
     text field
 *************************/
 
-.ui.infor.modal > .content > .ui.form > .text.field > textarea {
+.ui.infor.modal > .content .ui.form > .text.field > textarea {
   color: @fontTitleColor ;
   border-radius: @componentBorderRadius;
   min-height: 5em;
@@ -128,7 +128,7 @@ ui sgmodal > content > ui form
   max-height: 24em;
 }
 
-.ui.infor.modal > .content >  .ui.form > .large.text.field > textarea {
+.ui.infor.modal > .content .ui.form > .large.text.field > textarea {
   color: @fontTitleColor ;
   border-radius: @componentBorderRadius;
   min-height: 10em;
@@ -139,39 +139,39 @@ ui sgmodal > content > ui form
 /************************
   check field / radio field
 *************************/
-.ui.infor.modal > .content > .ui.form > .radio.field > .header,
-.ui.infor.modal > .content > .ui.form > .check.field > .header {
+.ui.infor.modal > .content .ui.form > .radio.field > .header,
+.ui.infor.modal > .content .ui.form > .check.field > .header {
   margin: 0px;
   padding: 0px;
 }
 
-.ui.infor.modal > .content > .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox,
-.ui.infor.modal > .content > .ui.form > .check.field > .inline.fields > .field > .ui.checkbox {
+.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox,
+.ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox {
   margin-top: 7px;
 }
 
-.ui.infor.modal > .content > .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label,
-.ui.infor.modal > .content > .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > label {
+.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label,
+.ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > label {
   font-size: @fontBodySize ;
   font-family: PingFang-SC-Medium;
   color: @fontTitleColor ;
 
 }
 
-.ui.infor.modal > .content > .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label:before {
+.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label:before {
   z-index: 1;
   opacity: 0.4;
 }
 
-.ui.infor.modal > .content > .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label:after{
+.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label:after{
   background: @primaryColor;
 }
-.ui.infor.modal > .content > .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > input+label:after,
-.ui.infor.modal > .content > .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
+.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > input+label:after,
+.ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
   background: @primaryColor;
 }
 
-.ui.infor.modal > .content > .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
+.ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
   color: white;
   border-radius: @componentBorderRadius;
 }
@@ -179,19 +179,19 @@ ui sgmodal > content > ui form
 /************************
      checkbox
 *************************/
-.ui.infor.modal > .content > .ui.form > .field > .ui.check.checkbox .box,
-.ui.infor.modal > .content > .ui.form > .field > .ui.check.checkbox >  label {
+.ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox .box,
+.ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox >  label {
   font-size: @fontBodySize ;
   font-family: PingFang-SC-Medium;
   color: @fontTitleColor ;
   margin-left: 0px !important;
   font-weight: 400;
 }
-.ui.infor.modal > .content > .ui.form > .field > .ui.check.checkbox > input+label:after {
+.ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox > input+label:after {
   background: @primaryColor;
 }
 
-.ui.infor.modal > .content > .ui.form > .field > .ui.check.checkbox > input+label:after {
+.ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox > input+label:after {
   color: white;
   border-radius: @componentBorderRadius;
 }
@@ -199,7 +199,7 @@ ui sgmodal > content > ui form
 /************************
     image field
 *************************/
-.ui.infor.modal > .content > .ui.form > .avatar.field > .image.field {
+.ui.infor.modal > .content .ui.form > .avatar.field > .image.field {
   width: 80px;
   height: 80px;
   background: @dividedColor;
@@ -207,24 +207,24 @@ ui sgmodal > content > ui form
   margin: 0px;
 }
 
-.ui.infor.modal > .content > .ui.form > .avatar.field > #open_image {
+.ui.infor.modal > .content .ui.form > .avatar.field > #open_image {
   visibility: hidden;
   float: left;
 }
 
-.ui.infor.modal > .content > .ui.form > .avatar.field > .image.field {
+.ui.infor.modal > .content .ui.form > .avatar.field > .image.field {
   display: flex;
   position: relative;
   font-size: 30px;
   color: #dbe1e6;
 }
 
-.ui.infor.modal > .content > .ui.form > .avatar.field > .image.field > img {
+.ui.infor.modal > .content .ui.form > .avatar.field > .image.field > img {
   width: 100%;
   border-radius: @componentBorderRadius;
 }
 
-.ui.infor.modal > .content > .ui.form > .avatar.field > .image.field > .icon.plus {
+.ui.infor.modal > .content .ui.form > .avatar.field > .image.field > .icon.plus {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -237,25 +237,25 @@ ui sgmodal > content > ui form
 /************************
     dependent field
 *************************/
-.ui.infor.modal > .content > .ui.form > .dependent.field {
+.ui.infor.modal > .content .ui.form > .dependent.field {
   display: flex;
   justify-content: flex-start;
   flex-wrap: nowrap;
   position: relative;
   margin-top: 48px;
 }
-.ui.infor.modal > .content > .ui.form > .dependent.field > .field {
+.ui.infor.modal > .content .ui.form > .dependent.field > .field {
   margin: 0px;
   line-height: 30px;
   color: @fontGrayColor;
 }
 
-.ui.infor.modal > .content > .ui.form > .dependent.field > .header {
+.ui.infor.modal > .content .ui.form > .dependent.field > .header {
   position: absolute;
   margin-top:-26px;
 }
 
-.ui.infor.modal > .content > .ui.form > .dependent.field > .field > .selection.dropdown {
+.ui.infor.modal > .content .ui.form > .dependent.field > .field > .selection.dropdown {
   padding: 9.5px 30px 9px 8px;
   width: auto !important;
   white-space: nowrap;
@@ -265,8 +265,8 @@ ui sgmodal > content > ui form
   margin-right: 10px;
 }
 
-.ui.infor.modal > .content > .ui.form > .dependent.field > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content > .ui.form > .dependent.field > .field > .selection.dropdown > .menu > .item {
+.ui.infor.modal > .content .ui.form > .dependent.field > .field > .ui.dropdown > .menu > .item,
+.ui.infor.modal > .content .ui.form > .dependent.field > .field > .selection.dropdown > .menu > .item {
   margin: 0px;
   width: auto !important;
   padding: 13px 4px 13px 8px !important;
@@ -278,34 +278,34 @@ ui sgmodal > content > ui form
 /***********************************************************
   dependents field / dependents field > dependents field
 ************************************************************/
-.ui.infor.modal > .content > .ui.form > .dependents.field ,
-.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field {
+.ui.infor.modal > .content .ui.form > .dependents.field ,
+.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field {
   position: relative;
 }
-.ui.infor.modal > .content > .ui.form > .dependents.field > .header ,
-.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field>.header {
+.ui.infor.modal > .content .ui.form > .dependents.field > .header ,
+.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field>.header {
   display: block;
 }
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields ,
-.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields {
+.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields ,
+.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields {
   margin-bottom: 0px;
 }
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field ,
-.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field {
+.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field ,
+.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field {
   line-height: 30px;
   color: @fontGrayColor;
   padding: 0px;
 }
 
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown,
-.ui.infor.modal > .content > .ui.form > .dependent.field > .field > .ui.dropdown,
-.ui.infor.modal > .content > .ui.form > .field > .ui.input > textarea,
-.ui.infor.modal > .content > .ui.form > .field > .ui.input > .ui.dropdown {
+.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown,
+.ui.infor.modal > .content .ui.form > .dependent.field > .field > .ui.dropdown,
+.ui.infor.modal > .content .ui.form > .field > .ui.input > textarea,
+.ui.infor.modal > .content .ui.form > .field > .ui.input > .ui.dropdown {
   border: 1px solid rgb(219, 225, 230);
   -webkit-transform: scale(1.01);
 }
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown ,
-.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown {
+.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown ,
+.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown {
   padding: 9.5px 30px 9px 8px;
   width: auto !important;
   white-space: nowrap;
@@ -315,25 +315,25 @@ ui sgmodal > content > ui form
   margin-right: 10px;
 }
 
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content > .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item,
-.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item {
+.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
+.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item,
+.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
+.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item {
   margin: 0px;
   width: auto !important;
   padding: 13px 4px 13px 8px !important;
   font-size: 14px;
 }
-.ui.infor.modal > .scrolling.content > .ui.form > .dependents.field > .inline.fields > .field > a > .label > i {
+.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > a > .label > i {
     margin:0px;
 }
 /**************************************
     dependents field > dependents field
 ***************************************/
-.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field {
+.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field {
   margin-top: 24px;
 }
-.ui.infor.modal > .content > .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > a > .ui.circular.label > .close.icon {
+.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > a > .ui.circular.label > .close.icon {
   margin: 0px;
   padding: 0px;
 }
@@ -342,14 +342,14 @@ ui sgmodal > content > ui form
 /************************
    post content
 *************************/
-.ui.infor.modal > .content > .ui.form > .post.content > .attach.field > .field {
+.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field {
   display: flex;
   justify-content: flex-start;
   flex-flow: nowrap;
   align-items: center;
 }
 
-.ui.infor.modal > .content > .ui.form > .post.content > .attach.field > .field > .ui.dropdown {
+.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .ui.dropdown {
   color: @fontGrayColor;
   font-size: @fontBodySize;
   padding: 9.5px 30px 9px 8px;
@@ -357,22 +357,22 @@ ui sgmodal > content > ui form
   white-space: nowrap;
 }
 
-.ui.infor.modal > .content > .ui.form > .post.content > .attach.field > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content > .ui.form > .post.content > .attach.field > .field > .selection.dropdown > .menu > .item {
+.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .ui.dropdown > .menu > .item,
+.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .selection.dropdown > .menu > .item {
   margin: 0px;
   width: auto !important;
   white-space: nowrap;
   padding: 13px 8px 13px 8px !important;
 }
 
-.ui.infor.modal > .content > .ui.form > .post.content > .attach.field > .field > .ui.icon.circular.label {
+.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .ui.icon.circular.label {
   margin-left: 6px;
 }
 
 /************************
   add attach field
 *************************/
-.ui.infor.modal > .content > .ui.form > a > {
+.ui.infor.modal > .content .ui.form > a > {
   color: #4a90e2;
   margin-top: 10px;
   font-size: @fontSize;
@@ -382,41 +382,41 @@ ui sgmodal > content > ui form
 /************************
   ui toggle checkbox
 *************************/
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.checkbox .box,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.checkbox label {
+.ui.infor.modal > .content .ui.form > .field > .ui.checkbox .box,
+.ui.infor.modal > .content .ui.form > .field > .ui.checkbox label {
     font-size: 14px;
     font-weight: bold;
     margin-left: -71px;
     color: #4b525a !important;
 }
 
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox input:checked~label {
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox input:checked~label {
     color: #4b525a !important;
 }
 
 
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:before,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:before {
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:before,
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:before {
     position: absolute;
     top: 24px;
     left: 0px;
 }
 
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:after,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:after {
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:after,
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:after {
     margin-top: 24px;
 }
 
 
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:after,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox .box:before,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:after,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox label:before {
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:after,
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:before,
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:after,
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:before {
     margin-left: 71px;
 }
 
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox input:checked~.box:before,
-.ui.infor.modal > .scrolling.content > .ui.form > .field > .ui.toggle.checkbox input:checked~label:before {
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox input:checked~.box:before,
+.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox input:checked~label:before {
     background-color: #00cddd !important;
 }
 
@@ -424,7 +424,7 @@ ui sgmodal > content > ui form
 /************************
   validation field
 *************************/
-.ui.infor.modal > .content > .ui.form > .validation.field > .tip {
+.ui.infor.modal > .content .ui.form > .validation.field > .tip {
   z-index: 9999;
   background: #000;
   border-radius: @containerBorderRadius;
@@ -440,12 +440,12 @@ ui sgmodal > content > ui form
 /************************
   detail field
 *************************/
-.ui.infor.modal > .content > .ui.form > .detail.field {
+.ui.infor.modal > .content .ui.form > .detail.field {
   margin: 0px;
   margin-top: 10px;
 }
 
-.ui.infor.modal > .content > .ui.form > .detail.field > .inline.field > label {
+.ui.infor.modal > .content .ui.form > .detail.field > .inline.field > label {
   width: 90px;
   font-size: @fontBodySize;
   text-align: right;
@@ -454,13 +454,13 @@ ui sgmodal > content > ui form
   font-weight: 500;
 }
 
-.ui.infor.modal > .content > .ui.form > .detail.field > .inline.field > label:after {
+.ui.infor.modal > .content .ui.form > .detail.field > .inline.field > label:after {
   content: ":";
   position: absolute;
   right: -6px;
 }
 
-.ui.infor.modal > .content > .ui.form > .detail.field > .inline.field > p {
+.ui.infor.modal > .content .ui.form > .detail.field > .inline.field > p {
   border-radius: @componentBorderRadius;
   font-size: @fontBodySize;
   color: @fontTitleColor ;
@@ -472,24 +472,24 @@ ui sgmodal > content > ui form
     ui infor modal > scrolling content > ui form > recharge field
 **********************************************************************/
 
-.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .inline.fields > .ui.input {
+.ui.infor.modal > .content .ui.form > .recharge.field > .inline.fields > .ui.input {
     width: 50%;
     font-size: 14px;
 }
-.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .inline.fields > .ui.input > input {
+.ui.infor.modal > .content .ui.form > .recharge.field > .inline.fields > .ui.input > input {
     width: 100% !important;
 }
-.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .inline.fields > a > .ui.circular.label > i {
+.ui.infor.modal > .content .ui.form > .recharge.field > .inline.fields > a > .ui.circular.label > i {
     margin: 0px;
 }
-.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .recharge.field > .inline.fileds > .ui.input {
+.ui.infor.modal > .content .ui.form > .recharge.field > .recharge.field > .inline.fileds > .ui.input {
     width: 50%;
     font-size: 14px;
 }
-.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input > input {
+.ui.infor.modal > .content .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input > input {
     width: 100% !important;
 }
-.ui.infor.modal > .scrolling.content > .ui.form > .recharge.field > .recharge.field > .inline.fields > a > .ui.circular.label > i {
+.ui.infor.modal > .content .ui.form > .recharge.field > .recharge.field > .inline.fields > a > .ui.circular.label > i {
     margin: 0px;
 }
 

@@ -19,6 +19,8 @@ $(".ui.sgcard .icon.close").click(function () {
 window.onload = function () {
     var headers = $(".ui.infor.modal > .tab.header > ul > li");
     var contents = $(".ui.infor.modal > .tab.content > div");
+    console.log("headers.length: " + headers.length);
+    console.log("contents.length: " + contents.length);
 
     for (var i = 0; i < headers.length; i++) {
         if(headers[i].className == "active") {
