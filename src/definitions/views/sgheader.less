@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
 }
 
 .ui.sgheader > .search > .action {
@@ -38,6 +39,7 @@
 }
 
 .ui.sgheader > .search > .action > .ui.button {
+    flex-shrink: 0;
     background-color: #ffbd00;
 	box-shadow: 0px 2px 11px 0px 
 		rgba(255, 189, 0, 0.2);
@@ -66,7 +68,7 @@
 .ui.sgsearch > .ui.input {
     padding: 0;
     padding-right: 5px;
-    width: 250px;
+    width: 20%;
 
     &:not(:first-child) {
         padding-left: 5px;
