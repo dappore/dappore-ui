@@ -30,7 +30,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
 }
 
 .ui.sgheader > .search > .action {
@@ -58,7 +57,7 @@
 ---------------*/
 
 .ui.sgsearch {
-    
+    width: 90%;
     font-size: @fontBodySize;
 
     display: flex;
@@ -69,6 +68,7 @@
     padding: 0;
     padding-right: 5px;
     width: 20%;
+    max-width: 200px;
 
     &:not(:first-child) {
         padding-left: 5px;
@@ -130,3 +130,6 @@
     }
 }
 
+.ui.sgheader > .filter > .header {
+    flex-shrink: 0;
+}
