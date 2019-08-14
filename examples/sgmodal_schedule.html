@@ -12,20 +12,116 @@
 </head>
 
 <body>
-    <div class="ui infor schedules modal">
+    <div class="ui infor first coupled schedule modal">
       <i class="close icon"></i>
       <div class="header">添加课程</div>
+      <!-- <button class="ui button"></button> -->
       <div class="scrolling content">
-        <form class="ui form">
+      <form class="ui form">
+
          <div class="field">
-           <label class="header">子课程</label>
-           <div class="add subcourse">
-             <i class="plus icon"></i>添加子课程
-           </div>
+          <label class="header">子课程</label>
+          <div class="add subcourse">
+            <a class="button">+添加子课程</a>
+          </div>
          </div>
 
+      <div class="field">
+        <label class="header">课频次</label>
+        <div class="field">
+          <select class="ui dropdown">
+            <option value="单次课">单词课</option>
+            <option value="多次课">多次课</option>
+          </select>
+        </div>
+      </div>
 
-        </form>
+      <div class="recharge field">
+        <label class="header">时间区间</label>
+        <div class="inline fields">
+          <div class="ui input">
+            <input type="date" placeholder="选择开始时间">
+          </div>
+          <span>-</span>
+          <div class="ui input" placeholder="选择结束时间">
+            <input type="date">
+          </div>
+        </div>
+      </div>
+
+      <div class="config field">
+        <label class="header">人员配置</label>
+        <div class="field">
+          <i class="icon close"></i>
+          <a href="#"><i class="icon primary edit"></i></a>
+          <table>
+            <tr>
+              <td>课节次</td>
+              <td>周一 / 09:30-10:30 / 10:30-11:30</td>
+            </tr>
+            <tr>
+              <td>教室</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>班级</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>学生</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>老师</td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+        <div class="add config">
+         <a href="#">+添加配置</a>
+        </div>
+      </div>
+
+      </form>
+    </div>
+    </div>
+
+      <div class="ui subcourse second coupled infor modal">
+        <i class="close icon"></i>
+        <div class="header">添加子课程</div>
+        <div class="scrolling content">
+          <form class="ui form">
+            <div class="field">
+              <label class="header">标题</label>
+              <div class="ui input">
+                <input type="text">
+              </div>
+            </div>
+            <div class="file field">
+              <div class="inline fields">
+                <div class="field">
+                  <div class="header">媒体资料</div>
+                  <div class="ui input">
+                    <input type="file">
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="header">文件</div>
+                  <div class="ui input">
+                    <input type="file">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
   <script src="index_js.js"></script>
+  <script>
+      $(".ui.infor.schedule.modal").modal("show");
+      $(".ui.infor.modal > .content > .ui.form > .field > .add.subcourse > a").click(function(){
+        $(".ui.subcourse.second.infor.modal").modal("show");
+      })
+  </script>
 </body>
 </html>

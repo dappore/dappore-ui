@@ -19,6 +19,7 @@
     <script src="main_js.js"></script>
     <script src="semantic_js.js"></script>
 
+
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
 </head>
@@ -83,6 +84,7 @@
             <div class="ui sgtree">
                 <div class="ui accordion">
                     <div class="active title">
+                        <i class='fas fa-edit'></i>
                         Level 1
                         <div class="ui dropdown">
                             <div class="menu">
@@ -97,9 +99,9 @@
                             <a>Level 2</a>
                             <div class="ui dropdown">
                                 <div class="menu">
-                                    <div class="item">Applications</div>
-                                    <div class="item">International Students</div>
-                                    <div class="item">Scholarships</div>
+                                    <a class="item">Applications</a>
+                                    <a class="item">International Students</a>
+                                    <a class="item">Scholarships</a>
                                 </div>
                             </div>
                         </div>
@@ -107,9 +109,9 @@
                             <a>Level 2</a>
                             <div class="ui dropdown">
                                 <div class="menu">
-                                    <div class="item">Applications</div>
-                                    <div class="item">International Students</div>
-                                    <div class="item">Scholarships</div>
+                                    <a class="item">Applications</a>
+                                    <a class="item">International Students</a>
+                                    <a class="item">Scholarships</a>Ï
                                 </div>
                             </div>
                         </div>
@@ -118,9 +120,9 @@
                         <a>Level 2</a>
                         <div class="ui dropdown">
                             <div class="menu">
-                                <div class="item">Applications</div>
-                                <div class="item">International Students</div>
-                                <div class="item">Scholarships</div>
+                                <a class="item">Applications</a>
+                                <a class="item">International Students</a>
+                                <a class="item">Scholarships</a>
                             </div>
                         </div>
                     </div>
@@ -362,12 +364,19 @@
                 ;
 
             $('.ui.accordion')
-                .accordion()
+                .accordion({
+                    selector: {
+                        trigger: '.title i'
+                    }
+                })
                 ;
 
             $('.ui.sgtree > .ui.accordion .title .ui.dropdown').on('click', function (event) {
                 event.stopPropagation();
             });
+
+            $("#sortable").sortable();
+            $("#sortable").disableSelection();
         }
     </script>
 

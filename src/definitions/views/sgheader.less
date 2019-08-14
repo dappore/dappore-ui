@@ -38,6 +38,7 @@
 }
 
 .ui.sgheader > .search > .action > .ui.button {
+    flex-shrink: 0;
     background-color: #ffbd00;
 	box-shadow: 0px 2px 11px 0px 
 		rgba(255, 189, 0, 0.2);
@@ -56,7 +57,7 @@
 ---------------*/
 
 .ui.sgsearch {
-    
+    width: 90%;
     font-size: @fontBodySize;
 
     display: flex;
@@ -66,7 +67,8 @@
 .ui.sgsearch > .ui.input {
     padding: 0;
     padding-right: 5px;
-    width: 250px;
+    width: 20%;
+    max-width: 200px;
 
     &:not(:first-child) {
         padding-left: 5px;
@@ -86,7 +88,8 @@
 .ui.sgsearch > .ui.button {
     font-size: @fontBodySize;
     // font-weight: 300;
-    width: 68px;
+    width: 5%;
+    max-width: 68px;
     height: 35px;
     padding: 0;
     margin: 0 5px;
@@ -127,4 +130,3 @@
         margin-right: 20px;
     }
 }
-
