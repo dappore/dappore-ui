@@ -611,7 +611,7 @@ ui sgmodal > content > ui form
   width: 50px;
   text-align-last: justify;
   position: relative;
-  white-space : normal nowrap;
+  white-space: nowrap;
 }
 
 .ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td:first-child:after{
@@ -620,7 +620,7 @@ ui sgmodal > content > ui form
 }
 
 .ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td:last-child {
- width: calc(100%-50px);
+ width: calc(100% - 50px);
  padding-left: 10px;
 }
 
@@ -638,12 +638,24 @@ ui sgmodal > content > ui form
 /******************************
 .ui.infor.subcourse.modal
 *******************************/
-.ui.infor.subcourse.second.coupled.modal > .content > .ui.form > .file.field > .inline.fields {
-  float: left;
-  background: yellow;
+.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > .inline.fields > .field > {
+ width: 50%;
+ position: relative;
 }
-
-
+.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > .inline.fields > .field > .ui.input > input[type=file] {
+  opacity: 0;
+  width: 100px;
+}
+.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > .inline.fields > .field > .ui.input > .ui.button {
+  width: 110px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 14px;
+}
+.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > .inline.fields > .field > .ui.input > span {
+  width: 100%;
+}
 
 /************************
   tab header
