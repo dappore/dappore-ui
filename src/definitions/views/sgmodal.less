@@ -13,26 +13,25 @@
   min-width: 450px;
   border-radius: @containerBorderRadius;
   margin: auto;
-  border-top: 1px solid #fff;
   box-shadow: 1px 3px 3px 0 rgba(0,0,0,0);
 }
 
 .ui.infor.modal > .header {
-  padding-top: 30px !important;
+  padding-top: 20px !important;
   padding-left: 40px !important;
-  font-size: 18px !important;
+  font-size: 16px !important;
   color: @fontTitleColor;
 }
 
 .ui.infor.modal > div:last-child{
- padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .ui.infor.modal > .close.icon {
   padding: 0px;
   position: absolute;
-  top: 30px !important;
-  right: 20px !important;
+  top: 15px !important;
+  right: 0px !important;
   font-size: @fontSize;
   color: @fontGrayColor;
 }
@@ -72,6 +71,10 @@ ui sgmodal > content > ui form
   margin-top: 10px;
   width: 90px;
   font-size: 14px;
+}
+
+.ui.infor.modal > .content  .ui.form input:focus{
+    border: 1px solid #00ccdd;
 }
 
 .ui.infor.modal > .content .ui.form > .field {
@@ -538,7 +541,7 @@ ui sgmodal > content > ui form
 
 
 /***************************************************
-  schedule
+    schedule
 ***************************************************/
 
 /**************************
@@ -557,13 +560,15 @@ ui sgmodal > content > ui form
 /****************************
       input[type=date]
 *****************************/
-.ui.infor.modal > .content .ui.form > .field > .inline.fields > .ui.input input[type=date]::-webkit-inner-spin-button {
-  display: none;
-}
-
+.ui.infor.modal > .content .ui.form > .field > .inline.fields > .ui.input input[type=date]::-webkit-inner-spin-button,
 .ui.infor.modal > .content .ui.form > .field > .inline.fields > .ui.input input[type=date]::-webkit-clear-button {
   display: none;
 }
+
+.ui.infor.modal > .content .ui.form > .recharge.field > .inline.fields > span {
+    color: #dbe1e6;
+}
+
 /************************
     .ui.infor.modal > .content > .ui.form > .config.field
 *************************/
@@ -629,6 +634,17 @@ ui sgmodal > content > ui form
   font-size: 14px;
   color: #4b525a;
 }
+
+/******************************
+.ui.infor.subcourse.modal
+*******************************/
+.ui.infor.subcourse.second.coupled.modal > .content > .ui.form > .file.field > .inline.fields {
+  float: left;
+  background: yellow;
+}
+
+
+
 /************************
   tab header
 *************************/
