@@ -103,16 +103,18 @@
                   <div class="header">媒体资料</div>
                   <div class="ui input">
                     <div class="ui inverted primary button">+添加文件</div>
-                    <!-- <span>未选择任何文件</span> -->
+                    <div class="description" id="text">未选择任何文件</div>
                     <input type="file" id="fileinp">
                   </div>
                 </div>
-                <!-- <div class="field">
+                <div class="field">
                   <div class="header">文件</div>
                   <div class="ui input">
-                    <input type="file">
+                    <div class="ui inverted primary button">+添加文件</div>
+                    <div class="description" id="text1">未选择任何文件</div>
+                    <input type="file" id="fileinp1">
                   </div>
-                </div> -->
+                </div>
               </div>
             </div>
           </form>
@@ -123,6 +125,12 @@
       $(".ui.infor.schedule.modal").modal("show");
       $(".ui.infor.modal > .content > .ui.form > .field > .add.subcourse > a").click(function(){
         $(".ui.subcourse.second.infor.modal").modal("show");
+      });
+  $("#fileinp").change(function () {
+    $("#text").html($("#fileinp").val()).css("color", "#4a90e2");
+  });
+    $("#fileinp1").change(function () {
+        $("#text1").html($("#fileinp1").val()).css("color","#4a90e2");
       })
   </script>
 </body>
