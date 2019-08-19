@@ -38,16 +38,16 @@
 
 /***************************
 ui infor modal > scrolling content > table
-***************************/
-.ui.infor.modal > .content table > tbody > tr td:first-child{
+// ***************************/
+.ui.infor.modal > .content > .ui.very.basic.table > tbody > tr td:first-child{
     vertical-align: text-top;
 }
 
-.ui.infor.modal > .content table > tbody > tr:first-child > td {
+.ui.infor.modal > .content > .ui.very.basic.table > tbody > tr:first-child > td {
     padding-top: 20px;
 }
 
-.ui.infor.modal > .content table > tbody > tr > td {
+.ui.infor.modal > .content > .ui.very.basic.table > tbody > tr > td {
     border-top: 0px;
     font-size: 14px;
 }
@@ -551,6 +551,7 @@ ui sgmodal > content > ui form
   border: 1px dashed rgb(219, 225, 230);
   text-align: center;
   padding: 10px 0px;
+  border-radius: 4px;
 }
 
 .ui.infor.modal > .content .ui.form > .field > .add.subcourse > a {
@@ -558,15 +559,20 @@ ui sgmodal > content > ui form
   color: #4b525a;
 }
 /****************************
-      input[type=date]
+      interval field
 *****************************/
-.ui.infor.modal > .content .ui.form > .field > .inline.fields > .ui.input input[type=date]::-webkit-inner-spin-button,
-.ui.infor.modal > .content .ui.form > .field > .inline.fields > .ui.input input[type=date]::-webkit-clear-button {
+.ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > .ui.input input[type=date]::-webkit-inner-spin-button,
+.ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > .ui.input input[type=date]::-webkit-clear-button {
   display: none;
 }
 
-.ui.infor.modal > .content .ui.form > .recharge.field > .inline.fields > span {
-    color: #dbe1e6;
+.ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > span {
+  color: #dbe1e6;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > .ui.input {
+  margin:0px;
 }
 
 /************************
@@ -628,6 +634,7 @@ ui sgmodal > content > ui form
   border: 1px dashed rgb(219, 225, 230);
   padding: 10px 0px;
   text-align: center;
+  border-radius: 4px;
 }
 
 .ui.infor.modal > .content .ui.form > .config.field > .add.config > a {
@@ -638,24 +645,39 @@ ui sgmodal > content > ui form
 /******************************
 .ui.infor.subcourse.modal
 *******************************/
-.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > .inline.fields > .field > {
- width: 50%;
- position: relative;
-}
-.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > .inline.fields > .field > .ui.input > input[type=file] {
-  opacity: 0;
-  width: 100px;
-}
-.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > .inline.fields > .field > .ui.input > .ui.button {
-  width: 110px;
-  position: absolute;
-  left: 0px;
-  top: 0px;
+
+.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > thead > tr > th {
   font-size: 14px;
+  color: @fontTitleColor;
+  margin: 0px;
+  padding-bottom: 7px;
+  font-weight: bold;
 }
-.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > .inline.fields > .field > .ui.input > span {
-  width: 100%;
+.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td {
+  padding-top: 0px;
+  position: relative;
+  vertical-align: text-top;
 }
+.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td > input[type=file] {
+  opacity: 0;
+  width: 112px;
+  margin-top:-40px;
+  float: left;
+}
+.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td > .ui.inverted.primary.button {
+  width: 110px;
+  font-size: 14px;
+  box-shadow: 0 0 0 1px #00ccdd inset;
+  color:#00ccdd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td > .description {
+  font-size: 12px;
+  color: #9199a3;
+}
+
+
 
 /************************
   tab header
@@ -709,7 +731,7 @@ ui sgmodal > content > ui form
 }
 
 .ui.infor.second.modal > .content > * {
-  width: 90%;
+  width: 82%;
   margin: auto;
   min-width: 200px;
 }

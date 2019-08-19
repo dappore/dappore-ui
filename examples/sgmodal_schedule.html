@@ -36,14 +36,14 @@
         </div>
       </div>
 
-      <div class="recharge field">
+      <div class="interval field">
         <label class="header">时间区间</label>
         <div class="inline fields">
           <div class="ui input">
-            <input type="date" placeholder="选择开始时间">
+            <input type="date" >
           </div>
           <span>-</span>
-          <div class="ui input" placeholder="选择结束时间">
+          <div class="ui input">
             <input type="date">
           </div>
         </div>
@@ -97,23 +97,36 @@
                 <input type="text">
               </div>
             </div>
+
             <div class="file field">
-              <div class="inline fields">
-                <div class="field">
-                  <div class="header">媒体资料</div>
-                  <div class="ui input">
+              <table>
+                <thead>
+                  <tr>
+                    <th>媒体资料</th>
+                    <th>文件</th>
+                  </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>
                     <div class="ui inverted primary button">+添加文件</div>
-                    <!-- <span>未选择任何文件</span> -->
                     <input type="file" id="fileinp">
-                  </div>
-                </div>
-                <!-- <div class="field">
-                  <div class="header">文件</div>
-                  <div class="ui input">
-                    <input type="file">
-                  </div>
-                </div> -->
-              </div>
+                  </td>
+                  <td>
+                    <div class="ui inverted primary button">+添加文件</div>
+                    <input type="file" id="fileinp1">
+                  </td>
+                </tr>
+                <tr>
+                  <td><div class="description" id="text">未选择任何文件</div></td>
+                  <td><div class="description" id="text1">未选择任何文件</div></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="field">
+              <input type="submit" value="确定" class="ui primary button">
             </div>
           </form>
         </div>
@@ -123,6 +136,12 @@
       $(".ui.infor.schedule.modal").modal("show");
       $(".ui.infor.modal > .content > .ui.form > .field > .add.subcourse > a").click(function(){
         $(".ui.subcourse.second.infor.modal").modal("show");
+      });
+  $("#fileinp").change(function () {
+    $("#text").html($("#fileinp").val()).css("color", "#4a90e2");
+  });
+    $("#fileinp1").change(function () {
+        $("#text1").html($("#fileinp1").val()).css("color","#4a90e2");
       })
   </script>
 </body>
