@@ -10,6 +10,35 @@
     <script src="main_js.js"></script>
     <script src="semantic_js.js"></script>
 
+    <script>
+        // tab select
+        window.onload = function () {
+            var headers = $(".ui.infor.modal > .tab.header > ul > li");
+            var contents = $(".ui.infor.modal > .tab.content > div");
+
+            for (var i = 0; i < headers.length; i++) {
+                if(headers[i].className == "active") {
+                    for (var j = 0; j < contents.length; j++) {
+                        contents[j].className = "tab hide";
+                    }
+                    contents[i].className = "tab show";
+                }
+
+                headers[i].index = i;
+                headers[i].onclick = function () {
+                    for (var i = 0; i < headers.length; i++) {
+                        headers[i].className = "";
+                    }
+                    this.className = "active";
+                    for (var j = 0; j < contents.length; j++) {
+                        contents[j].className = "tab hide";
+                    }
+                    contents[this.index].className = "tab show";
+                }
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -37,21 +66,44 @@
         </ul>
     </div>
 
-    <div class="tab content" style="height: 500px">
+    <div class="tab scrolling content" style="height: 680px">
+        <div>
+            <form class="ui form" action="/admin/promotes" accept-charset="UTF-8" data-remote="true" method="post"><input type="hidden" name="authenticity_token" value="Jl3ji/LqSkgrgAjUBLZo3jKjHPaEDqG0q8my8cqWIFPg67YLMCrywO3RdKG72TXxrqjMXpuQctZUgLIRlDalEw==">
+                <div class="input required field"><label class="header" for="promote_name">名称</label><div class="ui input"><input type="text" name="promote[name]" id="promote_name"></div></div>
+                <div class="field"><label class="header" for="promote_short_name">简称</label><div class="ui input"><input type="text" name="promote[short_name]" id="promote_short_name"></div></div>
+                <div class="field"><label class="header" for="promote_code">编码</label><div class="ui input"><input type="text" name="promote[code]" id="promote_code"></div></div>
+                <div class="field"><label class="header" for="promote_description">描述</label><div class="ui input"><input type="text" name="promote[description]" id="promote_description"></div></div>
+                <div class="field"><label class="header" for="promote_scope">应用范围</label><div class="ui input"><div class="ui fluid search dropdown selection"><select name="promote[scope]" id="promote_scope"><option value="overall">全体商品</option>
+                    <option value="single">单个商品</option></select><i class="dropdown icon"></i><input class="search" autocomplete="off" tabindex="0"><div class="text">全体商品</div><div class="menu" tabindex="-1"><div class="item active selected" data-value="overall">全体商品</div><div class="item" data-value="single">单个商品</div></div></div></div><span data-tooltip="是否可以对多个商品进行统一计算"><i class="grey question circle icon"></i></span></div>
+                <div class="field"><label class="header" for="promote_effect_at">生效时间</label><div class="ui input"><input value="2019-08-12 17:19:36 +0800" type="datetime-local" name="promote[effect_at]" id="promote_effect_at"></div></div>
+                <div class="field"><label class="header" for="promote_expire_at">过期时间</label><div class="ui input"><input type="datetime-local" name="promote[expire_at]" id="promote_expire_at"></div></div>
+                <div class="field"><label class="header" for="promote_sequence">序列</label><div class="ui input"><input step="1.0" type="number" value="1" name="promote[sequence]" id="promote_sequence"></div></div>
+                <div class="field"><label class="header" for="promote_metering">单位</label><div class="ui input"><div class="ui fluid search dropdown selection"><select name="promote[metering]" id="promote_metering"><option value="number">购买件数</option>
+                    <option value="amount">总金额</option>
+                    <option value="weight">总重量</option>
+                    <option value="volume">体积</option></select><i class="dropdown icon"></i><input class="search" autocomplete="off" tabindex="0"><div class="text">购买件数</div><div class="menu" tabindex="-1"><div class="item active selected" data-value="number">购买件数</div><div class="item" data-value="amount">总金额</div><div class="item" data-value="weight">总重量</div><div class="item" data-value="volume">体积</div></div></div></div></div>
+                <div class="field"><div class="six wide field"></div><input type="submit" name="commit" value="创建" class="ui primary button" data-disable-with="创建"></div>
+            </form>
+        </div>
         <div>
             <div>码云笔记：欢庆“十一”送祝福</div>
-            <button class="ui positive button" type="button" style="margin: 80px">打开二级弹窗</button>
+            <button class="ui positive add button" type="button" style="margin: 80px" id="add_button">打开二级弹窗</button>
         </div>
         <div>
             收银妹代理棋牌游戏 成功晋级游戏女老板2
             收银妹代理棋牌游戏 成功晋级游戏女老板2
-        </div>
-        <div>
-            紫金阁：代理棋牌游戏如何能稳赚不亏？
         </div>
     </div>
 
 </div>
+
+<script>
+    $('.first.modal')
+        .modal({
+            allowMultiple: true,
+        })
+        .modal('show');
+</script>
 
 <div class="ui infor second coupled modal" id="second_modal">
     <i class="black close icon"></i>
@@ -60,7 +112,7 @@
 
     <button class="ui positive button" type="button" style="margin: 10px; margin-left: 40px">打开三级弹窗</button>
 
-    <div class="scrolling content">
+    <div class="scrolling content" style="max-height: 600px">
         <h1>LOREM IPSUM DOLOR SIT AMET</h1>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ex velit, viverra non vulputate vitae,
@@ -124,6 +176,15 @@
         </p>
     </div>
 </div>
+
+<script>
+    $('.second.modal')
+        .modal({
+            allowMultiple: true,
+        })
+        .modal('attach events', '.first.modal #add_button')
+    ;
+</script>
 
 <div class="ui infor third coupled modal">
     <i class="black close icon"></i>
