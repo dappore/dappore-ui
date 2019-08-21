@@ -4,7 +4,6 @@ $("select.dropdown").dropdown();
 $(".ui.sgcard .icon.close").click(function () {
   $(this).closest(".ui.sgcard").transition("fade");
 });
-
 // tab select
 window.onload = function () {
     var headers = $(".ui.infor.modal > .tab.header > ul > li");

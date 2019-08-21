@@ -124,25 +124,130 @@
                 </tbody>
               </table>
             </div>
-
             <div class="field">
               <input type="submit" value="确定" class="ui primary button">
             </div>
           </form>
         </div>
       </div>
+
+      <div class="ui infor second coupled config modal">
+        <i class="close icon"></i>
+        <div class="header">添加子课程</div>
+        <div class="scrolling content">
+          <form class="ui form">
+            <div class="config field">
+              <div class="header">课节次</div>
+              <div class="ui dropdown button">
+                <span class="text">请选择课节次</span>
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text disable">周一</span>
+                    <div class="menu">
+                      <div class="item">09:30-10:30</div>
+                      <div class="item">10:30-11:30</div>
+                      <div class="item">09:30-10:30</div>
+                      <div class="item">10:30-11:30</div>
+                      <div class="item">09:30-10:30</div>
+                      <div class="item">10:30-11:30</div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <i class="dropdown icon"></i>
+                    <span class="text">周二</span>
+                    <div class="menu">
+                      <div class="item">09:30-10:30</div>
+                      <div class="item">10:30-11:30</div>
+                      <div class="item">09:30-10:30</div>
+                      <div class="item">10:30-11:30</div>
+                      <div class="item">09:30-10:30</div>
+                      <div class="item">10:30-11:30</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+      </div>
+
+
+
+
+
   <script src="index_js.js"></script>
   <script>
       $(".ui.infor.schedule.modal").modal("show");
       $(".ui.infor.modal > .content > .ui.form > .field > .add.subcourse > a").click(function(){
-        $(".ui.subcourse.second.infor.modal").modal("show");
+        $(".ui.subcourse.second.infor.coupled.modal").modal("show");
+      });
+      $(".ui.infor.modal > .content > .ui.form > .config.field > .field > a").click(function(){
+        $(".ui.config.second.infor.coupled.modal").modal("show");
       });
   $("#fileinp").change(function () {
     $("#text").html($("#fileinp").val()).css("color", "#4a90e2");
   });
     $("#fileinp1").change(function () {
         $("#text1").html($("#fileinp1").val()).css("color","#4a90e2");
+      });
+  $(".ui.infor.second.coupled.config.modal .ui.dropdown").dropdown({
+    // useLabels:true,
+    // maxSelections: 3,
+    // allowAdditions: true,
+    allowCategorySelection: true
+  });
+  $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").click(function(){
+    $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").empty().removeClass("hidden").html("请选择课节次");
+    return false;
+  });
+  $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button .item").click(function(){
+    $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").addClass("hidden");
+  });
+
+
+
+  $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field").hover(function(){
+
+    $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div").each(function(n){
+      $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ")").hover(function () {
+        $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").each(function (i) {
+          $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").eq(i).click(function () {
+           console.log(i);
+            var item = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div");
+            if(item.eq(i).attr("class") == "item"){
+              item.eq(i).addClass("active");
+            }else{
+              item.eq(i).removeClass("active");
+            }
+            return false;
+          });
+        })
       })
+    })
+  })
+
+  //   var week = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div");
+  //   var time = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > .item > .menu > div");
+  //   for(var i=0; i<week.length; i++){
+  //     // week.eq(i).hover(function(){
+  //       for (var j = 0; j < time.length; j++) {
+  //         time[j].onclick=function () {
+  //           console.log(j);
+  //           if (time[j].className == "item") {
+  //             time.eq[j].classList.add("active");
+  //             console.log(1);
+  //           } else {
+  //             time[j].classList.remove("active");
+  //             console.log(2);
+  //           }
+  //           return false;
+  //         }
+  //       }
+  //     // })
+  //   }
+  // })
+
   </script>
 </body>
 </html>
