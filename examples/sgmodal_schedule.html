@@ -178,6 +178,22 @@
 
   <script src="index_js.js"></script>
   <script>
+        $('.coupled.modal')
+        .modal({
+          allowMultiple: true,
+        })
+        ;
+
+      $('.second.modal')
+        .modal('attach events', '.first.modal .button')
+        ;
+
+      $('.third.modal')
+        .modal('attach events', '.second.modal .button')
+        ;
+
+      $('.first.modal')
+        .modal('show');
       $(".ui.infor.schedule.modal").modal("show");
       $(".ui.infor.modal > .content > .ui.form > .field > .add.subcourse > a").click(function(){
         $(".ui.subcourse.second.infor.coupled.modal").modal("show");
@@ -185,47 +201,48 @@
       $(".ui.infor.modal > .content > .ui.form > .config.field > .field > a").click(function(){
         $(".ui.config.second.infor.coupled.modal").modal("show");
       });
-  $("#fileinp").change(function () {
-    $("#text").html($("#fileinp").val()).css("color", "#4a90e2");
-  });
-    $("#fileinp1").change(function () {
-        $("#text1").html($("#fileinp1").val()).css("color","#4a90e2");
+
+      $("#fileinp").change(function () {
+        $("#text").html($("#fileinp").val()).css("color", "#4a90e2");
       });
-  $(".ui.infor.second.coupled.config.modal .ui.dropdown").dropdown({
-    // useLabels:true,
-    // maxSelections: 3,
-    // allowAdditions: true,
-    allowCategorySelection: true
-  });
-  $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").click(function(){
-    $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").empty().removeClass("hidden").html("请选择课节次");
-    return false;
-  });
-  $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button .item").click(function(){
-    $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").addClass("hidden");
-  });
-
-
-
-  $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field").hover(function(){
-
-    $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div").each(function(n){
-      $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ")").hover(function () {
-        $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").each(function (i) {
-          $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").eq(i).click(function () {
-           console.log(i);
-            var item = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div");
-            if(item.eq(i).attr("class") == "item"){
-              item.eq(i).addClass("active");
-            }else{
-              item.eq(i).removeClass("active");
-            }
-            return false;
+        $("#fileinp1").change(function () {
+            $("#text1").html($("#fileinp1").val()).css("color","#4a90e2");
           });
+      $(".ui.infor.second.coupled.config.modal .ui.dropdown").dropdown({
+        // useLabels:true,
+        // maxSelections: 3,
+        // allowAdditions: true,
+        allowCategorySelection: true
+      });
+      $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").click(function(){
+        $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").empty().removeClass("hidden").html("请选择课节次");
+        return false;
+      });
+      $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button .item").click(function(){
+        $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").addClass("hidden");
+      });
+
+
+
+      $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field").hover(function(){
+
+        $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div").each(function(n){
+          $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ")").hover(function () {
+            $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").each(function (i) {
+              $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").eq(i).click(function () {
+              console.log(i);
+                var item = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div");
+                if(item.eq(i).attr("class") == "item"){
+                  item.eq(i).addClass("active");
+                }else{
+                  item.eq(i).removeClass("active");
+                }
+                return false;
+              });
+            })
+          })
         })
       })
-    })
-  })
 
   //   var week = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div");
   //   var time = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > .item > .menu > div");
