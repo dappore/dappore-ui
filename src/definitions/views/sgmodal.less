@@ -1,845 +1,845 @@
-@import (multiple) '../../site/globals/site.variables';
+// @import (multiple) '../../site/globals/site.variables';
 
-.ui.dimmer {
-  background-color: rgba(0,0,0,.35) !important;
-}
+// .ui.dimmer {
+//   background-color: rgba(0,0,0,.35) !important;
+// }
 
-.ui.infor.modal .ui.dimmer {
-  background-color: rgba(0,0,0,.2) !important;
-}
+// .ui.infor.modal .ui.dimmer {
+//   background-color: rgba(0,0,0,.2) !important;
+// }
 
-.ui.infor.modal {
-  width: 48% !important;
-  min-width: 450px;
-  border-radius: @containerBorderRadius;
-  margin: auto;
-  box-shadow: 1px 3px 3px 0 rgba(0,0,0,0);
-}
+// .ui.infor.modal {
+//   width: 48% !important;
+//   min-width: 450px;
+//   border-radius: @containerBorderRadius;
+//   margin: auto;
+//   box-shadow: 1px 3px 3px 0 rgba(0,0,0,0);
+// }
 
-.ui.infor.modal > .header {
-  padding-top: 20px !important;
-  padding-left: 40px !important;
-  font-size: 16px !important;
-  color: @fontTitleColor;
-}
+// .ui.infor.modal > .header {
+//   padding-top: 20px !important;
+//   padding-left: 40px !important;
+//   font-size: 16px !important;
+//   color: @fontTitleColor;
+// }
 
-.ui.infor.modal > div:last-child{
-  padding-bottom: 30px;
-}
+// .ui.infor.modal > div:last-child{
+//   padding-bottom: 30px;
+// }
 
-.ui.infor.modal > .close.icon {
-  padding: 0px;
-  position: absolute;
-  top: 15px !important;
-  right: 0px !important;
-  font-size: @fontSize;
-  color: @fontGrayColor;
-}
+// .ui.infor.modal > .close.icon {
+//   padding: 0px;
+//   position: absolute;
+//   top: 15px !important;
+//   right: 0px !important;
+//   font-size: @fontSize;
+//   color: @fontGrayColor;
+// }
 
-/***************************
-ui infor modal > scrolling content > table
+// /***************************
+// ui infor modal > scrolling content > table
+// // ***************************/
+// .ui.infor.modal > .content > .ui.very.basic.table > tbody > tr td:first-child{
+//     vertical-align: text-top;
+// }
+
+// .ui.infor.modal > .content > .ui.very.basic.table > tbody > tr:first-child > td {
+//     padding-top: 20px;
+// }
+
+// .ui.infor.modal > .content > .ui.very.basic.table > tbody > tr > td {
+//     border-top: 0px;
+//     font-size: 14px;
+// }
+// /************************
+// ui sgmodal > content > ui form
+
+// *************************/
+// .ui.infor.modal > .content {
+//   width: 100%;
+//   padding: 0px;
+// }
+
+// .ui.infor.modal > .content > * {
+//   width: 50%;
+//   margin: auto;
+//   min-width: 200px;
+// }
+
+// .ui.infor.modal > .content .ui.form > a {
+//   display: block;
+//   margin-top: 10px;
+//   width: 90px;
+//   font-size: 14px;
+// }
+
+// .ui.infor.modal > .content  .ui.form input:focus{
+//     border: 1px solid #00ccdd;
+// }
+
+// .ui.infor.modal > .content .ui.form > .field {
+//   margin: 0px;
+//   margin-top: 24px;
+//   position: relative;
+// }
+
+// .ui.infor.modal > .content .ui.form > .field > .header {
+//   font-size: 14px;
+//   color: @fontTitleColor;
+//   margin: 0px;
+//   margin-bottom: 7px;
+//   font-weight: bold;
+// }
+
+// .ui.infor.modal > .content .ui.form > .field > .ui.button {
+//   display: block;
+//   margin: 0 auto;
+//   font-size: 14px;
+// }
+
+// .ui.infor.modal > .content .ui.form input:not([type]),
+// .ui.infor.modal > .content .ui.form input[type=date],
+// .ui.infor.modal > .content .ui.form input[type=datetime-local],
+// .ui.infor.modal > .content .ui.form input[type=email],
+// .ui.infor.modal > .content .ui.form input[type=file],
+// .ui.infor.modal > .content .ui.form input[type=number],
+// .ui.infor.modal > .content .ui.form input[type=password],
+// .ui.infor.modal > .content .ui.form input[type=search],
+// .ui.infor.modal > .content .ui.form input[type=tel],
+// .ui.infor.modal > .content .ui.form input[type=text],
+// .ui.infor.modal > .content .ui.form input[type=time],
+// .ui.infor.modal > .content .ui.form input[type=url],
+// .ui.infor.modal > .content .ui.form textarea,
+// .ui.infor.modal > .content .ui.form > .field > .field > .ui.dropdown,
+// .ui.infor.modal > .content .ui.form > .field > .field > .ui.dropdown > .menu > .item,
+// .ui.infor.modal > .content .ui.form > .field > .ui.input > .ui.dropdown,
+// .ui.infor.modal > .content .ui.form > .field > .ui.input > .ui.dropdown > .menu > .item{
+//   font-size: 14px;
+// }
+
+
+// /************************
+//     input field
+// *************************/
+
+// .ui.infor.modal > .content .ui.form > .field > .ui.input {
+//   color: @fontTitleColor;
+//   border-radius: @componentBorderRadius;
+//   box-sizing: border-box;
+// }
+
+// .ui.infor.modal > .content .ui.form > .input.required.field,
+// .ui.infor.modal > .content .ui.form > .input.error.field  {
+//   position: relative;
+// }
+
+// .ui.infor.modal > .content .ui.form > .input.required.field > span ,
+// .ui.infor.modal > .content .ui.form > .input.error.field > span{
+//   position: absolute;
+//   right: -35px;
+//   top: 35px;
+// }
+
+// /************************
+//     text field
+// *************************/
+
+// .ui.infor.modal > .content .ui.form > .text.field > textarea {
+//   color: @fontTitleColor ;
+//   border-radius: @componentBorderRadius;
+//   min-height: 5em;
+//   height: 5em;
+//   max-height: 24em;
+// }
+
+// .ui.infor.modal > .content .ui.form > .large.text.field > textarea {
+//   color: @fontTitleColor ;
+//   border-radius: @componentBorderRadius;
+//   min-height: 10em;
+//   height: 5em;
+//   max-height: 24em;
+// }
+
+// /************************
+//   check field / radio field
+// *************************/
+// .ui.infor.modal > .content .ui.form > .radio.field > .header,
+// .ui.infor.modal > .content .ui.form > .check.field > .header {
+//   margin: 0px;
+//   padding: 0px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox,
+// .ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox {
+//   margin-top: 7px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label,
+// .ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > label {
+//   font-size: @fontBodySize ;
+//   font-family: PingFang-SC-Medium;
+//   color: @fontTitleColor ;
+
+// }
+
+// .ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label:before {
+//   z-index: 1;
+//   opacity: 0.4;
+// }
+
+// .ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label:after{
+//   background: @primaryColor;
+// }
+
+// .ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > input+label:after,
+// .ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
+//   background: @primaryColor;
+// }
+
+// .ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
+//   color: white;
+//   border-radius: @componentBorderRadius;
+// }
+
+// /************************
+//      checkbox
+// *************************/
+// .ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox .box,
+// .ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox >  label {
+//   font-size: @fontBodySize ;
+//   font-family: PingFang-SC-Medium;
+//   color: @fontTitleColor ;
+//   margin-left: 0px !important;
+//   font-weight: 400;
+// }
+
+// .ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox > input+label:after {
+//   background: @primaryColor;
+// }
+
+// .ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox > input+label:after {
+//   color: white;
+//   border-radius: @componentBorderRadius;
+// }
+
+// /************************
+//     image field
+// *************************/
+// .ui.infor.modal > .content .ui.form > .avatar.field > .image.field {
+//   width: 80px;
+//   height: 80px;
+//   background: @dividedColor;
+//   border-radius: @componentBorderRadius;
+//   margin: 0px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .avatar.field > #open_image {
+//   visibility: hidden;
+//   float: left;
+// }
+
+// .ui.infor.modal > .content .ui.form > .avatar.field > .image.field {
+//   display: flex;
+//   position: relative;
+//   font-size: 30px;
+//   color: #dbe1e6;
+// }
+
+// .ui.infor.modal > .content .ui.form > .avatar.field > .image.field > img {
+//   width: 100%;
+//   border-radius: @componentBorderRadius;
+// }
+
+// .ui.infor.modal > .content .ui.form > .avatar.field > .image.field > .icon.plus {
+//   position: absolute;
+//   left: 50%;
+//   top: 50%;
+//   align-self: center;
+//   margin-left: -18px;
+//   margin-top: -18px;
+// }
+
+
+// /************************
+//     dependent field
+// *************************/
+// .ui.infor.modal > .content .ui.form > .dependent.field {
+//   display: flex;
+//   justify-content: flex-start;
+//   flex-wrap: nowrap;
+//   position: relative;
+//   margin-top: 48px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependent.field > .field {
+//   margin: 0px;
+//   line-height: 30px;
+//   color: @fontGrayColor;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependent.field > .header {
+//   position: absolute;
+//   margin-top:-26px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependent.field > .field > .selection.dropdown {
+//   padding: 9.5px 30px 9px 8px;
+//   width: auto !important;
+//   white-space: nowrap;
+//   color: @fontGrayColor;
+//   font-size: @fontBodySize;
+//   text-align: center;
+//   margin-right: 10px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependent.field > .field > .ui.dropdown > .menu > .item,
+// .ui.infor.modal > .content .ui.form > .dependent.field > .field > .selection.dropdown > .menu > .item {
+//   margin: 0px;
+//   width: auto !important;
+//   padding: 13px 4px 13px 8px !important;
+//   font-size: 14px;
+// }
+
+
+
+// /***********************************************************
+//   dependents field / dependents field > dependents field
+// ************************************************************/
+// .ui.infor.modal > .content .ui.form > .dependents.field ,
+// .ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field {
+//   position: relative;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependents.field > .header ,
+// .ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field>.header {
+//   display: block;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields ,
+// .ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields {
+//   margin-bottom: 0px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field ,
+// .ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field {
+//   line-height: 30px;
+//   color: @fontGrayColor;
+//   padding: 0px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown,
+// .ui.infor.modal > .content .ui.form > .dependent.field > .field > .ui.dropdown,
+// .ui.infor.modal > .content .ui.form > .field > .ui.input > textarea,
+// .ui.infor.modal > .content .ui.form > .field > .ui.input > .ui.dropdown {
+//   border: 1px solid rgb(219, 225, 230);
+//   -webkit-transform: scale(1.01);
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown ,
+// .ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown {
+//   padding: 9.5px 30px 9px 8px;
+//   width: auto !important;
+//   white-space: nowrap;
+//   color: @fontGrayColor;
+//   font-size: @fontBodySize;
+//   text-align: center;
+//   margin-right: 10px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
+// .ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item,
+// .ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
+// .ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item {
+//   margin: 0px;
+//   width: auto !important;
+//   padding: 13px 4px 13px 8px !important;
+//   font-size: 14px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > a > .label > i {
+//     margin:0px;
+// }
+// /**************************************
+//     dependents field > dependents field
+// ***************************************/
+// .ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field {
+//   margin-top: 24px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > a > .ui.circular.label > .close.icon {
+//   margin: 0px;
+//   padding: 0px;
+// }
+
+
+// /************************
+//    post content
+// *************************/
+// .ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field {
+//   display: flex;
+//   justify-content: flex-start;
+//   flex-flow: nowrap;
+//   align-items: center;
+// }
+
+// .ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .ui.dropdown {
+//   color: @fontGrayColor;
+//   font-size: @fontBodySize;
+//   padding: 9.5px 30px 9px 8px;
+//   width: auto !important;
+//   white-space: nowrap;
+// }
+
+// .ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .ui.dropdown > .menu > .item,
+// .ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .selection.dropdown > .menu > .item {
+//   margin: 0px;
+//   width: auto !important;
+//   white-space: nowrap;
+//   padding: 13px 8px 13px 8px !important;
+// }
+
+// .ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .ui.icon.circular.label {
+//   margin-left: 6px;
+// }
+
+// /************************
+//   add attach field
+// *************************/
+// .ui.infor.modal > .content .ui.form > a > {
+//   color: #4a90e2;
+//   margin-top: 10px;
+//   font-size: @fontSize;
+// }
+
+
+// /************************
+//   ui toggle checkbox
+// *************************/
+// .ui.infor.modal > .content .ui.form > .field > .ui.checkbox .box,
+// .ui.infor.modal > .content .ui.form > .field > .ui.checkbox label {
+//     font-size: 14px;
+//     font-weight: bold;
+//     margin-left: -71px;
+//     color: #4b525a !important;
+// }
+
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox input:checked~label {
+//     color: #4b525a !important;
+// }
+
+
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:before,
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:before {
+//     position: absolute;
+//     top: 24px;
+//     left: 0px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:after,
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:after {
+//     margin-top: 24px;
+// }
+
+
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:after,
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:before,
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:after,
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:before {
+//     margin-left: 71px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox input:checked~.box:before,
+// .ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox input:checked~label:before {
+//     background-color: #00cddd !important;
+// }
+
+
+// /************************
+//   validation field
+// *************************/
+// .ui.infor.modal > .content .ui.form > .validation.field > .tip {
+//   z-index: 9999;
+//   background: #000;
+//   border-radius: @containerBorderRadius;
+//   opacity: 0.6;
+//   font-size: @fontSize;
+//   color: #fff;
+//   text-align: center;
+//   padding: 15px 5px;
+//   margin-top: 24px;
+//   display: none;
+// }
+
+// /************************
+//   detail field
+// *************************/
+// .ui.infor.modal > .content .ui.form > .detail.field {
+//   margin: 0px;
+//   margin-top: 10px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .detail.field > .inline.field > label {
+//   width: 90px;
+//   font-size: @fontBodySize;
+//   text-align: right;
+//   color: @fontTitleColor ;
+//   position: relative;
+//   font-weight: 500;
+// }
+
+// .ui.infor.modal > .content .ui.form > .detail.field > .inline.field > label:after {
+//   content: ":";
+//   position: absolute;
+//   right: -6px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .detail.field > .inline.field > p {
+//   border-radius: @componentBorderRadius;
+//   font-size: @fontBodySize;
+//   color: @fontTitleColor ;
+//   padding: 5px;
+//   font-weight: 500;
+// }
+
+// /*********************************************************************
+//     ui infor modal > scrolling content > ui form > recharge field
+// **********************************************************************/
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a,
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > a {
+//     position: absolute;
+//     right: -40px;
+// }
+
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input,
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fileds > .ui.input  {
+//     width: 50%;
+//     font-size: 14px;
+// }
+
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input > input,
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input > input {
+//     width: 100% !important;
+// }
+
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input:first-of-type,
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input:first-of-type {
+//     margin: 0px 10px 0px 0px;
+// }
+
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input:last-of-type,
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input:last-of-type {
+//     margin: 0px 0px 0px 10px;
+// }
+
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a > .ui.circular.label > i,
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > a > .ui.circular.label > i {
+//     margin: 0px;
+// }
+
+// .ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .header {
+//     display: none;
+// }
+
+
+// /***************************************************
+//     schedule
+// ***************************************************/
+
+// /**************************
+//   .add.subcourse
 // ***************************/
-.ui.infor.modal > .content > .ui.very.basic.table > tbody > tr td:first-child{
-    vertical-align: text-top;
-}
-
-.ui.infor.modal > .content > .ui.very.basic.table > tbody > tr:first-child > td {
-    padding-top: 20px;
-}
-
-.ui.infor.modal > .content > .ui.very.basic.table > tbody > tr > td {
-    border-top: 0px;
-    font-size: 14px;
-}
-/************************
-ui sgmodal > content > ui form
-
-*************************/
-.ui.infor.modal > .content {
-  width: 100%;
-  padding: 0px;
-}
-
-.ui.infor.modal > .content > * {
-  width: 50%;
-  margin: auto;
-  min-width: 200px;
-}
-
-.ui.infor.modal > .content .ui.form > a {
-  display: block;
-  margin-top: 10px;
-  width: 90px;
-  font-size: 14px;
-}
-
-.ui.infor.modal > .content  .ui.form input:focus{
-    border: 1px solid #00ccdd;
-}
-
-.ui.infor.modal > .content .ui.form > .field {
-  margin: 0px;
-  margin-top: 24px;
-  position: relative;
-}
-
-.ui.infor.modal > .content .ui.form > .field > .header {
-  font-size: 14px;
-  color: @fontTitleColor;
-  margin: 0px;
-  margin-bottom: 7px;
-  font-weight: bold;
-}
-
-.ui.infor.modal > .content .ui.form > .field > .ui.button {
-  display: block;
-  margin: 0 auto;
-  font-size: 14px;
-}
-
-.ui.infor.modal > .content .ui.form input:not([type]),
-.ui.infor.modal > .content .ui.form input[type=date],
-.ui.infor.modal > .content .ui.form input[type=datetime-local],
-.ui.infor.modal > .content .ui.form input[type=email],
-.ui.infor.modal > .content .ui.form input[type=file],
-.ui.infor.modal > .content .ui.form input[type=number],
-.ui.infor.modal > .content .ui.form input[type=password],
-.ui.infor.modal > .content .ui.form input[type=search],
-.ui.infor.modal > .content .ui.form input[type=tel],
-.ui.infor.modal > .content .ui.form input[type=text],
-.ui.infor.modal > .content .ui.form input[type=time],
-.ui.infor.modal > .content .ui.form input[type=url],
-.ui.infor.modal > .content .ui.form textarea,
-.ui.infor.modal > .content .ui.form > .field > .field > .ui.dropdown,
-.ui.infor.modal > .content .ui.form > .field > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content .ui.form > .field > .ui.input > .ui.dropdown,
-.ui.infor.modal > .content .ui.form > .field > .ui.input > .ui.dropdown > .menu > .item{
-  font-size: 14px;
-}
-
-
-/************************
-    input field
-*************************/
-
-.ui.infor.modal > .content .ui.form > .field > .ui.input {
-  color: @fontTitleColor;
-  border-radius: @componentBorderRadius;
-  box-sizing: border-box;
-}
-
-.ui.infor.modal > .content .ui.form > .input.required.field,
-.ui.infor.modal > .content .ui.form > .input.error.field  {
-  position: relative;
-}
-
-.ui.infor.modal > .content .ui.form > .input.required.field > span ,
-.ui.infor.modal > .content .ui.form > .input.error.field > span{
-  position: absolute;
-  right: -35px;
-  top: 35px;
-}
-
-/************************
-    text field
-*************************/
-
-.ui.infor.modal > .content .ui.form > .text.field > textarea {
-  color: @fontTitleColor ;
-  border-radius: @componentBorderRadius;
-  min-height: 5em;
-  height: 5em;
-  max-height: 24em;
-}
-
-.ui.infor.modal > .content .ui.form > .large.text.field > textarea {
-  color: @fontTitleColor ;
-  border-radius: @componentBorderRadius;
-  min-height: 10em;
-  height: 5em;
-  max-height: 24em;
-}
-
-/************************
-  check field / radio field
-*************************/
-.ui.infor.modal > .content .ui.form > .radio.field > .header,
-.ui.infor.modal > .content .ui.form > .check.field > .header {
-  margin: 0px;
-  padding: 0px;
-}
-
-.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox,
-.ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox {
-  margin-top: 7px;
-}
-
-.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label,
-.ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > label {
-  font-size: @fontBodySize ;
-  font-family: PingFang-SC-Medium;
-  color: @fontTitleColor ;
-
-}
-
-.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label:before {
-  z-index: 1;
-  opacity: 0.4;
-}
-
-.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > label:after{
-  background: @primaryColor;
-}
-
-.ui.infor.modal > .content .ui.form > .radio.field > .inline.fields > .field > .ui.checkbox > input+label:after,
-.ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
-  background: @primaryColor;
-}
-
-.ui.infor.modal > .content .ui.form > .check.field > .inline.fields > .field > .ui.checkbox > input+label:after {
-  color: white;
-  border-radius: @componentBorderRadius;
-}
-
-/************************
-     checkbox
-*************************/
-.ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox .box,
-.ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox >  label {
-  font-size: @fontBodySize ;
-  font-family: PingFang-SC-Medium;
-  color: @fontTitleColor ;
-  margin-left: 0px !important;
-  font-weight: 400;
-}
-
-.ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox > input+label:after {
-  background: @primaryColor;
-}
-
-.ui.infor.modal > .content .ui.form > .field > .ui.check.checkbox > input+label:after {
-  color: white;
-  border-radius: @componentBorderRadius;
-}
-
-/************************
-    image field
-*************************/
-.ui.infor.modal > .content .ui.form > .avatar.field > .image.field {
-  width: 80px;
-  height: 80px;
-  background: @dividedColor;
-  border-radius: @componentBorderRadius;
-  margin: 0px;
-}
-
-.ui.infor.modal > .content .ui.form > .avatar.field > #open_image {
-  visibility: hidden;
-  float: left;
-}
-
-.ui.infor.modal > .content .ui.form > .avatar.field > .image.field {
-  display: flex;
-  position: relative;
-  font-size: 30px;
-  color: #dbe1e6;
-}
-
-.ui.infor.modal > .content .ui.form > .avatar.field > .image.field > img {
-  width: 100%;
-  border-radius: @componentBorderRadius;
-}
-
-.ui.infor.modal > .content .ui.form > .avatar.field > .image.field > .icon.plus {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  align-self: center;
-  margin-left: -18px;
-  margin-top: -18px;
-}
-
-
-/************************
-    dependent field
-*************************/
-.ui.infor.modal > .content .ui.form > .dependent.field {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  position: relative;
-  margin-top: 48px;
-}
-
-.ui.infor.modal > .content .ui.form > .dependent.field > .field {
-  margin: 0px;
-  line-height: 30px;
-  color: @fontGrayColor;
-}
-
-.ui.infor.modal > .content .ui.form > .dependent.field > .header {
-  position: absolute;
-  margin-top:-26px;
-}
-
-.ui.infor.modal > .content .ui.form > .dependent.field > .field > .selection.dropdown {
-  padding: 9.5px 30px 9px 8px;
-  width: auto !important;
-  white-space: nowrap;
-  color: @fontGrayColor;
-  font-size: @fontBodySize;
-  text-align: center;
-  margin-right: 10px;
-}
-
-.ui.infor.modal > .content .ui.form > .dependent.field > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content .ui.form > .dependent.field > .field > .selection.dropdown > .menu > .item {
-  margin: 0px;
-  width: auto !important;
-  padding: 13px 4px 13px 8px !important;
-  font-size: 14px;
-}
-
-
-
-/***********************************************************
-  dependents field / dependents field > dependents field
-************************************************************/
-.ui.infor.modal > .content .ui.form > .dependents.field ,
-.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field {
-  position: relative;
-}
-
-.ui.infor.modal > .content .ui.form > .dependents.field > .header ,
-.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field>.header {
-  display: block;
-}
-
-.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields ,
-.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields {
-  margin-bottom: 0px;
-}
-
-.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field ,
-.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field {
-  line-height: 30px;
-  color: @fontGrayColor;
-  padding: 0px;
-}
-
-.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown,
-.ui.infor.modal > .content .ui.form > .dependent.field > .field > .ui.dropdown,
-.ui.infor.modal > .content .ui.form > .field > .ui.input > textarea,
-.ui.infor.modal > .content .ui.form > .field > .ui.input > .ui.dropdown {
-  border: 1px solid rgb(219, 225, 230);
-  -webkit-transform: scale(1.01);
-}
-
-.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown ,
-.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown {
-  padding: 9.5px 30px 9px 8px;
-  width: auto !important;
-  white-space: nowrap;
-  color: @fontGrayColor;
-  font-size: @fontBodySize;
-  text-align: center;
-  margin-right: 10px;
-}
-
-.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item,
-.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > .selection.dropdown > .menu > .item {
-  margin: 0px;
-  width: auto !important;
-  padding: 13px 4px 13px 8px !important;
-  font-size: 14px;
-}
-
-.ui.infor.modal > .content .ui.form > .dependents.field > .inline.fields > .field > a > .label > i {
-    margin:0px;
-}
-/**************************************
-    dependents field > dependents field
-***************************************/
-.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field {
-  margin-top: 24px;
-}
-
-.ui.infor.modal > .content .ui.form > .dependents.field > .dependents.field > .inline.fields > .field > a > .ui.circular.label > .close.icon {
-  margin: 0px;
-  padding: 0px;
-}
-
-
-/************************
-   post content
-*************************/
-.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field {
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: nowrap;
-  align-items: center;
-}
-
-.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .ui.dropdown {
-  color: @fontGrayColor;
-  font-size: @fontBodySize;
-  padding: 9.5px 30px 9px 8px;
-  width: auto !important;
-  white-space: nowrap;
-}
-
-.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .ui.dropdown > .menu > .item,
-.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .selection.dropdown > .menu > .item {
-  margin: 0px;
-  width: auto !important;
-  white-space: nowrap;
-  padding: 13px 8px 13px 8px !important;
-}
-
-.ui.infor.modal > .content .ui.form > .post.content > .attach.field > .field > .ui.icon.circular.label {
-  margin-left: 6px;
-}
-
-/************************
-  add attach field
-*************************/
-.ui.infor.modal > .content .ui.form > a > {
-  color: #4a90e2;
-  margin-top: 10px;
-  font-size: @fontSize;
-}
-
-
-/************************
-  ui toggle checkbox
-*************************/
-.ui.infor.modal > .content .ui.form > .field > .ui.checkbox .box,
-.ui.infor.modal > .content .ui.form > .field > .ui.checkbox label {
-    font-size: 14px;
-    font-weight: bold;
-    margin-left: -71px;
-    color: #4b525a !important;
-}
-
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox input:checked~label {
-    color: #4b525a !important;
-}
-
-
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:before,
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:before {
-    position: absolute;
-    top: 24px;
-    left: 0px;
-}
-
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:after,
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:after {
-    margin-top: 24px;
-}
-
-
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:after,
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox .box:before,
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:after,
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox label:before {
-    margin-left: 71px;
-}
-
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox input:checked~.box:before,
-.ui.infor.modal > .content .ui.form > .field > .ui.toggle.checkbox input:checked~label:before {
-    background-color: #00cddd !important;
-}
-
-
-/************************
-  validation field
-*************************/
-.ui.infor.modal > .content .ui.form > .validation.field > .tip {
-  z-index: 9999;
-  background: #000;
-  border-radius: @containerBorderRadius;
-  opacity: 0.6;
-  font-size: @fontSize;
-  color: #fff;
-  text-align: center;
-  padding: 15px 5px;
-  margin-top: 24px;
-  display: none;
-}
-
-/************************
-  detail field
-*************************/
-.ui.infor.modal > .content .ui.form > .detail.field {
-  margin: 0px;
-  margin-top: 10px;
-}
-
-.ui.infor.modal > .content .ui.form > .detail.field > .inline.field > label {
-  width: 90px;
-  font-size: @fontBodySize;
-  text-align: right;
-  color: @fontTitleColor ;
-  position: relative;
-  font-weight: 500;
-}
-
-.ui.infor.modal > .content .ui.form > .detail.field > .inline.field > label:after {
-  content: ":";
-  position: absolute;
-  right: -6px;
-}
-
-.ui.infor.modal > .content .ui.form > .detail.field > .inline.field > p {
-  border-radius: @componentBorderRadius;
-  font-size: @fontBodySize;
-  color: @fontTitleColor ;
-  padding: 5px;
-  font-weight: 500;
-}
-
-/*********************************************************************
-    ui infor modal > scrolling content > ui form > recharge field
-**********************************************************************/
-.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a,
-.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > a {
-    position: absolute;
-    right: -40px;
-}
-
-.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input,
-.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fileds > .ui.input  {
-    width: 50%;
-    font-size: 14px;
-}
-
-.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input > input,
-.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input > input {
-    width: 100% !important;
-}
-
-.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input:first-of-type,
-.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input:first-of-type {
-    margin: 0px 10px 0px 0px;
-}
-
-.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > .ui.input:last-of-type,
-.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > .ui.input:last-of-type {
-    margin: 0px 0px 0px 10px;
-}
-
-.ui.infor.modal > .content > .ui.form > .recharge.field > .inline.fields > a > .ui.circular.label > i,
-.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .inline.fields > a > .ui.circular.label > i {
-    margin: 0px;
-}
-
-.ui.infor.modal > .content > .ui.form > .recharge.field > .recharge.field > .header {
-    display: none;
-}
-
-
-/***************************************************
-    schedule
-***************************************************/
-
-/**************************
-  .add.subcourse
-***************************/
-.ui.infor.modal > .content .ui.form > .field > .add.subcourse {
-  border: 1px dashed rgb(219, 225, 230);
-  text-align: center;
-  padding: 10px 0px;
-  border-radius: 4px;
-}
-
-.ui.infor.modal > .content .ui.form > .field > .add.subcourse > a {
-  font-size: 14px;
-  color: #4b525a;
-}
-/****************************
-      interval field
-*****************************/
-.ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > .ui.input input[type=date]::-webkit-inner-spin-button,
-.ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > .ui.input input[type=date]::-webkit-clear-button {
-  display: none;
-}
-
-.ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > span {
-  color: #dbe1e6;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-.ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > .ui.input {
-  margin:0px;
-}
-
-/************************
-    .ui.infor.modal > .content > .ui.form > .config.field
-*************************/
-.ui.infor.modal > .content .ui.form > .config.field > .field {
-  width: 100%;
-  background: #f6f8fa;
-  border-radius: 4px;
-  padding: 15px 14px 10px 14px;
-  position: relative;
-}
-
-.ui.infor.modal > .content .ui.form > .config.field > .field  i {
-  font-size: 14px;
-}
-
-.ui.infor.modal > .content .ui.form > .config.field > .field > i {
-  position: absolute;
-  right: 6px;
-  top: 6px;
-  color: #9199a3;
-}
-
-.ui.infor.modal > .content .ui.form > .config.field > .field > a > i {
-  position: absolute;
-  right: 6px;
-  bottom: 12px;
-}
-
-.ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr {
-  height: 22px;
-  width: 100%;
-}
-.ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td {
-  padding: 0px;
-  font-size: 14px;
-  color: #9199a3;
-}
-
-.ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td:first-child {
-  width: 50px;
-  text-align-last: justify;
-  position: relative;
-  white-space: nowrap;
-}
-
-.ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td:first-child:after{
-  content: ":";
-  position: absolute;
-}
-
-.ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td:last-child {
- width: calc(100% - 50px);
- padding-left: 10px;
-}
-
-.ui.infor.modal > .content .ui.form > .config.field > .add.config {
-  border: 1px dashed rgb(219, 225, 230);
-  padding: 10px 0px;
-  text-align: center;
-  border-radius: 4px;
-}
-
-.ui.infor.modal > .content .ui.form > .config.field > .add.config > a {
-  font-size: 14px;
-  color: #4b525a;
-}
-
-/******************************
-.ui.infor.subcourse.second.coupled.modal
-*******************************/
-
-.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > thead > tr > th {
-  font-size: 14px;
-  color: @fontTitleColor;
-  margin: 0px;
-  padding-bottom: 7px;
-  font-weight: bold;
-}
-.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td {
-  padding-top: 0px;
-  position: relative;
-  vertical-align: text-top;
-}
-.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td > input[type=file] {
-  opacity: 0;
-  width: 112px;
-  margin-top:-40px;
-  float: left;
-}
-.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td > .ui.inverted.primary.button {
-  width: 110px;
-  font-size: 14px;
-  box-shadow: 0 0 0 1px #00ccdd inset;
-  color:#00ccdd;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td > .description {
-  font-size: 12px;
-  color: #9199a3;
-}
-
-/******************************
-.ui.infor.config.second.coupled.modal
-*******************************/
-.ui.infor.config.second.coupled.modal .ui.dropdown .menu .menu {
-  margin: 0 !important;
-}
-
-.ui.infor.config.second.coupled.modal > .content  .ui.form {
-  min-height: 400px;
-}
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .field {
-  width: 70%;
-}
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button {
-  width: 100%;
-  background: white;
-  border: 1px solid rgb(219, 225, 230);
-  font-size: 14px;
-  color:#4b525a;
-  padding: 0.285em 1.1em 0.2875em;
-
-}
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > i {
-  float: right;
-  margin-top: 6px;
-  margin-right: 4px;
-}
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span {
-  padding: 0.4rem 0.4rem !important;
-  background: white;
-  color: #9199a3;
-}
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span.hidden:after{
-  content: "\f00d";
-  font-family: 'Font Awesome 5 Free';
-  padding-left: 10px;
-  font-size: 10px;
-  color: #9199a3;
-}
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span.hidden {
-  background:#edf2f5 ;
-  padding: 0.4rem 0.4rem !important;
-  border-radius: 4px;
-}
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span:after{
-  content: "";
-  font-family: 'Font Awesome 5 Free';
-}
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item{
-    padding: 0.6rem 1.125rem !important;
-
-}
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item ,
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > i {
-  font-size: 14px;
-  color: #4b525a;
-}
-
- .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > i {
-   color: #9199a3;
- }
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu {
-
-  min-width: 120px !important;
-  max-height: 250px;
-  overflow: auto;
-  margin-left: 20px;
-}
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu > .item {
-  width: 100%;
-  font-size: 14px;
-  color: #4b525a;
-}
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu > .item:before {
-  content: "\f111";
-  font-family: 'Font Awesome 5 Free';
-  color: white;
-  margin: 1px 10px 1px -10px;
-  box-sizing: border-box;
-  border:1px solid rgb(219, 225, 230);
-  border-radius: 12px;
-}
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu > .item.active:before {
-  color: #00ccdd;
-  border: 0px
-}
-
-.ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu > .item:after {
-  content: "\f00c";
-  font-family: 'Font Awesome 5 Free';
-  color: white;
-  font-size: 10px;
-  position: absolute;
-  left: 9px;
-}
-
-/************************
-  tab header
-*************************/
-.ui.infor.modal > .tab.header {
-  padding-bottom: 0px;
-}
-
-.ui.infor.modal > .tab.header > ul {
-  list-style-type: none;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  padding-inline-start: 0px;
-}
-
-.ui.infor.modal > .tab.header > ul > li {
-  display: inline-block;
-  width: 80px;
-  text-align: center;
-  border-bottom: none;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 18px;
-  padding-bottom: 20px;
-  font-weight: normal;
-}
-
-.ui.infor.modal > .tab.header > ul > li:hover {
-  cursor: default;
-}
-
-.ui.infor.modal > .tab.header > ul > li.active {
-  border-bottom: 3px solid @primaryColor;
-  color: @primaryColor;
-  font-weight: bold;
-}
-
-.tab.show {
-  display: block;
-}
-
-.tab.hide {
-  display: none;
-}
-
-/************************
-  multi modals
-*************************/
-.ui.infor.second.modal {
-  width: 32% !important;
-}
-
-.ui.infor.second.modal > .content > * {
-  width: 82%;
-  margin: auto;
-  min-width: 200px;
-}
-
-.ui.infor.third.modal {
-  width: 24% !important;
-}
+// .ui.infor.modal > .content .ui.form > .field > .add.subcourse {
+//   border: 1px dashed rgb(219, 225, 230);
+//   text-align: center;
+//   padding: 10px 0px;
+//   border-radius: 4px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .field > .add.subcourse > a {
+//   font-size: 14px;
+//   color: #4b525a;
+// }
+// /****************************
+//       interval field
+// *****************************/
+// .ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > .ui.input input[type=date]::-webkit-inner-spin-button,
+// .ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > .ui.input input[type=date]::-webkit-clear-button {
+//   display: none;
+// }
+
+// .ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > span {
+//   color: #dbe1e6;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+// .ui.infor.modal > .content .ui.form > .interval.field > .inline.fields > .ui.input {
+//   margin:0px;
+// }
+
+// /************************
+//     .ui.infor.modal > .content > .ui.form > .config.field
+// *************************/
+// .ui.infor.modal > .content .ui.form > .config.field > .field {
+//   width: 100%;
+//   background: #f6f8fa;
+//   border-radius: 4px;
+//   padding: 15px 14px 10px 14px;
+//   position: relative;
+// }
+
+// .ui.infor.modal > .content .ui.form > .config.field > .field  i {
+//   font-size: 14px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .config.field > .field > i {
+//   position: absolute;
+//   right: 6px;
+//   top: 6px;
+//   color: #9199a3;
+// }
+
+// .ui.infor.modal > .content .ui.form > .config.field > .field > a > i {
+//   position: absolute;
+//   right: 6px;
+//   bottom: 12px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr {
+//   height: 22px;
+//   width: 100%;
+// }
+// .ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td {
+//   padding: 0px;
+//   font-size: 14px;
+//   color: #9199a3;
+// }
+
+// .ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td:first-child {
+//   width: 50px;
+//   text-align-last: justify;
+//   position: relative;
+//   white-space: nowrap;
+// }
+
+// .ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td:first-child:after{
+//   content: ":";
+//   position: absolute;
+// }
+
+// .ui.infor.modal > .content .ui.form > .config.field > .field > table > tbody > tr > td:last-child {
+//  width: calc(100% - 50px);
+//  padding-left: 10px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .config.field > .add.config {
+//   border: 1px dashed rgb(219, 225, 230);
+//   padding: 10px 0px;
+//   text-align: center;
+//   border-radius: 4px;
+// }
+
+// .ui.infor.modal > .content .ui.form > .config.field > .add.config > a {
+//   font-size: 14px;
+//   color: #4b525a;
+// }
+
+// /******************************
+// .ui.infor.subcourse.second.coupled.modal
+// *******************************/
+
+// .ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > thead > tr > th {
+//   font-size: 14px;
+//   color: @fontTitleColor;
+//   margin: 0px;
+//   padding-bottom: 7px;
+//   font-weight: bold;
+// }
+// .ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td {
+//   padding-top: 0px;
+//   position: relative;
+//   vertical-align: text-top;
+// }
+// .ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td > input[type=file] {
+//   opacity: 0;
+//   width: 112px;
+//   margin-top:-40px;
+//   float: left;
+// }
+// .ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td > .ui.inverted.primary.button {
+//   width: 110px;
+//   font-size: 14px;
+//   box-shadow: 0 0 0 1px #00ccdd inset;
+//   color:#00ccdd;
+//   padding-top: 10px;
+//   padding-bottom: 10px;
+// }
+// .ui.infor.subcourse.second.coupled.modal > .content .ui.form > .file.field > table > tbody > tr > td > .description {
+//   font-size: 12px;
+//   color: #9199a3;
+// }
+
+// /******************************
+// .ui.infor.config.second.coupled.modal
+// *******************************/
+// .ui.infor.config.second.coupled.modal .ui.dropdown .menu .menu {
+//   margin: 0 !important;
+// }
+
+// .ui.infor.config.second.coupled.modal > .content  .ui.form {
+//   min-height: 400px;
+// }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .field {
+//   width: 70%;
+// }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button {
+//   width: 100%;
+//   background: white;
+//   border: 1px solid rgb(219, 225, 230);
+//   font-size: 14px;
+//   color:#4b525a;
+//   padding: 0.285em 1.1em 0.2875em;
+
+// }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > i {
+//   float: right;
+//   margin-top: 6px;
+//   margin-right: 4px;
+// }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span {
+//   padding: 0.4rem 0.4rem !important;
+//   background: white;
+//   color: #9199a3;
+// }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span.hidden:after{
+//   content: "\f00d";
+//   font-family: 'Font Awesome 5 Free';
+//   padding-left: 10px;
+//   font-size: 10px;
+//   color: #9199a3;
+// }
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span.hidden {
+//   background:#edf2f5 ;
+//   padding: 0.4rem 0.4rem !important;
+//   border-radius: 4px;
+// }
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span:after{
+//   content: "";
+//   font-family: 'Font Awesome 5 Free';
+// }
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item{
+//     padding: 0.6rem 1.125rem !important;
+
+// }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item ,
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > i {
+//   font-size: 14px;
+//   color: #4b525a;
+// }
+
+//  .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > i {
+//    color: #9199a3;
+//  }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu {
+
+//   min-width: 120px !important;
+//   max-height: 250px;
+//   overflow: auto;
+//   margin-left: 20px;
+// }
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu > .item {
+//   width: 100%;
+//   font-size: 14px;
+//   color: #4b525a;
+// }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu > .item:before {
+//   content: "\f111";
+//   font-family: 'Font Awesome 5 Free';
+//   color: white;
+//   margin: 1px 10px 1px -10px;
+//   box-sizing: border-box;
+//   border:1px solid rgb(219, 225, 230);
+//   border-radius: 12px;
+// }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu > .item.active:before {
+//   color: #00ccdd;
+//   border: 0px
+// }
+
+// .ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > .menu > .item > .menu > .item:after {
+//   content: "\f00c";
+//   font-family: 'Font Awesome 5 Free';
+//   color: white;
+//   font-size: 10px;
+//   position: absolute;
+//   left: 9px;
+// }
+
+// /************************
+//   tab header
+// *************************/
+// .ui.infor.modal > .tab.header {
+//   padding-bottom: 0px;
+// }
+
+// .ui.infor.modal > .tab.header > ul {
+//   list-style-type: none;
+//   margin-block-start: 0px;
+//   margin-block-end: 0px;
+//   padding-inline-start: 0px;
+// }
+
+// .ui.infor.modal > .tab.header > ul > li {
+//   display: inline-block;
+//   width: 80px;
+//   text-align: center;
+//   border-bottom: none;
+//   margin-left: 20px;
+//   margin-right: 20px;
+//   font-size: 18px;
+//   padding-bottom: 20px;
+//   font-weight: normal;
+// }
+
+// .ui.infor.modal > .tab.header > ul > li:hover {
+//   cursor: default;
+// }
+
+// .ui.infor.modal > .tab.header > ul > li.active {
+//   border-bottom: 3px solid @primaryColor;
+//   color: @primaryColor;
+//   font-weight: bold;
+// }
+
+// .tab.show {
+//   display: block;
+// }
+
+// .tab.hide {
+//   display: none;
+// }
+
+// /************************
+//   multi modals
+// *************************/
+// .ui.infor.second.modal {
+//   width: 32% !important;
+// }
+
+// .ui.infor.second.modal > .content > * {
+//   width: 82%;
+//   margin: auto;
+//   min-width: 200px;
+// }
+
+// .ui.infor.third.modal {
+//   width: 24% !important;
+// }
