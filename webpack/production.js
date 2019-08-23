@@ -3,12 +3,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   mode: 'production',
   entry: {
-    semantic_js: './Fomantic-UI/dist/semantic.min.js',
-    main_css: './src/semantic.less'
+    main: './src/semantic.less'
   },
   output: {
-    filename: '[name].js',
-    publicPath: '/'
+    filename: 'main.js'
   },
   plugins: [
     new MiniCssExtractPlugin({
