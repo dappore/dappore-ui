@@ -5,10 +5,9 @@
 @boxShadow: 0px 8px 7px 0px 
 		rgba(52, 57, 61, 0.1);
 
-@headerVerticalPadding: 0;
-@headerHorizontalPadding: 0;
-@headerPadding: @headerVerticalPadding @headerHorizontalPadding;
-@headerBackground: @white;
+@headerPadding: 0 0 0 40px;
+@headerMargin: 0;
+
 @headerColor: @darkTextColor;
 @headerFontSize: 18px;
 @headerBoxShadow: none;
@@ -16,6 +15,6 @@
 @headerFontFamily: @headerFont;
 @headerBorder: 1px solid @borderColor;
 
-@headerMargin: 0 0 0 40px;
+@borderRadius: 8px;
 
 @headerLineHeight: 72px;
