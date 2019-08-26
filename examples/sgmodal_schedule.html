@@ -41,35 +41,31 @@
         </select>
       </div>
 
+      <div class="ui file sgfield">
+        <div class="ui inverted button">+添加文件</div>
+        <input type="file">
+        <div class="description">未选择任何文件</div>
+      </div>
+
       <div class="ui sgfield">
-        <table>
-          <thead>
-            <tr>
-              <th>媒体资料</th>
-              <th>文件</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <div class="ui inverted primary button">+添加文件</div>
-                <input type="file" id="fileinp">
-              </td>
-              <td>
-                <div class="ui inverted primary button">+添加文件</div>
-                <input type="file" id="fileinp1">
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <div class="description" id="text">未选择任何文件</div>
-              </td>
-              <td>
-                <div class="description" id="text1">未选择任何文件</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="inline fields">
+          <div class="ui sgfield">
+            <div class="header">媒体资料</div>
+              <div class="ui file sgfield">
+                <div class="ui inverted button">+添加文件</div>
+                <input type="file" id="1">
+                <div class="description" id="2">未选择任何文件</div>
+              </div>
+          </div>
+          <div class="ui sgfield">
+            <div class="header">文件</div>
+              <div class="ui file sgfield">
+                <div class="ui inverted button">+添加文件</div>
+                <input type="file" id="3">
+                <div class="description" id="4">未选择任何文件</div>
+              </div>
+          </div>
+        </div>
       </div>
 
       <div class="ui sgfield">
@@ -208,11 +204,11 @@
       $(".ui.config.sgfield > .field > i.close").click(function(){
         $(this).closest(".ui.config.sgfield").transition("fade");
       })
-      $("#fileinp").change(function () {
-        $("#text").html($("#fileinp").val()).css("color", "#4a90e2");
+      $("#1").change(function () {
+        $("#2").html($("#1").val()).css("color", "#4a90e2");
       });
-      $("#fileinp1").change(function () {
-        $("#text1").html($("#fileinp1").val()).css("color","#4a90e2");
+      $("#3").change(function () {
+        $("#4").html($("#3").val()).css("color", "#4a90e2");
       });
       //   $('.coupled.modal')
       //   .modal({

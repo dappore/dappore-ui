@@ -43,7 +43,7 @@
 
 .ui.form .ui.sgfield input:focus,
 .ui.form .ui.sgfield textarea:focus,
-.ui.form .ui.sgfield  .ui.dropdown:focus{
+.ui.form .ui.sgfield .ui.dropdown:focus{
   border: 1px solid #00ccdd;
 }
 
@@ -183,31 +183,7 @@
 /******************************
     ui table sgfield
 *******************************/
-.ui.sgfield > table {
-  width: 100%;
-}
-
-.ui.sgfield > table tr th {
-  font-size: 14px;
-  color: @fontTitleColor;
-  margin: 0px;
-  padding-bottom: 7px;
-  font-weight: bold;
-}
-
-.file.field > table tr td {
-  padding-top: 0px;
-  position: relative;
-  vertical-align: text-top;
-}
-
-.ui.sgfield > table tr td > input[type=file] {
-  opacity: 0;
-  width: 112px;
-  margin-top: -40px;
-}
-
-.ui.sgfield > table tr td > .ui.inverted.primary.button {
+.ui.file.sgfield > .ui.button {
   width: 110px;
   font-size: 14px;
   box-shadow: 0 0 0 1px #00ccdd inset;
@@ -216,13 +192,23 @@
   padding-bottom: 10px;
 }
 
-.ui.sgfield > table tr td > .description {
-  font-size: 12px;
-  color: #9199a3;
-  margin-top: -20px;
-  vertical-align: top;
+.ui.file.sgfield > input[type=file] {
+  opacity: 0;
+  width: 112px;
+  margin-left: -118px;
 }
 
+.ui.file.sgfield > .description {
+  width: 110px;
+  font-size: 12px;
+  color: #9199a3;
+  word-wrap: break-word;
+}
+.ui.sgfield > .inline.fields > .ui.sgfield:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+}
 // /******************************
 // .ui.infor.config.second.coupled.modal
 // *******************************/
