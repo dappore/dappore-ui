@@ -1,3 +1,20 @@
 /*******************************
          Site Overrides
 *******************************/
+
+@boxShadow: 0px 8px 7px 0px 
+		rgba(52, 57, 61, 0.1);
+
+@headerPadding: 0 0 0 40px;
+@headerMargin: 0;
+
+@headerColor: @darkTextColor;
+@headerFontSize: 18px;
+@headerBoxShadow: none;
+@headerFontWeight: @bold;
+@headerFontFamily: @headerFont;
+@headerBorder: 1px solid @borderColor;
+
+@borderRadius: 8px;
+
+@headerLineHeight: 72px;

@@ -1,10 +1,9 @@
-.ui.side {
-  display: flex;
-  flex-wrap: nowrap;
-}
+/*******************************
+     User Global Overrides
+*******************************/
 
-.ui.side > .content {
-  width: 100%;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-}
+@absoluteBorderRadius: @4px;
+
+@borderColor: #dbe1e6;
+
+@darkTextColor: #4b525a;
