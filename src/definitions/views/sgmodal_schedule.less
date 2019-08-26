@@ -1,0 +1,333 @@
+@import (multiple) '../../site/globals/site.variables';
+
+/***************************************************
+    schedule
+***************************************************/
+/************************
+    .ui.sginput
+*************************/
+.ui.sginput {
+  width: 100%;
+}
+.ui.sginput .ui.dropdown {
+  width: 100%;
+}
+.ui.short.sginput {
+  width: 48%;
+}
+.ui.short.sginput > .ui.dropdown {
+  width: 100%;
+  min-width: 120px;
+}
+/************************
+    .ui.sgfield
+*************************/
+.ui.form .ui.sgfield input:not([type]),
+.ui.form .ui.sgfield input[type=date],
+.ui.form .ui.sgfield input[type=datetime-local],
+.ui.form .ui.sgfield input[type=email],
+.ui.form .ui.sgfield input[type=file],
+.ui.form .ui.sgfield input[type=number],
+.ui.form .ui.sgfield input[type=password],
+.ui.form .ui.sgfield input[type=search],
+.ui.form .ui.sgfield input[type=tel],
+.ui.form .ui.sgfield input[type=text],
+.ui.form .ui.sgfield input[type=time],
+.ui.form .ui.sgfield input[type=url],
+.ui.form .ui.sgfield textarea,
+.ui.form .ui.sgfield .ui.dropdown,
+.ui.form .ui.sgfield .ui.dropdown .item{
+  font-size: 14px;
+  color: #4b525a;
+}
+
+.ui.form .ui.sgfield input:focus,
+.ui.form .ui.sgfield textarea:focus,
+.ui.form .ui.sgfield  .ui.dropdown:focus{
+  border: 1px solid #00ccdd;
+}
+
+.ui.sgfield {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .header,label.header{
+        display: block;
+        font-size: 14px;
+        color: @fontTitleColor;
+        margin: 0px;
+        margin-bottom: 7px;
+        font-weight: bold;
+    }
+}
+
+.ui.sgfield .inline.fields {
+  width: 100%;
+  min-width: 280px;
+  position: relative;
+}
+.ui.sgfield .inline.fields > .ui.short.sginput:first-child {
+  margin-right: 4%;
+}
+
+.ui.sgfield .inline.fields > .ui.short.sginput:last-child:before{
+  content: "-";
+  font-size: 12px;
+  color: rgb(219, 225, 230);
+  position: absolute;
+  z-index: 9999;
+  left: calc(50% - 4px);
+  top: 8px;
+  z-index: 0;
+}
+
+
+
+
+/************************
+    ui config sgfield
+*************************/
+.ui.config.sgfield {
+
+    .field {
+        width: 100%;
+        min-width: 320px;
+        background: #f6f8fa;
+        border-radius: 4px;
+        position: relative;
+
+        i {
+            font-size: 14px;
+            position: absolute;
+            right: 6px;
+          }
+
+    }
+
+    .field > i {
+        top: 6px;
+        color: #9199a3;
+    }
+
+    .field > a > i {
+        bottom: 10px;
+    }
+
+    .field > table {
+        border-radius: 4px;
+        padding: 15px 20px 10px 14px;
+
+        tr {
+          height: 22px;
+          width: 100%;
+
+          td {
+            padding: 0px;
+            font-size: 14px;
+
+            &:first-child {
+                width: 16%;
+                text-align-last: justify;
+                white-space: nowrap;
+                vertical-align: text-top;
+                position: relative;
+                color: #9199a3;
+
+                &:after {
+                    content: ":";
+                    position: absolute;
+                }
+            }
+
+            &:last-child {
+                padding-left: 10px;
+                color: #4b525a;
+
+                span {
+                  display: block;
+                }
+            }
+
+          }
+
+        }
+
+    }
+
+}
+
+/***********************
+      ui add sgfield
+************************/
+.ui.add.sgfield {
+  border: 1px dashed rgb(219, 225, 230);
+  min-width: 320px;
+  padding: 6px 0px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.ui.add.sgfield > a {
+  font-size: 14px;
+  color: #4b525a;
+}
+
+/****************************
+    ui interval sgfield
+*****************************/
+// .ui.interval.sgfield .inline.fields > .ui.input input[type=date]::-webkit-inner-spin-button,
+// .ui.interval.sgfield .inline.fields > .ui.input input[type=date]::-webkit-clear-button {
+//   display: none;
+// }
+
+/******************************
+    ui table sgfield
+*******************************/
+.ui.sgfield > table {
+  width: 100%;
+}
+
+.ui.sgfield > table tr th {
+  font-size: 14px;
+  color: @fontTitleColor;
+  margin: 0px;
+  padding-bottom: 7px;
+  font-weight: bold;
+}
+
+.file.field > table tr td {
+  padding-top: 0px;
+  position: relative;
+  vertical-align: text-top;
+}
+
+.ui.sgfield > table tr td > input[type=file] {
+  opacity: 0;
+  width: 112px;
+  margin-top: -40px;
+}
+
+.ui.sgfield > table tr td > .ui.inverted.primary.button {
+  width: 110px;
+  font-size: 14px;
+  box-shadow: 0 0 0 1px #00ccdd inset;
+  color: #00ccdd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.ui.sgfield > table tr td > .description {
+  font-size: 12px;
+  color: #9199a3;
+  margin-top: -20px;
+  vertical-align: top;
+}
+
+// /******************************
+// .ui.infor.config.second.coupled.modal
+// *******************************/
+// .ui.infor.config.second.coupled.modal .ui.dropdown .menu .menu {
+//   margin: 0 !important;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form {
+//   min-height: 400px;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.field {
+//   width: 70%;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button {
+//   width: 100%;
+//   background: white;
+//   border: 1px solid rgb(219, 225, 230);
+//   font-size: 14px;
+//   color: #4b525a;
+//   padding: 0.285em 1.1em 0.2875em;
+
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>i {
+//   float: right;
+//   margin-top: 6px;
+//   margin-right: 4px;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>span {
+//   padding: 0.4rem 0.4rem !important;
+//   background: white;
+//   color: #9199a3;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>span.hidden:after {
+//   content: "\f00d";
+//   font-family: 'Font Awesome 5 Free';
+//   padding-left: 10px;
+//   font-size: 10px;
+//   color: #9199a3;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>span.hidden {
+//   background: #edf2f5;
+//   padding: 0.4rem 0.4rem !important;
+//   border-radius: 4px;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>span:after {
+//   content: "";
+//   font-family: 'Font Awesome 5 Free';
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item {
+//   padding: 0.6rem 1.125rem !important;
+
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item,
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>i {
+//   font-size: 14px;
+//   color: #4b525a;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>i {
+//   color: #9199a3;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu {
+
+//   min-width: 120px !important;
+//   max-height: 250px;
+//   overflow: auto;
+//   margin-left: 20px;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu>.item {
+//   width: 100%;
+//   font-size: 14px;
+//   color: #4b525a;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu>.item:before {
+//   content: "\f111";
+//   font-family: 'Font Awesome 5 Free';
+//   color: white;
+//   margin: 1px 10px 1px -10px;
+//   box-sizing: border-box;
+//   border: 1px solid rgb(219, 225, 230);
+//   border-radius: 12px;
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu>.item.active:before {
+//   color: #00ccdd;
+//   border: 0px
+// }
+
+// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu>.item:after {
+//   content: "\f00c";
+//   font-family: 'Font Awesome 5 Free';
+//   color: white;
+//   font-size: 10px;
+//   position: absolute;
+//   left: 9px;
+// }

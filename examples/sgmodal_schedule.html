@@ -12,126 +12,152 @@
 </head>
 
 <body>
-    <div class="ui infor first coupled schedule modal">
+    <div class="ui infor modal">
       <i class="close icon"></i>
       <div class="header">添加课程</div>
       <!-- <button class="ui button"></button> -->
       <div class="scrolling content">
       <form class="ui form">
 
-         <div class="field">
-          <label class="header">子课程</label>
-          <div class="add subcourse">
-            <a class="button">+添加子课程</a>
-          </div>
-         </div>
-
-      <div class="field">
-        <label class="header">课频次</label>
-        <div class="field">
-          <select class="ui dropdown">
-            <option value="单次课">单词课</option>
-            <option value="多次课">多次课</option>
-          </select>
-        </div>
+      <div class="ui sginput">
+        <input type="text">
       </div>
 
-      <div class="interval field">
-        <label class="header">时间区间</label>
+      <div class="ui sginput">
+        <select class="ui dropdown">
+          <option value="单次课">单词课</option>
+          <option value="多次课">多次课</option>
+        </select>
+      </div>
+
+      <div class="ui short sginput">
+        <input type="text">
+      </div>
+
+      <div class="ui short sginput">
+        <select class="ui dropdown">
+          <option value="单次课">单词课</option>
+          <option value="多次课">多次课</option>
+        </select>
+      </div>
+
+      <div class="ui sgfield">
+        <table>
+          <thead>
+            <tr>
+              <th>媒体资料</th>
+              <th>文件</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="ui inverted primary button">+添加文件</div>
+                <input type="file" id="fileinp">
+              </td>
+              <td>
+                <div class="ui inverted primary button">+添加文件</div>
+                <input type="file" id="fileinp1">
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="description" id="text">未选择任何文件</div>
+              </td>
+              <td>
+                <div class="description" id="text1">未选择任何文件</div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="ui sgfield">
+        <div class="header">abcd</div>
         <div class="inline fields">
-          <div class="ui input">
-            <input type="date" >
+          <div class="ui short sginput">
+            <select class="ui dropdown">
+              <option value="单次课">单词课</option>
+              <option value="多次课">多次课</option>
+            </select>
           </div>
-          <span>-</span>
-          <div class="ui input">
-            <input type="date">
+          <div class="ui short sginput">
+            <select class="ui dropdown">
+              <option value="单次课">单词课</option>
+              <option value="多次课">多次课</option>
+            </select>
           </div>
         </div>
       </div>
 
-      <div class="config field">
+
+      <div class="ui config sgfield">
         <label class="header">人员配置</label>
         <div class="field">
           <i class="icon close"></i>
           <a href="#"><i class="icon primary edit"></i></a>
           <table>
-            <tr>
-              <td>课节次</td>
-              <td>周一 / 09:30-10:30 / 10:30-11:30</td>
-            </tr>
-            <tr>
-              <td>教室</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>班级</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>学生</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>老师</td>
-              <td></td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>课节次</td>
+                <td><span>周一 / 09:30-10:30 / 10:30-11:30</span>
+                    <span>周一 / 09:30-10:30 / 10:30-11:30</span>
+                </td>
+              </tr>
+              <tr>
+                <td>教室</td>
+                <td>Lorem ipsum</td>
+              </tr>
+              <tr>
+                <td>班级</td>
+                <td>Lorem ipsum dolor </td>
+              </tr>
+              <tr>
+                <td>学生</td>
+                <td>Lorem ipsum dolor sit</td>
+              </tr>
+              <tr>
+                <td>老师</td>
+                <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
-        <div class="add config">
-         <a href="#">+添加配置</a>
+      </div>
+
+      <div class="ui add sgfield">
+        <a href="#">+添加配置</a>
+      </div>
+
+      <div class="ui sgfield">
+        <div class="header">子课程</div>
+        <div class="ui add sgfield">
+          <a class="button">+添加子课程</a>
         </div>
       </div>
+
+        <!-- <div class="ui interval sgfield">
+          <label class="header">时间区间</label>
+          <div class="inline fields">
+            <div class="ui short sginput">
+              <input type="date">
+            </div>
+            <div class="ui short sginput">
+              <input type="date">
+            </div>
+          </div>
+        </div> -->
 
       </form>
     </div>
     </div>
 
-      <div class="ui subcourse second coupled infor modal">
-        <i class="close icon"></i>
-        <div class="header">添加子课程</div>
-        <div class="scrolling content">
-          <form class="ui form">
-            <div class="field">
-              <label class="header">标题</label>
-              <div class="ui input">
-                <input type="text">
-              </div>
-            </div>
 
-            <div class="file field">
-              <table>
-                <thead>
-                  <tr>
-                    <th>媒体资料</th>
-                    <th>文件</th>
-                  </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>
-                    <div class="ui inverted primary button">+添加文件</div>
-                    <input type="file" id="fileinp">
-                  </td>
-                  <td>
-                    <div class="ui inverted primary button">+添加文件</div>
-                    <input type="file" id="fileinp1">
-                  </td>
-                </tr>
-                <tr>
-                  <td><div class="description" id="text">未选择任何文件</div></td>
-                  <td><div class="description" id="text1">未选择任何文件</div></td>
-                </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="field">
-              <input type="submit" value="确定" class="ui primary button">
-            </div>
-          </form>
-        </div>
-      </div>
 
-      <div class="ui infor second coupled config modal">
+
+
+      <!-- <div class="ui infor second coupled config modal">
         <i class="close icon"></i>
         <div class="header">添加子课程</div>
         <div class="scrolling content">
@@ -170,7 +196,7 @@
               </div>
             </div>
           </form>
-      </div>
+      </div> -->
 
 
 
@@ -178,71 +204,73 @@
 
   <script src="index_js.js"></script>
   <script>
-        $('.coupled.modal')
-        .modal({
-          allowMultiple: true,
-        })
-        ;
-
-      $('.second.modal')
-        .modal('attach events', '.first.modal .button')
-        ;
-
-      $('.third.modal')
-        .modal('attach events', '.second.modal .button')
-        ;
-
-      $('.first.modal')
-        .modal('show');
-      $(".ui.infor.schedule.modal").modal("show");
-      $(".ui.infor.modal > .content > .ui.form > .field > .add.subcourse > a").click(function(){
-        $(".ui.subcourse.second.infor.coupled.modal").modal("show");
-      });
-      $(".ui.infor.modal > .content > .ui.form > .config.field > .field > a").click(function(){
-        $(".ui.config.second.infor.coupled.modal").modal("show");
-      });
-
+      $(".ui.modal").modal("show");
+      $(".ui.config.sgfield > .field > i.close").click(function(){
+        $(this).closest(".ui.config.sgfield").transition("fade");
+      })
       $("#fileinp").change(function () {
         $("#text").html($("#fileinp").val()).css("color", "#4a90e2");
       });
-        $("#fileinp1").change(function () {
-            $("#text1").html($("#fileinp1").val()).css("color","#4a90e2");
-          });
-      $(".ui.infor.second.coupled.config.modal .ui.dropdown").dropdown({
-        // useLabels:true,
-        // maxSelections: 3,
-        // allowAdditions: true,
-        allowCategorySelection: true
+      $("#fileinp1").change(function () {
+        $("#text1").html($("#fileinp1").val()).css("color","#4a90e2");
       });
-      $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").click(function(){
-        $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").empty().removeClass("hidden").html("请选择课节次");
-        return false;
-      });
-      $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button .item").click(function(){
-        $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").addClass("hidden");
-      });
+      //   $('.coupled.modal')
+      //   .modal({
+      //     allowMultiple: true,
+      //   })
+      //   ;
+
+      // $('.second.modal')
+      //   .modal('attach events', '.first.modal .button')
+      //   ;
+
+      // $('.third.modal')
+      //   .modal('attach events', '.second.modal .button')
+      //   ;
+
+      // $('.first.modal')
+      //   .modal('show');
+      // $(".ui.infor.modal > .content > .ui.form > .field > .add.subcourse > a").click(function(){
+      //   $(".ui.subcourse.second.infor.coupled.modal").modal("show");
+      // });
+      // $(".ui.infor.modal > .content > .ui.form > .config.field > .field > a").click(function(){
+      //   $(".ui.config.second.infor.coupled.modal").modal("show");
+      // });
+      // $(".ui.infor.second.coupled.config.modal .ui.dropdown").dropdown({
+      //   // useLabels:true,
+      //   // maxSelections: 3,
+      //   // allowAdditions: true,
+      //   allowCategorySelection: true
+      // });
+      // $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").click(function(){
+      //   $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").empty().removeClass("hidden").html("请选择课节次");
+      //   return false;
+      // });
+      // $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button .item").click(function(){
+      //   $(".ui.infor.config.second.coupled.modal > .content .ui.form > .config.field > .ui.button > span").addClass("hidden");
+      // });
 
 
 
-      $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field").hover(function(){
+      // $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field").hover(function(){
 
-        $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div").each(function(n){
-          $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ")").hover(function () {
-            $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").each(function (i) {
-              $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").eq(i).click(function () {
-              console.log(i);
-                var item = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div");
-                if(item.eq(i).attr("class") == "item"){
-                  item.eq(i).addClass("active");
-                }else{
-                  item.eq(i).removeClass("active");
-                }
-                return false;
-              });
-            })
-          })
-        })
-      })
+      //   $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div").each(function(n){
+      //     $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ")").hover(function () {
+      //       $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").each(function (i) {
+      //         $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div").eq(i).click(function () {
+      //         console.log(i);
+      //           var item = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div:eq(" + n + ") > .menu > div");
+      //           if(item.eq(i).attr("class") == "item"){
+      //             item.eq(i).addClass("active");
+      //           }else{
+      //             item.eq(i).removeClass("active");
+      //           }
+      //           return false;
+      //         });
+      //       })
+      //     })
+      //   })
+      // })
 
   //   var week = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > div");
   //   var time = $(".ui.infor.config.second.coupled.modal > .content > .ui.form > .config.field > .ui.button > .menu > .item > .menu > div");
