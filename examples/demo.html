@@ -348,6 +348,19 @@
 
             </div>
         </div>
+
+        <div class="ui modal">
+            <i class="close icon"></i>
+            <div class="header">Header</div>
+            <div class="content">
+                <p></p>
+            </div>
+            <div class="actions">
+                <div class="ui approve button">Approve</div>
+                <div class="ui button">Neutral</div>
+                <div class="ui cancel button">Cancel</div>
+            </div>
+        </div>
     </main>
 
 
@@ -379,8 +392,10 @@
                 event.stopPropagation();
             });
 
-            $("#sortable").sortable();
-            $("#sortable").disableSelection();
+            // $("#sortable").sortable();
+            // $("#sortable").disableSelection();
+
+            $('.ui.modal').modal('show');
         }
     </script>
 
