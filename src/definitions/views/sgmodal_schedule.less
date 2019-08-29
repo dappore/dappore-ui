@@ -6,48 +6,48 @@
 /************************
     .ui.sginput
 *************************/
-.ui.sginput {
+.sginput {
   width: 100%;
 }
-.ui.sginput .ui.dropdown {
+.sginput .ui.dropdown {
   width: 100%;
 }
-.ui.short.sginput {
+.short.sginput {
   width: 48%;
 }
-.ui.short.sginput > .ui.dropdown {
+.short.sginput > .ui.dropdown {
   width: 100%;
   min-width: 120px;
 }
 /************************
     .ui.sgfield
 *************************/
-.ui.form .ui.sgfield input:not([type]),
-.ui.form .ui.sgfield input[type=date],
-.ui.form .ui.sgfield input[type=datetime-local],
-.ui.form .ui.sgfield input[type=email],
-.ui.form .ui.sgfield input[type=file],
-.ui.form .ui.sgfield input[type=number],
-.ui.form .ui.sgfield input[type=password],
-.ui.form .ui.sgfield input[type=search],
-.ui.form .ui.sgfield input[type=tel],
-.ui.form .ui.sgfield input[type=text],
-.ui.form .ui.sgfield input[type=time],
-.ui.form .ui.sgfield input[type=url],
-.ui.form .ui.sgfield textarea,
-.ui.form .ui.sgfield .ui.dropdown,
-.ui.form .ui.sgfield .ui.dropdown .item{
+.ui.form .sgfield input:not([type]),
+.ui.form .sgfield input[type=date],
+.ui.form .sgfield input[type=datetime-local],
+.ui.form .sgfield input[type=email],
+.ui.form .sgfield input[type=file],
+.ui.form .sgfield input[type=number],
+.ui.form .sgfield input[type=password],
+.ui.form .sgfield input[type=search],
+.ui.form .sgfield input[type=tel],
+.ui.form .sgfield input[type=text],
+.ui.form .sgfield input[type=time],
+.ui.form .sgfield input[type=url],
+.ui.form .sgfield textarea,
+.ui.form .sgfield .ui.dropdown,
+.ui.form .sgfield .ui.dropdown .item{
   font-size: 14px;
   color: #4b525a;
 }
 
-.ui.form .ui.sgfield input:focus,
-.ui.form .ui.sgfield textarea:focus,
-.ui.form .ui.sgfield .ui.dropdown:focus{
+.ui.form .sgfield input:focus,
+.ui.form .sgfield textarea:focus,
+.ui.form .sgfield .ui.dropdown:focus{
   border: 1px solid #00ccdd;
 }
 
-.ui.sgfield {
+.sgfield {
     width: 100%;
     margin-bottom: 20px;
 
@@ -61,16 +61,16 @@
     }
 }
 
-.ui.sgfield .inline.fields {
+.sgfield .inline.fields {
   width: 100%;
   min-width: 280px;
   position: relative;
 }
-.ui.sgfield .inline.fields > .ui.short.sginput:first-child {
+.sgfield .inline.fields > .short.sginput:first-child {
   margin-right: 4%;
 }
 
-.ui.sgfield .inline.fields > .ui.short.sginput:last-child:before{
+.sgfield .inline.fields > .short.sginput:last-child:before{
   content: "-";
   font-size: 12px;
   color: rgb(219, 225, 230);
@@ -87,7 +87,7 @@
 /************************
     ui config sgfield
 *************************/
-.ui.config.sgfield  {
+.config.sgfield  {
   width: 100%;
   min-width: 320px;
   background: #f6f8fa;
@@ -95,37 +95,37 @@
   position: relative;
 }
 
-.ui.config.sgfield i {
+.config.sgfield i {
   font-size: 14px;
   position: absolute;
   right: 6px;
 }
 
-.ui.config.sgfield > i {
+.config.sgfield > i {
   top: 6px;
   color: #9199a3;
 }
 
-.ui.config.sgfield > a > i {
+.config.sgfield > a > i {
   bottom: 10px;
 }
 
-.ui.config.sgfield > table {
+.config.sgfield > table {
   border-radius: 4px;
   padding: 15px 20px 10px 14px;
 }
 
-.ui.config.sgfield > table tr {
+.config.sgfield > table tr {
   width: 100%;
   height: 22px;
 }
 
-.ui.config.sgfield > table tr td {
+.config.sgfield > table tr td {
   padding: 0px;
   font-size: 14px;
 }
 
-.ui.config.sgfield > table tr td:first-child {
+.config.sgfield > table tr td:first-child {
   width: 16%;
   text-align-last: justify;
   white-space: nowrap;
@@ -134,24 +134,24 @@
   color: #9199a3;
 }
 
-.ui.config.sgfield > table tr td:first-child:after {
+.config.sgfield > table tr td:first-child:after {
   content: ":";
   position: absolute;
 }
 
-.ui.config.sgfield > table tr td:last-child {
+.config.sgfield > table tr td:last-child {
   padding-left: 10px;
   color: #4b525a;
 }
 
-.ui.config.sgfield > table tr td:last-child span {
+.config.sgfield > table tr td:last-child span {
   display: block;
 }
 
 /***********************
       ui add sgfield
 ************************/
-.ui.add.sgfield {
+.add.sgfield {
   border: 1px dashed rgb(219, 225, 230);
   min-width: 320px;
   padding: 6px 0px;
@@ -159,23 +159,15 @@
   border-radius: 4px;
 }
 
-.ui.add.sgfield > a {
+.add.sgfield > a {
   font-size: 14px;
   color: #4b525a;
 }
 
-/****************************
-    ui interval sgfield
-*****************************/
-// .ui.interval.sgfield .inline.fields > .ui.input input[type=date]::-webkit-inner-spin-button,
-// .ui.interval.sgfield .inline.fields > .ui.input input[type=date]::-webkit-clear-button {
-//   display: none;
-// }
-
 /******************************
     ui table sgfield
 *******************************/
-.ui.file.sgfield > .ui.button {
+.file.sgfield > .ui.button {
   width: 110px;
   font-size: 14px;
   box-shadow: 0 0 0 1px #00ccdd inset;
@@ -184,131 +176,23 @@
   padding-bottom: 10px;
 }
 
-.ui.file.sgfield > input[type=file] {
+.file.sgfield > input[type=file] {
   opacity: 0;
   width: 112px;
   margin-left: -118px;
 }
 
-.ui.file.sgfield > .description {
+.file.sgfield > .description {
   width: 110px;
   font-size: 12px;
   color: #9199a3;
   word-wrap: break-word;
 }
-.ui.sgfield > .inline.fields > .ui.sgfield {
+.sgfield > .inline.fields > .ui.sgfield {
   width: 50%;
 }
-.ui.sgfield > .inline.fields > .ui.sgfield:nth-child(2) {
+.sgfield > .inline.fields > .ui.sgfield:nth-child(2) {
   position: absolute;
   left: 50%;
   top: 0px;
 }
-// /******************************
-// .ui.infor.config.second.coupled.modal
-// *******************************/
-// .ui.infor.config.second.coupled.modal .ui.dropdown .menu .menu {
-//   margin: 0 !important;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form {
-//   min-height: 400px;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.field {
-//   width: 70%;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button {
-//   width: 100%;
-//   background: white;
-//   border: 1px solid rgb(219, 225, 230);
-//   font-size: 14px;
-//   color: #4b525a;
-//   padding: 0.285em 1.1em 0.2875em;
-
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>i {
-//   float: right;
-//   margin-top: 6px;
-//   margin-right: 4px;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>span {
-//   padding: 0.4rem 0.4rem !important;
-//   background: white;
-//   color: #9199a3;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>span.hidden:after {
-//   content: "\f00d";
-//   font-family: 'Font Awesome 5 Free';
-//   padding-left: 10px;
-//   font-size: 10px;
-//   color: #9199a3;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>span.hidden {
-//   background: #edf2f5;
-//   padding: 0.4rem 0.4rem !important;
-//   border-radius: 4px;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>span:after {
-//   content: "";
-//   font-family: 'Font Awesome 5 Free';
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item {
-//   padding: 0.6rem 1.125rem !important;
-
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item,
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>i {
-//   font-size: 14px;
-//   color: #4b525a;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>i {
-//   color: #9199a3;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu {
-
-//   min-width: 120px !important;
-//   max-height: 250px;
-//   overflow: auto;
-//   margin-left: 20px;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu>.item {
-//   width: 100%;
-//   font-size: 14px;
-//   color: #4b525a;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu>.item:before {
-//   content: "\f111";
-//   font-family: 'Font Awesome 5 Free';
-//   color: white;
-//   margin: 1px 10px 1px -10px;
-//   box-sizing: border-box;
-//   border: 1px solid rgb(219, 225, 230);
-//   border-radius: 12px;
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu>.item.active:before {
-//   color: #00ccdd;
-//   border: 0px
-// }
-
-// .ui.infor.config.second.coupled.modal>.content .ui.form>.config.field>.ui.button>.menu>.item>.menu>.item:after {
-//   content: "\f00c";
-//   font-family: 'Font Awesome 5 Free';
-//   color: white;
-//   font-size: 10px;
-//   position: absolute;
-//   left: 9px;
-// }

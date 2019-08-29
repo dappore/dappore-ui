@@ -19,47 +19,47 @@
       <div class="scrolling content">
       <form class="ui form">
 
-      <div class="ui sginput">
+      <div class="sginput">
         <input type="text">
       </div>
 
-      <div class="ui sginput">
+      <div class="sginput">
         <select class="ui dropdown">
           <option value="单次课">单词课</option>
           <option value="多次课">多次课</option>
         </select>
       </div>
 
-      <div class="ui short sginput">
+      <div class="short sginput">
         <input type="text">
       </div>
 
-      <div class="ui short sginput">
+      <div class="short sginput">
         <select class="ui dropdown">
           <option value="单次课">单词课</option>
           <option value="多次课">多次课</option>
         </select>
       </div>
 
-      <div class="ui file sgfield">
+      <div class="file sgfield">
         <div class="ui inverted button">+添加文件</div>
         <input type="file">
         <div class="description">未选择任何文件</div>
       </div>
 
-      <div class="ui sgfield">
+      <div class="sgfield">
         <div class="inline fields">
-          <div class="ui sgfield">
+          <div class="sgfield">
             <div class="header">媒体资料</div>
-              <div class="ui file sgfield">
+              <div class="file sgfield">
                 <div class="ui inverted button">+添加文件</div>
                 <input type="file" id="1">
                 <div class="description" id="2">未选择任何文件</div>
               </div>
           </div>
-          <div class="ui sgfield">
+          <div class="sgfield">
             <div class="header">文件</div>
-              <div class="ui file sgfield">
+              <div class="file sgfield">
                 <div class="ui inverted button">+添加文件</div>
                 <input type="file" id="3">
                 <div class="description" id="4">未选择任何文件</div>
@@ -68,16 +68,16 @@
         </div>
       </div>
 
-      <div class="ui sgfield">
+      <div class="sgfield">
         <div class="header">abcd</div>
         <div class="inline fields">
-          <div class="ui short sginput">
+          <div class="short sginput">
             <select class="ui dropdown">
               <option value="单次课">单词课</option>
               <option value="多次课">多次课</option>
             </select>
           </div>
-          <div class="ui short sginput">
+          <div class="short sginput">
             <select class="ui dropdown">
               <option value="单次课">单词课</option>
               <option value="多次课">多次课</option>
@@ -86,58 +86,27 @@
         </div>
       </div>
 
-      <div class="ui add sgfield">
+      <div class="add sgfield">
         <a href="#">+添加配置</a>
       </div>
 
-      <div class="ui sgfield">
+      <div class="sgfield">
         <div class="header">子课程</div>
         <div class="ui add sgfield">
           <a class="button">+添加子课程</a>
         </div>
       </div>
 
-      <div class="ui configs sgfield">
+      <div class="configs sgfield">
         <label class="header">人员配置</label>
         <div class="field">
-          <div class="ui config sgfield">
-            <i class="icon close"></i>
-            <a href="#"><i class="icon primary edit"></i></a>
-            <table>
-              <tbody>
-                <tr>
-                  <td>课节次</td>
-                  <td><span>周一 / 09:30-10:30 / 10:30-11:30</span>
-                    <span>周一 / 09:30-10:30 / 10:30-11:30</span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>教室</td>
-                  <td>Lorem ipsum</td>
-                </tr>
-                <tr>
-                  <td>班级</td>
-                  <td>Lorem ipsum dolor </td>
-                </tr>
-                <tr>
-                  <td>学生</td>
-                  <td>Lorem ipsum dolor sit</td>
-                </tr>
-                <tr>
-                  <td>老师</td>
-                  <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
         </div>
-        <div class="ui add sgfield">
+        <div class="add sgfield">
             <a href="#">+添加配置</a>
         </div>
       </div>
 
-      <div class="ui config sgfield">
+      <div class="config sgfield">
           <i class="close icon"></i>
           <a href="#"><i class="icon primary edit"></i></a>
           <table>
@@ -158,20 +127,6 @@
           </table>
       </div>
 
-
-
-        <!-- <div class="ui interval sgfield">
-          <label class="header">时间区间</label>
-          <div class="inline fields">
-            <div class="ui short sginput">
-              <input type="date">
-            </div>
-            <div class="ui short sginput">
-              <input type="date">
-            </div>
-          </div>
-        </div> -->
-
       </form>
     </div>
     </div>
@@ -187,7 +142,7 @@
 
   <script src="index_js.js"></script>
   <script>
-
+        $('.first.modal').modal('show');
       $("#1").change(function () {
         $("#2").html($("#1").val()).css("color", "#4a90e2");
       });
@@ -197,43 +152,35 @@
 
       $('.coupled.modal').modal({allowMultiple: true,});
 
-      $('.second.modal').modal('attach events', '.ui.config.sgfield > a');
+      $('.second.modal').modal('attach events', '.config.sgfield > a');
 
-      $('.ui.configs.sgfield > .ui.add.sgfield').click(function(){
-        $('.ui.configs.sgfield > .field').append(`
-          <div class="ui config sgfield">
-            <i class="icon close"></i>
-            <a href="#"><i class="icon primary edit"></i></a>
-            <table>
-              <tbody>
-                <tr>
-                  <td>课节次</td>
-                  <td><span></span>
-                      <span></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td>教室</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>班级</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>学生</td>
-                  <td></td>
-                </tr>
-                <tr>
-                  <td>老师</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        `);
+      $('.configs.sgfield > .add.sgfield').click(function(){
+
+        function addConfig(obj){
+          var dom = "<div><i></i><a><i></i></a><table><tbody><tr><td>课节次</td><td><span>" + obj.week + "</span></td></tr><tr><td>教室</td><td>" + obj.classroom + "</td></tr><tr><td>班级</td><td>" + obj.classs + "</td></tr><tr><td>学生</td><td>" + obj.student + "</td></tr><tr><td>老师</td><td>" + courseware.teacher + "</td></tr></tbody></table></div>";
+          $('.configs.sgfield > .field').append(dom);
+          $(".configs.sgfield > .field > div").addClass("config sgfield");
+          $(".configs.sgfield > .field > .config.sgfield > i").addClass("icon close");
+          $(".configs.sgfield > .field > .config.sgfield > a > i").addClass("icon primary edit");
+        }
+        var courseware = { week: "周一", classroom: "A教室", classs: "宝六班", student: "王花花", teacher: "果果老师" };
+        addConfig(courseware);
+        $(".configs.sgfield > .field > .config.sgfield > i.close").each(function (index) {
+          $(".configs.sgfield > .field > .config.sgfield > i.close").eq(index).click(function () {
+            $(".configs.sgfield > .field > .config.sgfield").each(function (i) {
+              if (i === index) {
+                $(".configs.sgfield > .field > .config.sgfield").eq(i).hide();
+              }
+            })
+          })
+        });
+        $('.configs.sgfield > .field > .config.sgfield > a > i').click(function () {
+          $('.second.modal').modal("show");
+        })
       });
-      $('.first.modal').modal('show');
+
+
+
 
   </script>
 </body>
