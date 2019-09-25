@@ -67,7 +67,13 @@
 
           <div class="field">
             <div class="header">权限</div>
-            <label class="ui check checkbox">
+            <label class="ui checkbox">
+              <input type="checkbox">
+              <label>园区管理员</label>
+              <input type="checkbox">
+              <label>园区管理员</label>
+              <input type="checkbox">
+              <label>园区管理员</label>
               <input type="checkbox">
               <label>园区管理员</label>
             </label>
@@ -268,6 +274,9 @@
   <script src="index_js.js"></script>
   <script>
         $(".ui.infor.modal").modal("show");
+
+        $(".field > .ui.check.checkbox > input").checkbox();
+
   </script>
 
   <!-- <script>
